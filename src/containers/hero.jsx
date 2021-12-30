@@ -22,17 +22,17 @@ export const Button = ({ children, className, onClick }) => {
 };
 
 const style = {
-  background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${bg})`,
+  background: ` url(${bg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
-  backgroundSize: "100% -100%",
+  backgroundSize: "cover",
 };
 
 // hero component
 const Hero = () => {
-  return (<div style={style}>
+  return (<div className='bg-dark-800'>
 
-    <div className={`${paddingX} flex flex-col gap-8 relative    py-12`}>
+    <div style={style} className={`${paddingX} flex flex-col gap-8 relative    py-12`}>
       <div className='flex sm:flex-row flex-col justify-between w-full items-center'>
         <img src={logo} alt='nutgain logo' className='h-12 w-32' />
         <Button>Whitepaper</Button>

@@ -17,11 +17,11 @@ const style1 = {
   background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${bg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
-  backgroundSize: "100% ",
+  backgroundSize: "cover ",
 };
 const Team = () => {
   return (
-    <div className={` py-12 bg-dark-800 `}>
+    <div className={`   bg-dark-800 `}>
     <div className={`${paddingX} py-12 0 grid grid-cols-1 gap-12`} style={style1}>
       <Heading className='text-primary-800 text-center'>Meet Our Team</Heading>
       <div className='flex flex-wrap items-start gap-8 justify-center'>
