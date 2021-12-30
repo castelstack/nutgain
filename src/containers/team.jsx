@@ -8,13 +8,21 @@ import ad5 from "../assets/svg/ad5.svg";
 import te1 from "../assets/svg/te1.svg";
 import ta2 from "../assets/svg/ta2.svg";
 import ta4 from "../assets/svg/ta4.svg"
+import bg from "../assets/svg/bgtime.svg"
 
 const style = {
   borderRadius: "97px 0px 97px 0px",
 };
+const style1 = {
+  background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${bg})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundSize: "100% ",
+};
 const Team = () => {
   return (
-    <div className={`${paddingX} py-12 bg-dark-800 grid grid-cols-1 gap-12`}>
+    <div className={` py-12 bg-dark-800 `}>
+    <div className={`${paddingX} py-12 0 grid grid-cols-1 gap-12`} style={style1}>
       <Heading className='text-primary-800 text-center'>Meet Our Team</Heading>
       <div className='flex flex-wrap items-start gap-8 justify-center'>
         
@@ -33,6 +41,7 @@ const Team = () => {
           <Advisor key={el} image={el.image} />
             )}
         </div>
+      </div>
       </div>
     </div>
   );

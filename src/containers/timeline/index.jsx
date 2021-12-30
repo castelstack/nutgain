@@ -5,6 +5,7 @@ import TimeCard from "./card";
 import { paddingX } from "../../constant/styles/spacing";
 import squ from "../../assets/svg/squ.svg";
 import coin from "../../assets/svg/coin.svg";
+import card from "../../assets/svg/card.svg";
 import { ReactComponent as Stand } from "../../assets/svg/stand.svg";
 
 const ProjectTimeline = () => {
@@ -16,7 +17,7 @@ const ProjectTimeline = () => {
           {data.map((el) => (
             <TimeCard
               key={el.year}
-              icon={coin}
+              icon={card}
               year={el.year}
               title={el.title}
               info={el.info}
