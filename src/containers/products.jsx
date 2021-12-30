@@ -1,8 +1,8 @@
 import React from "react";
-import { Heading, SmText, SubText } from "../constant/styles/text";
+import {  SmText, SubText } from "../constant/styles/text";
 import cha3 from "../assets/svg/cha3.svg";
 import stroke from "../assets/svg/line.svg";
-import stroker from "../assets/svg/liner.svg";
+// import stroker from "../assets/svg/liner.svg";
 import { paddingX } from "../constant/styles/spacing";
 
 const Products = () => {
