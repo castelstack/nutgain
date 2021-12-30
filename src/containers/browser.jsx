@@ -7,9 +7,9 @@ import cha4 from "../assets/svg/cha4.svg";
 import hero from "../assets/svg/hero.svg";
 import stroke from "../assets/svg/line.svg";
 
-const style = {
-    borderRadius: "97px 0px 97px 0px",
-  };
+// const style = {
+//     borderRadius: "97px 0px 97px 0px",
+//   };
 
 const Browser = () => {
   return (
