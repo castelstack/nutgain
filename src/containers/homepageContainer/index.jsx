@@ -9,16 +9,20 @@ import Redistro from "../redistro";
 import Reward from "../reward";
 import Team from "../team";
 import ProjectTimeline from "../timeline";
+import Time from "../timeline/time";
+import Modal from "./modal";
 
 const Home = () => {
   return (
     <div className='overflow-hidden'>
+      <Modal/>
       <Hero />
       <Reward />
       <Redistro />
       <Browser />
       <Exchange />
       <Products />
+      <Time/>
       <ProjectTimeline />
       <Publish/>
       <Team/>

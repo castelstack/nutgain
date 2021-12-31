@@ -8,7 +8,7 @@ import { paddingX } from '../constant/styles/spacing';
 const Exchange = () => {
     return (
         <div className={`${paddingX} py-12 grid grid-cols-2 bg-dark-900 items-center h-screen`}>
-            <div classNam='flex flex-col gap-32 justify-between'>
+            <div className='flex flex-col gap-32 justify-between'>
             <div >
             <Heading className='text-primary-800'>DeFi Exchange</Heading>
             <SmText className='text-white'>
@@ -17,7 +17,7 @@ const Exchange = () => {
           </div>
           <div className='grid grid-cols-fr-mx mt-12  gap-4'>
               <img src={stroke} alt='stroke' className='w-full' />{" "}
-              <p className='text-primary-800 text-sm self-end'>Find Out More</p>
+              <p className='text-primary-800 text-sm self-end'>Find Out More &rarr;</p>
             </div>
             </div>
             <img src={hero} alt='stroke' className='w-full transform -translate-y-40' />

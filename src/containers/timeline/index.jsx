@@ -1,12 +1,14 @@
 import React from "react";
 import { Heading, SmText } from "../../constant/styles/text";
 import cha3 from "../../assets/svg/cha3.svg";
-import TimeCard from "./card";
+import { TimeCard } from "./card";
 import { paddingX } from "../../constant/styles/spacing";
 import squ from "../../assets/svg/squ.svg";
 import coin from "../../assets/svg/coin.svg";
 import card from "../../assets/svg/card.svg";
 import { ReactComponent as Stand } from "../../assets/svg/stand.svg";
+
+
 
 const ProjectTimeline = () => {
   return (
@@ -14,9 +16,9 @@ const ProjectTimeline = () => {
       <div className={`${paddingX} pt-12  flex flex-col gap-12`}>
         <Heading className='text-primary-800'>Project Timelines</Heading>
         <div className='flex w-full justify-between gap-8 mt-4'>
-          {data.map((el) => (
+          {data.map((el, idx) => (
             <TimeCard
-              key={el.year}
+              key={idx}
               icon={card}
               year={el.year}
               title={el.title}
@@ -31,10 +33,9 @@ const ProjectTimeline = () => {
           className='p-12 w-full justify-self-start flex flex-col items-start justify-end  rounded-t-3xl pt-8 px-20 bg-dark-800 '
         >
           <div className='-space-y-44 flex flex-col justify-items-center '>
-          {/* <Coinn  className='h-40 w-40' /> */}
-          <img src={coin} alt='msg ' className='h-52 w-52 mr8 z-20' />
-          <Stand className='h-52 w-52 z-10' />
-
+            {/* <Coinn  className='h-40 w-40' /> */}
+            <img src={coin} alt='msg ' className='h-52 w-52 mr8 z-20' />
+            <Stand className='h-52 w-52 z-10' />
           </div>
           <div>
             <Heading className='text-primary-800 tracking-wider '>
@@ -52,11 +53,15 @@ const ProjectTimeline = () => {
             <div className='grid grid-cols-2 justify-between gap-12 mt-12'>
               <div className='sm:w-56 w-full'>
                 <img src={cha3} alt='web3 browser ' className='h-20 w-20' />
-                <SmText className='text-primary-800 '>Passive income in BUSD </SmText>
+                <SmText className='text-primary-800 '>
+                  Passive income in BUSD{" "}
+                </SmText>
               </div>
               <div className='sm:w-56 w-full'>
                 <img src={cha3} alt='web3 browser ' className='h-20 w-20' />
-                <SmText className='text-primary-800 '>Powered by cutting-edge products</SmText>
+                <SmText className='text-primary-800 '>
+                  Powered by cutting-edge products
+                </SmText>
               </div>
             </div>
           </div>
@@ -68,26 +73,36 @@ const ProjectTimeline = () => {
             className=' h-96 w-full  absolute -top-80 -left-52'
           />
           <div
-            className='grid grid-cols-2 items-center content-center overflow-none object-fit '
-            style={{ borderRadius: "97px 0px 97px 0px" }}
+            className=' grid grid-cols-2 items-center content-center overflow-none object-fit '
+           
           >
             <div></div>
             <div className='grid grid-cols-2  justify-between justify-items-center px-4 py-4'>
-              <SmText className='text-primary-800 px-4 w-full text-center'>
+              <SmText className='text-gray-100 px-4 w-full text-center'>
                 Buy Fee
               </SmText>
-              <SmText className='text-primary-800 px-4 w-full text-center'>
+              <SmText className='text-gray-100 px-4 w-full text-center'>
                 Sell Fee
               </SmText>
             </div>
           </div>
+          {/* 
+          card 1 */}
           <div
-            className='grid grid-cols-2 items-center content-center overflow-none object-fit  bg-white'
+            className='shadow-new-2 grid grid-cols-2 items-center content-center  object-fit  bg-white'
             style={{ borderRadius: "97px 0px 97px 0px" }}
           >
-            <SmText className='text-gray-900 px-8 py-4 bg-primary-800' style={{clipPath: 'polygon(22% 0, 100% 0%, 100% 98%, 0% 100%)'}}>
-              Invest in NutGain and
-            </SmText>
+            <div
+              style={{
+                borderRadius: "97px 0px 0px 0px",
+                clipPath: "polygon(0 0, 97% 0, 90% 100%, 0% 100%)",
+              }}
+              className='bg-primary-800'
+            >
+              <SmText className='text-gray-900 px-8 py-4 '>
+                Invest in NutGain and
+              </SmText>
+            </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>
               <SmText className='text-gray-900 px-4 w-full text-center'>
                 2.33
@@ -97,13 +112,23 @@ const ProjectTimeline = () => {
               </SmText>
             </div>
           </div>
+          {/* 
+          card 2 */}
           <div
-            className='grid grid-cols-2 items-center content-center overflow-none object-fit  bg-white'
+            className='shadow-new-2 grid grid-cols-2 items-center content-center  object-fit  bg-white'
             style={{ borderRadius: "97px 0px 97px 0px" }}
           >
-            <SmText className='text-gray-900 px-8 py-4 bg-primary-800' style={{clipPath: 'polygon(0 0, 81% 0, 100% 98%, 0% 100%)'}}>
-              Invest in NutGain and
-            </SmText>
+            <div
+              style={{
+                borderRadius: "97px 0px 0px 0px",
+                clipPath: "polygon(0 0, 97% 0, 90% 100%, 0% 100%)",
+              }}
+              className='bg-primary-800'
+            >
+              <SmText className='text-gray-900 px-8 py-4 '>
+                Invest in NutGain and
+              </SmText>
+            </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>
               <SmText className='text-gray-900 px-4 w-full text-center'>
                 2.33
@@ -113,13 +138,23 @@ const ProjectTimeline = () => {
               </SmText>
             </div>
           </div>
+          {/* 
+          card 3 */}
           <div
-            className='grid grid-cols-2 items-center content-center overflow-none object-fit  bg-white'
+            className='shadow-new-2 grid grid-cols-2 items-center content-center  object-fit  bg-white'
             style={{ borderRadius: "97px 0px 97px 0px" }}
           >
-            <SmText className='text-gray-900 px-8 py-4 bg-primary-800' style={{clipPath: 'polygon(0 0, 81% 0, 100% 98%, 0% 100%)'}}>
-              Invest in NutGain and
-            </SmText>
+            <div
+              style={{
+                borderRadius: "97px 0px 0px 0px",
+                clipPath: "polygon(0 0, 97% 0, 90% 100%, 0% 100%)",
+              }}
+              className='bg-primary-800'
+            >
+              <SmText className='text-gray-900 px-8 py-4 '>
+                Invest in NutGain and
+              </SmText>
+            </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>
               <SmText className='text-gray-900 px-4 w-full text-center'>
                 2.33

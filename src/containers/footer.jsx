@@ -66,10 +66,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className='text-gray-100' />
+        <hr className='text-white py-1' />
 
         <p className='text-white text-sm tracking-wider'>
-          Copyright 2021 ZOR All right reserved.
+          Copyright &copy;2021 NutGain All right reserved.
         </p>
       </div>
     </div>
