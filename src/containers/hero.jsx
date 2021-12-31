@@ -8,6 +8,7 @@ import linkdin from "../assets/svg/link.svg";
 import squ from "../assets/svg/squ.svg";
 import { Heading, SmText } from "../constant/styles/text";
 import { paddingX } from "../constant/styles/spacing";
+import { CountdownView } from "../components/countdown";
 
 // button component
 export const Button = ({ children, className, onClick }) => {
@@ -45,6 +46,7 @@ const Hero = () => {
           tools including Web3, DeFi, Metaverse, NFT, Crypto Wallet, D-Hyper
           Ecommerce and dApps.
         </SmText>
+        <CountdownView/>
         <div className='flex gap-4 items-center'>
           <Button>Buy Now</Button>
           <Button>Whitelist your Wallet</Button>
