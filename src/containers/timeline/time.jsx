@@ -211,12 +211,6 @@ const data = [
           "integration",
         ],
       },
-      {
-        id: 13,
-        verified: false,
-        desc: "Ui & Domain Finalization 3",
-        subDesc: [],
-      },
     ],
     info2: [
       {
