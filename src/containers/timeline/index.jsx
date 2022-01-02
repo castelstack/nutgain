@@ -15,7 +15,7 @@ const ProjectTimeline = () => {
     <div className={` pt-12 bg-dark-900 flex flex-col gap-12`}>
       <div className={`${paddingX} pt-12  flex flex-col gap-12`}>
         <Heading className='text-primary-800'>Project Timelines</Heading>
-        <div className='flex w-full justify-between gap-8 mt-4'>
+        <div className='flex w-full sm:flex-row flex-col justify-between gap-8 mt-4'>
           {data.map((el, idx) => (
             <TimeCard
               key={idx}
@@ -27,10 +27,11 @@ const ProjectTimeline = () => {
           ))}
         </div>
       </div>
-      <div className='h-screen grid grid-cols-2 items-end w-full'>
+      {/* tokenomics and mock trade view box */}
+      <div className=' grid sm:grid-cols-2 grid-cols-1 items-end w-full'>
         <div
           style={{ borderRadius: "97px 97px 0px 0px" }}
-          className='p-12 w-full justify-self-start flex flex-col items-start justify-end  rounded-t-3xl pt-8 px-20 bg-dark-800 '
+          className='py-12 sm:px-12 px-4 w-full justify-self-start flex flex-col items-start justify-end  rounded-t-3xl pt-8  bg-dark-800 '
         >
           <div className='-space-y-44 flex flex-col justify-items-center '>
             {/* <Coinn  className='h-40 w-40' /> */}
@@ -66,11 +67,12 @@ const ProjectTimeline = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col relative gap-4 transform -translate-x-20 mb-12'>
+        {/* ./second div containig squ img and trading view box */}
+        <div className='flex flex-col sm:px-0 px-4 gap-4 sm:transform transform-none -translate-x-20 mb-12'>
           <img
             src={squ}
             alt='nutgain '
-            className=' h-96 w-full  absolute -top-80 -left-52'
+            className=' h-96 w-full  sm:absolute -top-80 -left-52'
           />
           <div
             className=' grid grid-cols-2 items-center content-center overflow-none object-fit '

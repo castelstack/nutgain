@@ -20,9 +20,9 @@ const stylebg = {
 
 const Browser = () => {
   return (
-    <div className='py-40 px-32 bg-dark-800'>
-      <main className='grid grid-cols-2 h-full' style={{borderRadius: "97px 0px 97px 0px"}}>
-        <div className='flex items-center bg-primary-800' style={{borderRadius: "97px 0px 0px 0px"}}>
+    <div className='md:py-40 py-2 md:px-32 sm:px-12 px-4 bg-dark-800'>
+      <main className='grid sm:grid-cols-2 grid-cols-1 h-full' style={{borderRadius: "97px 0px 97px 0px"}}>
+        <div className='hidden sm:flex items-center bg-primary-800' style={{borderRadius: "97px 0px 0px 0px"}}>
           <img src={hero} alt='web3 browser' />
         </div>
         {/* features of web3 browser */}
@@ -43,21 +43,21 @@ const Browser = () => {
             <SubText className='text-white'>
               Zor offers the following builts in functions
             </SubText>
-            <ul className='gap-2'>
-              <li className='text-white text-xl'>&bull; Decentralized games</li>
-              <li className='text-white text-xl'>&bull; Decentralized games</li>
-              <li className='text-white text-xl'>&bull; Decentralized games</li>
-              <li className='text-white text-xl'>&bull; Decentralized games</li>
-              <li className='text-white text-xl'>&bull; Decentralized games</li>
-              <li className='text-white text-xl'>&bull; Decentralized games</li>
-              <li className='text-white text-xl'>&bull; Decentralized games</li>
-            </ul>
+            <div className='gap-2'>
+              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
+              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
+              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
+              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
+              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
+              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
+              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
+            </div>
           </div>
           <div className='md:px-12 px-8'>
             <SubText className='text-white'>
               Zor offers the following builts in functions
             </SubText>
-            <div className='grid grid-cols-2'>
+            <div className='grid grid-cols-2 gap-4'>
               <div className='flex flex-col'>
                 <img src={cha0} alt='zor' className='h-24 w-24' />
                 <SmText className='text-white'>

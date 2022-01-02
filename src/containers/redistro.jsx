@@ -3,28 +3,32 @@ import bg from "../assets/svg/debg.svg";
 import rebg from "../assets/svg/rebg.svg";
 import coin from "../assets/svg/coin.svg";
 import { ReactComponent as Stand } from "../assets/svg/stand.svg";
+// import vid from "../assets/gif.mp4"
+
 // import { ReactComponent as Coinn } from "../assets/svg/coin.svg";
 // import  squ from "../assets/svg/squ.svg";
 import { Heading, SmText } from "../constant/styles/text";
+import { paddingX } from "../constant/styles/spacing";
+
 
 const style = {
-  background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${bg})`,
+  background: ` url(${bg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   backgroundSize: "cover",
 };
 const stylebg = {
-  background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${rebg})`,
+  background: ` url(${rebg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   backgroundSize: "100%",
 };
 const Redistro = () => {
   return (
-    <div className='h-full grid grid-cols-2 items-strech bg-dark-900'>
+    <div className='h-full grid sm:grid-cols-2 grid-cols-1 items-strech bg-dark-900'>
       <div
         style={stylebg}
-        className=' w-full flex flex-col items-start justify-items-center py-8  px-20  '
+        className={` ${paddingX} w-full flex flex-col items-start justify-items-center py-8  `}
       >
         <div className='-space-y-44 flex flex-col justify-items-center '>
           {/* <Coinn  className='h-40 w-40' /> */}
@@ -85,6 +89,7 @@ const Redistro = () => {
       </div>
 {/* <img src={bg} alt='' className='h-screen min-w-full py-8'/> */}
       <div className='w-full' style={style}></div>
+      {/* <video src={vid} type='video/webm' loop autoplay/> */}
     </div> 
   );
 };

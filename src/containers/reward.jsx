@@ -15,29 +15,31 @@ const style = {
 };
 
 const styleDiv = {  
-  background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${bg})`,
+  background: ` url(${bg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   backgroundSize: "100%",
-  
+  '@media (max-width:640px)': {
+    background: 'none'
+  }
 };
-const Reward = () => {
+const Reward = () => { 
   return (
-    <div className={` bg-dark-700 pt-12 overflow-hidden`}>
-      <div className='grid grid-cols-3 gap-12 items-center'>
-      <img src={linerl} alt='stroke' className='self-center'/>
-      <img src={bgward} alt='stroke' className=''/>
-      <img src={liner} alt='stroke' className='self-center'/>
+    <div className={` bg-dark-700  overflow-hidden`}>
+      <div className='grid sm:grid-cols-3 grid-cols-1 sm:gap-12 gap-2 items-center sm:px-0 px-4  py-12'>
+      <img src={linerl} alt='stroke' className='self-center sm:block hidden'/>
+      <img src={bgward} alt='stroke' className=' w-full'/>
+      <img src={liner} alt='stroke' className='self-center sm:block hidden'/>
       </div>
       <div
-        className='h-screen mt-8 relative '
+        className='sm:h-screen   sm:mt-8 relative '
        style={styleDiv}
       >
         {/* <Nut className='z-10' /> */}
-        <div className='pb-12 mr-24 absolute top-12 right-0 z-20 w-2/4  grid grid-cols-1 justify-items-center content-evenly h-screen gap-2'>
+        <div className='py-12 sm:mr-24 px-4 static sm:absolute top-12 right-0 z-20 sm:w-2/4 w-full grid grid-cols-1 justify-items-center content-evenly sm:h-screen gap-2'>
           <div
             style={style}
-            className='shadow-new-1  flex justify-evenly items-center gap-8 p-12 w-3/5'
+            className='shadow-new-1  flex justify-evenly items-center gap-8 p-12 sm:w-3/5 bg-dark-700 '
           >
             <Dia className='h-32 w-32' />
             {/* <img src={dia} alt='msg ' className='h-24 w-32' /> */}
@@ -69,7 +71,7 @@ const Reward = () => {
             </div>
           </div>
           {/* rewards and giveaway */}
-          <div className='flex items-center gap-20 '>
+          <div className='flex items-center md:gap-20 gap-4 '>
             {/* <Rewards /> */}
              <img src={gift} alt='msg ' className='h-32 w-32' />
             <div className='flex flex-col'>
@@ -81,7 +83,7 @@ const Reward = () => {
               </p>
             </div>
           </div>
-          <div className='flex items-center gap-20'>
+          <div className='flex items-center md:gap-20 gap-4'>
             <div className='flex flex-col'>
               <p className='text-primary-800 sm:text-base text-sm'>
                 Giveaway

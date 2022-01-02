@@ -34,9 +34,9 @@ const Team = () => {
       <Heading className='text-primary-800 text-center'>Advisors</Heading>
       <div
         style={style}
-        className={`${paddingX} bg-dark-700 shadow-new-3 p-4`}
+        className={`${paddingX} bg-dark-700 shadow-new-3  py-8`}
       >
-        <div className='flex flex-wrap items-start gap-12 justify-center'>
+        <div className='flex flex-wrap items-start sm:gap-12 gap-4 justify-center'>
           {adteam.map((el, idx) =>
           <Advisor key={idx} image={el.image} />
             )}
@@ -52,7 +52,7 @@ export default Team;
 const TeamMember = ({image, position}) => {
   return (
     <div className='sm:w-60 w-full'>
-      <img src={image} alt='web3 browser' />
+      <img src={image} alt='web3 browser'  className='sm:h-40 h-32'/>
       <SubText className='text-primary-800 text-center'>Name</SubText>
       <SubText className='text-white text-center'>{position}</SubText>
       <SmText className='text-white text-center'>
@@ -65,7 +65,7 @@ const TeamMember = ({image, position}) => {
 const Advisor = ({image}) => {
   return (
     <div className='sm:w-80 w-full flex items-center'>
-      <img src={image} alt='web3 browser ' />
+      <img src={image} alt='web3 browser '  className='sm:h-40 h-32'/>
       <div>
         
       <MdHeading className='text-primary-800 '>Ad name</MdHeading>

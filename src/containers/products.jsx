@@ -24,16 +24,18 @@ const Products = () => {
         className='grid grid-cols-1 py-12 gap-12 bg-dark-800'
       >
         {/* // headline with line */}
-        <div className='grid grid-cols-3 gap-4'>
+        <div className='grid grid-cols-3  sm:gap-4 gap-2'>
           <img src={stroke} alt='stroke' className='w-full' />{" "}
-          <p className='text-primary-800 text-xl font-bold self-end text-center'>
+          <p className='text-primary-800 text-xl font-bold sm:self-end text-center'>
             Other Product
           </p>
           <img src={stroker} alt='stroke' className='w-full' />{" "}
         </div>
         {/* first two cards */}
-        <div className={`${paddingX} grid grid-cols-2 w-full gap-20`}>
-          <div>
+        <div
+          className={`${paddingX} grid sm:grid-cols-2 grid-cols-1 w-full gap-12`}
+        >
+          <div className={`grid sm:grid-cols-2 grid-cols-1 w-full gap-4`}>
             <div
               style={{ borderRadius: "97px 0px 97px 0px" }}
               className='mb-8 shadow-new-1 relative'
@@ -50,6 +52,8 @@ const Products = () => {
               />
               <img src={pro1} alt='zor' className='h-80 py-2 w-full' />
             </div>
+            <div>
+
             <SubText className='text-white mb-4'>MetaVerse</SubText>
             <SmText className='text-white'>
               NutGain is building Metaverse. It would allow users to make
@@ -58,9 +62,11 @@ const Products = () => {
               NutGain’s Web 3 Browser called ZOR.
             </SmText>
             <p className='text-primary-800 text-sm'>More Info &rarr;</p>
+            </div>
           </div>
-          <div>
-          <div
+          {/* second card */}
+          <div className={`grid sm:grid-cols-2 grid-cols-1 w-full gap-4`}>
+            <div
               style={{ borderRadius: "97px 0px 97px 0px" }}
               className='mb-8 shadow-new-1 relative'
             >
@@ -76,31 +82,35 @@ const Products = () => {
               />
               <img src={pro2} alt='zor' className='h-80 py-2 w-full' />
             </div>
+            <div>
+
             <SubText className='text-white mb-4'>MetaVerse</SubText>
             <SmText className='text-white'>
-              This user optimized crypto wallet offers users easy access to
-              their cryptocurrencies, both those earned on NutGain as well as
-              their other digital coin types.
+              NutGain is building Metaverse. It would allow users to make
+              video/audio calls, do shopping for their metaverse avatars, play
+              games and much more. NutGain Metaverse would be accessed via
+              NutGain’s Web 3 Browser called ZOR.
             </SmText>
             <p className='text-primary-800 text-sm'>More Info &rarr;</p>
+            </div>
           </div>
-        </div>
+             </div>
         {/* third card */}
-        <div className={`${paddingX} grid grid-cols-2 w-full gap-12`}>
-        <div
-              style={{ borderRadius: "97px 0px 97px 0px" }}
-              className='mb-8 shadow-new-1 relative'
-            >
-              <img
-                src={dot}
-                alt='zor'
-                className='h-4 w-4 absolute -top-1 -right-1'
-              />{" "}
-              <img
-                src={dot}
-                alt='zor'
-                className='h-4 w-4 absolute -bottom-1 -left-1'
-              />
+        <div className={`${paddingX} grid sm:grid-cols-2 grid-cols-1 w-full sm:gap-12 gap-8`}>
+          <div
+            style={{ borderRadius: "97px 0px 97px 0px" }}
+            className='mb-8 shadow-new-1 relative'
+          >
+            <img
+              src={dot}
+              alt='zor'
+              className='h-4 w-4 absolute -top-1 -right-1'
+            />{" "}
+            <img
+              src={dot}
+              alt='zor'
+              className='h-4 w-4 absolute -bottom-1 -left-1'
+            />
             <img src={pro3} alt='zor' className='h-80 py-2 w-full' />
           </div>
           <div>

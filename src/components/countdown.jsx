@@ -25,29 +25,29 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
         <div className='flex gap-2 items-center'>
           <span
             style={styleDiv}
-            className='text-white text-2xl p-4  rounded-md shadow-new-2 font-bold'
+            className='text-white sm:text-2xl text-base p-4  rounded-md shadow-new-2 font-bold'
           >
             {hours}
           </span>
-          <span className='text-white text-2xl '>hrs</span>
+          <span className='text-white sm:text-2xl text-base '>hrs</span>
         </div>
         <div className='flex gap-2 items-center'>
           <span
             style={styleDiv}
-            className='text-white text-2xl p-4  rounded-md shadow-new-2 font-bold'
+            className='text-white sm:text-2xl text-base p-4  rounded-md shadow-new-2 font-bold'
           >
             {minutes}
           </span>
-          <span className='text-white text-2xl '>mins</span>
+          <span className='text-white sm:text-2xl text-base '>mins</span>
         </div>
         <div className='flex gap-2 items-center'>
           <span
             style={styleDiv}
-            className='text-white text-2xl p-4 rounded-md  shadow-new-2 font-bold'
+            className='text-white sm:text-2xl text-base p-4 rounded-md  shadow-new-2 font-bold'
           >
             {seconds}
           </span>
-          <span className='text-white text-2xl '>secs</span>
+          <span className='text-white sm:text-2xl text-base '>secs</span>
         </div>
       </div>
     );

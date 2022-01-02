@@ -15,7 +15,7 @@ export const Button = ({ children, className, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className={`${className} rounded-full ring-2 ring-white text-primary-900 text-base font-bold px-12 py-4 bg-primary-800`}
+      className={`${className} rounded-full ring-2 ring-white text-primary-900 sm:text-base text-sm font-bold sm:px-12 px-6  sm:py-4 py-3 bg-primary-800`}
     >
       {children}
     </button>
@@ -34,7 +34,7 @@ const Hero = () => {
   return (<div className='bg-dark-800'>
 
     <div style={style} className={`${paddingX} flex flex-col gap-8 relative    py-12`}>
-      <div className='flex sm:flex-row flex-col justify-between w-full items-center'>
+      <div className='flex flex-row  justify-between w-full items-center '>
         <img src={logo} alt='nutgain logo' className='h-12 w-32' />
         <Button>Whitepaper</Button>
       </div>
@@ -52,14 +52,14 @@ const Hero = () => {
           <Button>Whitelist your Wallet</Button>
         </div>
         <div className='flex gap-2 items-center'>
-          <img src={insta} alt='insta' className='h-20 w-20' />
-          <img src={linkdin} alt='linkdin logo' className='h-20 w-20' />
-          <img src={msg} alt='msg ' className='h-20 w-20' />
-          <img src={cup} alt='cup ' className='h-20 w-20' />
+          <img src={insta} alt='insta' className='sm:h-20 sm:w-20 h-12 w-12' />
+          <img src={linkdin} alt='linkdin logo' className='sm:h-20 sm:w-20 h-12 w-12' />
+          <img src={msg} alt='msg ' className='sm:h-20 sm:w-20 h-12 w-12' />
+          <img src={cup} alt='cup ' className='sm:h-20 sm:w-20 h-12 w-12' />
                   </div>
                   <div>
 
-               <img src={squ} alt='cup ' className=' absolute h-full w-full -bottom-20 -right-80 bg-no-repeat'/>
+               <img src={squ} alt='cup ' className=' absolute h-full w-full -bottom-20 -right-80 bg-no-repeat sm:block hidden'/>
                   </div>
       </div>
        </div>

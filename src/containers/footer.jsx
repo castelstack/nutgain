@@ -25,7 +25,7 @@ const Footer = () => {
       >
         <img src={logo} alt='nutgain logo' className='h-12 w-32' />
         {/* footer list */}
-        <div className='flex md:flex-row flex-col items-start w-full justify-between'>
+        <div className='flex md:flex-row flex-col gap-8 items-start w-full justify-between'>
           <div className='flex flex-col'>
             <SubText className='font-bold text-white'>Product</SubText>
             <div className='flex flex-col gap-3 '>

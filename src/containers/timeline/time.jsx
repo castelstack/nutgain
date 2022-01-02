@@ -7,7 +7,7 @@ const style = {
 };
 const Time = () => {
   return (
-    <div className={`${paddingX} bg-dark-900  flex flex-col `}>
+    <div className={`${paddingX} bg-dark-900 hidden md:flex flex-col `}>
       <div className='py-12'>
         <Heading className='text-primary-800 font-bold mb-2'>
           Product Timeline
@@ -209,8 +209,6 @@ const data = [
           "smart contarct",
           "yield farming",
           "integration",
-          "staking",
-          " spin and win",
         ],
       },
       {
@@ -235,16 +233,7 @@ const data = [
           "swap",
           "smart contarct",
           "yield farming",
-          "integration",
-          "staking",
-          " spin and win",
         ],
-      },
-      {
-        id: 37,
-        verified: false,
-        desc: "Ui & Domain Finalization 3",
-        subDesc: [],
       },
     ],
   },
@@ -252,7 +241,7 @@ const data = [
   {
     id: 277,
     title: "Quarter 2",
-    year: 2018,
+    year: 2022,
 
     info: [
       {
@@ -360,19 +349,6 @@ const data = [
         desc: "Ui & Domain Finalization 1",
         subDesc: [],
       },
-      {
-        id: 2221,
-        verified: false,
-        desc: "Ui & Domain Finalization",
-        subDesc: [
-        ],
-      },
-      {
-        id: 33341,
-        verified: false,
-        desc: "Ui & Domain Finalization 3",
-        subDesc: [],
-      },
     ],
   },
 ];
@@ -411,7 +387,7 @@ const data2 = [
     {
       id: 277,
       title: "Quarter 2",
-      year: 2018,
+      year: '',
   
       info: [
         {
@@ -447,7 +423,7 @@ const data2 = [
     {
       id: 377,
       title: "Quarter 3",
-      year: "2016",
+      year: "2024",
   
       info: [
         { id: 191, verified: false, desc: "", subDesc: [] },

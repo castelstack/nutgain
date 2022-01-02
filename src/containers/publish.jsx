@@ -13,25 +13,25 @@ import { paddingX } from "../constant/styles/spacing";
 const Publish = () => {
   return (
     <div className=' pt-12 bg-primary-800 flex flex-col gap-12'>
-      <div className={`${paddingX} flex  items-start gap-12 justify-between`}>
+      <div className={`${paddingX} flex md:flex-nowrap flex-wrap items-start md:gap-12 gap-6 justify-between`}>
         {company.map((el) => (
           <div key={el.position} className='flex flex-col justify-items-center items-center'>
-            <img src={el.image} alt='zor' className='h-32 w-32' />
+            <img src={el.image} alt='zor' className='sm:h-32 sm:w-32 h-12 w-12' />
             <SmText className='text-gray-900 font-bold'>{el.company}</SmText>
           </div>
         ))}
       </div>
-      <div className='flex items-center gap-20 justify-self-end'>
+      <div className='flex sm:flex-row flex-col items-center md:gap-20 gap-4 justify-self-end'>
         <SubText className='w-96 sm:pl-24 pl-4 flex text-gray-900'>
           Published By
         </SubText>
         <div
-          className='flex justify-evenly bg-white w-full py-8'
-          style={{ clipPath: "polygon(22% 0, 100% 0%, 100% 98%, 0% 100%)" }}
+          className='flex justify-evenly bg-white w-full sm:py-8 py-4'
+          style={{ clipPath: "polygon(22% 0, 100% 0%, 100% 100%, 0% 100%)" }}
         >
           <div></div>
-          <img src={yahoo} alt='zor' className='h-32 w-1/4' />
-          <img src={pre} alt='zor' className='h-32 w-1/4' />
+          <img src={yahoo} alt='zor' className='h-32 md:w-1/4 w-32' />
+          <img src={pre} alt='zor' className='h-32 md:w-1/4 w-32' />
         </div>
       </div>
     </div>
