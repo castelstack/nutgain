@@ -3,7 +3,7 @@ import bg from "../assets/svg/debg.svg";
 import rebg from "../assets/svg/rebg.svg";
 import coin from "../assets/svg/coin.svg";
 import { ReactComponent as Stand } from "../assets/svg/stand.svg";
-// import vid from "../assets/gif.mp4"
+import vid from "../assets/gif.mp4"
 
 // import { ReactComponent as Coinn } from "../assets/svg/coin.svg";
 // import  squ from "../assets/svg/squ.svg";
@@ -28,7 +28,7 @@ const Redistro = () => {
     <div className='h-full grid sm:grid-cols-2 grid-cols-1 items-strech bg-dark-900'>
       <div
         style={stylebg}
-        className={` ${paddingX} w-full flex flex-col items-start justify-items-center py-8  `}
+        className={` ${paddingX} w-full flex flex-col items-start justify-items-center   `}
       >
         <div className='-space-y-44 flex flex-col justify-items-center '>
           {/* <Coinn  className='h-40 w-40' /> */}
@@ -62,7 +62,7 @@ const Redistro = () => {
           {/* 
           card 1 */}
           <div
-            className='grid grid-cols-2 items-center content-center  object-fit shadow-new-2 bg-white'
+            className='grid grid-cols-2 items-center content-center  object-fit shadow-new-2 bg-white mb-4'
             style={{ borderRadius: "97px 0px 97px 0px" }}
           >
             <div
@@ -88,8 +88,8 @@ const Redistro = () => {
         </div>
       </div>
 {/* <img src={bg} alt='' className='h-screen min-w-full py-8'/> */}
-      <div className='w-full' style={style}></div>
-      {/* <video src={vid} type='video/webm' loop autoplay/> */}
+      {/* <div className='w-full' style={style}></div> */}
+      <video src={vid} type='video/mp4'  loop autoPlay autoStart muted className='h-full w-full self-stretch' />
     </div> 
   );
 };
