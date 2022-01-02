@@ -169,7 +169,7 @@ const Time = () => {
                 </div>
                 <div className='h-4 flex self-start rounded-md'>
                   {el.year ? (
-                    <SmText className='self-start  text-white border-2 border-white px-3 py-1'>
+                    <SmText className='self-start rounded-md text-white border-2 border-white px-3 py-1'>
                       {el.year}
                     </SmText>
                   ) : (

@@ -50,25 +50,18 @@ const Reward = () => {
                   Lottery Winners
                 </p>
                 <p className='text-white sm:text-base text-sm'>
-                  Token won Token won
+                  15,000 BUSD to investors in IDO
                 </p>
               </div>
               <div className='flex flex-col'>
                 <p className='text-primary-800 sm:text-base text-sm'>
-                  Lottery Winners
+                  Mega Winners
                 </p>
                 <p className='text-white sm:text-base text-sm'>
-                  Token won Token won
+                 2 Ethereum & 10BNBs.
                 </p>
               </div>
-              <div className='flex flex-col'>
-                <p className='text-primary-800 sm:text-base text-sm'>
-                  Lottery Winners
-                </p>
-                <p className='text-white sm:text-base text-sm'>
-                  Token won Token won
-                </p>
-              </div>
+             
             </div>
           </div>
           {/* rewards and giveaway */}
@@ -80,7 +73,7 @@ const Reward = () => {
                 Rewards
               </p>
               <p className='text-white sm:text-base text-sm'>
-                Token won Token won
+                Assured Rewards to all investor inIDO of up to BUSD 20,000
               </p>
             </div>
           </div>
@@ -90,7 +83,7 @@ const Reward = () => {
                 Giveaway
               </p>
               <p className='text-white sm:text-base text-sm'>
-                Token won Token won
+                Unique NFT Giveaways up to 5,000 BUSD
               </p>
             </div>
             {/* <Give /> */}

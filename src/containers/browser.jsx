@@ -41,45 +41,45 @@ const Browser = () => {
           </div>
           <div className='md:px-12 px-8'>
             <SubText className='text-white'>
-              Zor offers the following builts in functions
+              NutGain offers the following builts in functions
             </SubText>
             <div className='gap-2'>
+              <SmText className='text-white text-xl'>&bull; Secure web cryptocurrency wallet</SmText>
+              <SmText className='text-white text-xl'>&bull; Decentralized applications</SmText>
               <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
-              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
-              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
-              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
-              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
-              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
-              <SmText className='text-white text-xl'>&bull; Decentralized games</SmText>
+              <SmText className='text-white text-xl'>&bull; Web protection</SmText>
+              <SmText className='text-white text-xl'>&bull; Voice and Video call</SmText>
+              <SmText className='text-white text-xl'>&bull; Secure chat</SmText>
+              <SmText className='text-white text-xl'>&bull; Multilayered VPN</SmText>
             </div>
           </div>
           <div className='md:px-12 px-8'>
             <SubText className='text-white'>
-              Zor offers the following builts in functions
+              NutGain offers the following builts in functions
             </SubText>
             <div className='grid grid-cols-2 gap-4'>
               <div className='flex flex-col'>
                 <img src={cha0} alt='zor' className='h-24 w-24' />
                 <SmText className='text-white'>
-                  Lorem ipsum dolor sit amet
+                 Fast and ad-free
                 </SmText>
               </div>
               <div className='flex flex-col'>
                 <img src={cha1} alt='zor' className='h-24 w-24' />
                 <SmText className='text-white'>
-                  Lorem ipsum dolor sit amet
+                 Private
                 </SmText>
               </div>
               <div className='flex flex-col'>
                 <img src={cha3} alt='zor' className='h-24 w-24' />
                 <SmText className='text-white'>
-                  Lorem ipsum dolor sit amet
+                 Optimized and efficient
                 </SmText>
               </div>
               <div className='flex flex-col'>
                 <img src={cha4} alt='zor' className='h-24 w-24' />
                 <SmText className='text-white'>
-                  Lorem ipsum dolor sit amet
+                  Has darkn mode
                 </SmText>
               </div>
             </div>

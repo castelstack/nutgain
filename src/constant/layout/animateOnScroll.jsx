@@ -20,8 +20,8 @@ const dotUpVariants = {
   hidden: { opacity: 0, y: 40 }
 };
 const dotVariants = {
-  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-  hidden: { opacity: 0, y: -10 }
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  hidden: { opacity: 0, x: -40 }
 };
 
 
