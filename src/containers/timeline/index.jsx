@@ -28,7 +28,7 @@ const ProjectTimeline = () => {
         </div>
       </div>
       {/* tokenomics and mock trade view box */}
-      <div className=' grid sm:grid-cols-2 grid-cols-1 items-end w-full'>
+      <div className=' grid md:grid-cols-2 grid-cols-1 items-end w-full'>
         <div
           style={{ borderRadius: "97px 97px 0px 0px" }}
           className='py-12 sm:px-12 px-4 w-full justify-self-start flex flex-col items-start justify-end  rounded-t-3xl pt-8  bg-dark-800 '
@@ -68,11 +68,11 @@ const ProjectTimeline = () => {
           </div>
         </div>
         {/* ./second div containig squ img and trading view box */}
-        <div className='flex flex-col sm:px-0 px-4 gap-4 sm:transform transform-none -translate-x-20 mb-12'>
+        <div className='flex flex-col sm:px-0 px-4 gap-4 md:transform transform-none -translate-x-20 mb-12'>
           <img
             src={squ}
             alt='nutgain '
-            className=' h-96 w-full  sm:absolute -top-80 -left-52'
+            className=' h-96 w-full  md:absolute -top-80 -left-52'
           />
           <div
             className=' grid grid-cols-2 items-center content-center overflow-none object-fit '

@@ -33,7 +33,7 @@ const Products = () => {
         </div>
         {/* first two cards */}
         <div
-          className={`${paddingX} grid sm:grid-cols-2 grid-cols-1 w-full gap-12`}
+          className={`${paddingX} grid md:grid-cols-2 grid-cols-1 w-full gap-12`}
         >
           <div className={`grid sm:grid-cols-2 grid-cols-1 w-full gap-4`}>
             <div

@@ -36,7 +36,7 @@ const Team = () => {
         style={style}
         className={`${paddingX} bg-dark-700 shadow-new-3  py-8`}
       >
-        <div className='flex flex-wrap items-start sm:gap-12 gap-4 justify-center'>
+        <div className='flex flex-wrap items-start sm:gap-12 gap-4 justify-items-center'>
           {adteam.map((el, idx) =>
           <Advisor key={idx} image={el.image} />
             )}

@@ -20,7 +20,7 @@ const stylebg = {
 
 const Browser = () => {
   return (
-    <div className='md:py-40 py-2 md:px-32 sm:px-12 px-4 bg-dark-800'>
+    <div className='md:py-40 py-4 md:px-32 sm:px-12 px-2 bg-dark-800'>
       <main className='grid sm:grid-cols-2 grid-cols-1 h-full' style={{borderRadius: "97px 0px 97px 0px"}}>
         <div className='hidden sm:flex items-center bg-primary-800' style={{borderRadius: "97px 0px 0px 0px"}}>
           <img src={hero} alt='web3 browser' />

@@ -12,6 +12,7 @@ import { ReactComponent as Dia } from "../assets/svg/dia.svg";
 
 const style = {
   borderRadius: "97px 0px 97px 0px",
+  background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`,
 };
 
 const styleDiv = {  
@@ -32,14 +33,14 @@ const Reward = () => {
       <img src={liner} alt='stroke' className='self-center sm:block hidden'/>
       </div>
       <div
-        className='sm:h-screen   sm:mt-8 relative '
+        className='md:h-screen   sm:mt-8 relative '
        style={styleDiv}
       >
         {/* <Nut className='z-10' /> */}
-        <div className='py-12 sm:mr-24 px-4 static sm:absolute top-12 right-0 z-20 sm:w-2/4 w-full grid grid-cols-1 justify-items-center content-evenly sm:h-screen gap-2'>
+        <div className='py-12 sm:mr-24 px-4 static md:absolute top-12 right-0 z-20 md:w-2/4 w-full grid grid-cols-1 justify-items-center content-evenly md:h-screen gap-2'>
           <div
             style={style}
-            className='shadow-new-1  flex justify-evenly items-center gap-8 p-12 sm:w-3/5 bg-dark-700 '
+            className='shadow-new-1  flex justify-evenly items-center gap-8 p-12 md:w-3/5 w-full '
           >
             <Dia className='h-32 w-32' />
             {/* <img src={dia} alt='msg ' className='h-24 w-32' /> */}

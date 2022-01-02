@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../assets/svg/debg.svg";
+// import bg from "../assets/svg/debg.svg";
 import rebg from "../assets/svg/rebg.svg";
 import coin from "../assets/svg/coin.svg";
 import { ReactComponent as Stand } from "../assets/svg/stand.svg";
@@ -11,12 +11,12 @@ import { Heading, SmText } from "../constant/styles/text";
 import { paddingX } from "../constant/styles/spacing";
 
 
-const style = {
-  background: ` url(${bg})`,
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-};
+// const style = {
+//   background: ` url(${bg})`,
+//   backgroundRepeat: "no-repeat",
+//   backgroundPosition: "center",
+//   backgroundSize: "cover",
+// };
 const stylebg = {
   background: ` url(${rebg})`,
   backgroundRepeat: "no-repeat",
@@ -25,10 +25,10 @@ const stylebg = {
 };
 const Redistro = () => {
   return (
-    <div className='h-full grid sm:grid-cols-2 grid-cols-1 items-strech bg-dark-900'>
+    <div className='h-full grid md:grid-cols-2 grid-cols-1 items-strech bg-dark-900 '>
       <div
         style={stylebg}
-        className={` ${paddingX} w-full flex flex-col items-start justify-items-center   `}
+        className={` ${paddingX} w-full flex flex-col items-start justify-items-center  py-4 `}
       >
         <div className='-space-y-44 flex flex-col justify-items-center '>
           {/* <Coinn  className='h-40 w-40' /> */}
@@ -44,7 +44,7 @@ const Redistro = () => {
             Invest in NutGain and Earn BUSD on every subsequent buy and sell
           </SmText>
         </div>
-        <div className='flex flex-col mt-4'>
+        <div className='flex flex-col mt-4 w-full'>
           <div
             className='grid grid-cols-2 items-center content-center overflow-none object-fit '
             style={{ borderRadius: "97px 0px 97px 0px" }}
