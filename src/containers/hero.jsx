@@ -9,13 +9,15 @@ import squ from "../assets/svg/squ.svg";
 import { Heading, SmText } from "../constant/styles/text";
 import { paddingX } from "../constant/styles/spacing";
 import { CountdownView } from "../components/countdown";
+import { ScrollInRight } from "../constant/layout/animateOnScroll";
 
 // button component
 export const Button = ({ children, className, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className={`${className} rounded-full ring-2 ring-white text-primary-900 sm:text-base text-sm font-bold sm:px-12 px-6  sm:py-4 py-3 bg-primary-800`}
+      className={`${className} rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 sm:text-base
+      transition ease-in  text-sm font-bold sm:px-12 px-6  sm:py-4 py-3 bg-primary-800`}
     >
       {children}
     </button>
@@ -58,9 +60,11 @@ const Hero = () => {
           <img src={cup} alt='cup ' className='sm:h-20 sm:w-20 h-12 w-12' />
                   </div>
                   <div>
-
-               <img src={squ} alt='cup ' className=' absolute h-full w-full -bottom-20 -right-80 bg-no-repeat sm:block hidden'/>
-                  </div>
+            <ScrollInRight>
+            <img src={squ} alt='cup ' className=' absolute h-full w-full -bottom-20 -right-80 bg-no-repeat sm:block hidden'/>
+              
+</ScrollInRight>
+                   </div>
       </div>
        </div>
         </div>

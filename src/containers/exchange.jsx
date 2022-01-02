@@ -4,6 +4,7 @@ import { Heading, SmText } from "../constant/styles/text";
 import hero from "../assets/svg/gp.svg";
 import stroke from "../assets/svg/line.svg";
 import { paddingX } from '../constant/styles/spacing';
+import { ScrollBottom } from '../constant/layout/animateOnScroll';
 
 const Exchange = () => {
     return (
@@ -20,9 +21,11 @@ const Exchange = () => {
               <p className='text-primary-800 text-sm self-end'>Find Out More &rarr;</p>
             </div>
             </div>
-           
+            <ScrollBottom>
             <img src={hero} alt='stroke' className='w-full md:transform -translate-y-40' />
-        </div>
+      
+           </ScrollBottom>
+             </div>
     );
 };
 

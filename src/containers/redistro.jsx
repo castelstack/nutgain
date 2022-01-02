@@ -4,7 +4,7 @@ import rebg from "../assets/svg/rebg.svg";
 import coin from "../assets/svg/coin.svg";
 import { ReactComponent as Stand } from "../assets/svg/stand.svg";
 import vid from "../assets/gif.mp4"
-
+import {motion } from "framer-motion";
 // import { ReactComponent as Coinn } from "../assets/svg/coin.svg";
 // import  squ from "../assets/svg/squ.svg";
 import { Heading, SmText } from "../constant/styles/text";
@@ -32,7 +32,11 @@ const Redistro = () => {
       >
         <div className='-space-y-44 flex flex-col justify-items-center '>
           {/* <Coinn  className='h-40 w-40' /> */}
-          <img src={coin} alt='msg ' className='h-52 w-52 mr8 z-20' />
+          <motion.img
+  animate={{
+    scale: 1.1,
+    transition: { ease: "linear", duration: 10, repeat: Infinity  },
+  }} src={coin} alt='msg ' className='h-52 w-52 mr8 z-20' />
           <Stand className='h-52 w-52 z-10' />
         </div>
         <div>

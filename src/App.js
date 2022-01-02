@@ -9,7 +9,7 @@ function App() {
   React.useEffect(() => {
   setTimeout(() => {
     setLoaded(false)
-    }, 5000);
+    }, 8000);
   },[]);
   return (
     <div className="App">
