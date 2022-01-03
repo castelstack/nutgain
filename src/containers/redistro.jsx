@@ -28,8 +28,9 @@ const Redistro = () => {
     <div className='h-full grid md:grid-cols-2 grid-cols-1 items-strech bg-dark-900 '>
       <div
         style={stylebg}
-        className={` ${paddingX} w-full flex flex-col items-start justify-items-center  py-4 `}
+        className={` ${paddingX} w-full flex flex-col items-center justify-center  py-4 `}
       >
+      <div className='flex gap-3'>
         <div className='-space-y-44 flex flex-col justify-items-center '>
           {/* <Coinn  className='h-40 w-40' /> */}
           <motion.img
@@ -48,6 +49,7 @@ const Redistro = () => {
             Invest in NutGain and Earn BUSD on every subsequent buy and sell
           </SmText>
         </div>
+          </div>
         <div className='flex flex-col mt-4 w-full'>
           <div
             className='grid grid-cols-2 items-center content-center overflow-none object-fit '
@@ -77,7 +79,7 @@ const Redistro = () => {
               className='bg-primary-800'
             >
               <SmText className='text-gray-900 px-8 py-4 '>
-                Invest in NutGain and
+               Redistribution
               </SmText>
             </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>

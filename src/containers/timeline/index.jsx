@@ -1,15 +1,14 @@
 import React from "react";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Heading, SmText } from "../../constant/styles/text";
 import cha3 from "../../assets/svg/cha3.svg";
+import box from "../../assets/svg/box.svg";
 import { TimeCard } from "./card";
 import { paddingX } from "../../constant/styles/spacing";
 import squ from "../../assets/svg/squ.svg";
 import coin from "../../assets/svg/coin.svg";
 import card from "../../assets/svg/card.svg";
 import { ReactComponent as Stand } from "../../assets/svg/stand.svg";
-
-
 
 const ProjectTimeline = () => {
   return (
@@ -37,10 +36,14 @@ const ProjectTimeline = () => {
           <div className='-space-y-44 flex flex-col justify-items-center '>
             {/* <Coinn  className='h-40 w-40' /> */}
             <motion.img
-  animate={{
-    scale: 1.1,
-    transition: { ease: "linear", duration: 10, repeat: Infinity  },
-  }} src={coin} alt='msg ' className='h-52 w-52 mr8 z-20' />
+              animate={{
+                scale: 1.1,
+                transition: { ease: "linear", duration: 10, repeat: Infinity },
+              }}
+              src={coin}
+              alt='msg '
+              className='h-52 w-52 mr8 z-20'
+            />
             <Stand className='h-52 w-52 z-10' />
           </div>
           <div>
@@ -51,20 +54,22 @@ const ProjectTimeline = () => {
               What is Nutgain?
             </SmText>
             <SmText className='text-white mr-2'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores ut a, facilis rerum numquam laborum tenetur porro
-              consequatur, repudiandae quisquam placeat minima? Laborum
-              recusandae iure voluptas assumenda doloribus in nam.
+              NutGain is an exciting smart contract that guarantees steady BUSD
+              rewards to holders. NutGain is also Hyper Deflationary Ensuring
+              BUSD Reflections on every transaction.{" "}
+            </SmText>
+            <SmText className='text-white mr-2'>
+            NutGain Token constitutes the ecosystem’s unique crytopcurrency. After receiving pay-outs for their use of the NutGain Browser and for holding the e-commerce offers available only to the NutGain community.
             </SmText>
             <div className='grid grid-cols-2 justify-between gap-12 mt-12'>
               <div className='sm:w-56 w-full'>
-                <img src={cha3} alt='web3 browser ' className='h-20 w-20' />
+                <img src={coin} alt='web3 browser ' className='h-20 w-20' />
                 <SmText className='text-primary-800 '>
                   Passive income in BUSD{" "}
                 </SmText>
               </div>
               <div className='sm:w-56 w-full'>
-                <img src={cha3} alt='web3 browser ' className='h-20 w-20' />
+                <img src={box} alt='web3 browser ' className='h-20 w-20' />
                 <SmText className='text-primary-800 '>
                   Powered by cutting-edge products
                 </SmText>
@@ -79,10 +84,7 @@ const ProjectTimeline = () => {
             alt='nutgain '
             className=' h-96 w-full  md:absolute -top-80 -left-52'
           />
-          <div
-            className=' grid grid-cols-2 items-center content-center overflow-none object-fit '
-           
-          >
+          <div className=' grid grid-cols-2 items-center content-center overflow-none object-fit '>
             <div></div>
             <div className='grid grid-cols-2  justify-between justify-items-center px-4 py-4'>
               <SmText className='text-gray-100 px-4 w-full text-center'>
@@ -107,7 +109,7 @@ const ProjectTimeline = () => {
               className='bg-primary-800'
             >
               <SmText className='text-gray-900 px-8 py-4 '>
-                Invest in NutGain and
+              Liquidity Pool
               </SmText>
             </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>
@@ -133,7 +135,7 @@ const ProjectTimeline = () => {
               className='bg-primary-800'
             >
               <SmText className='text-gray-900 px-8 py-4 '>
-                Invest in NutGain and
+              Product Development
               </SmText>
             </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>
@@ -159,7 +161,7 @@ const ProjectTimeline = () => {
               className='bg-primary-800'
             >
               <SmText className='text-gray-900 px-8 py-4 '>
-                Invest in NutGain and
+              Redistribution
               </SmText>
             </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>
@@ -183,25 +185,25 @@ const data = [
   {
     title: "Quarter 1",
     year: "2020",
-    info: ["Bought 8 Nft", "Bought two of good Nft"],
+    info: ["IDO (PinkSale)", "Listing on PancakeSwap"],
     icon: cha3,
   },
   {
     title: "Quarter 2",
     year: "",
-    info: ["Bought 8 Nft", "Bought two of good Nft"],
+    info: ["Listing on other DEX"],
     icon: cha3,
   },
   {
     title: "Quarter 3",
-    year: "2024",
-    info: ["Bought 8 Nft", "Bought two of good Nft"],
+    year: "",
+    info: ["Listing on Centralized Exchange (Binance)"],
     icon: cha3,
   },
   {
     title: "Quarter 4",
-    year: "2024",
-    info: ["Bought 8 Nft", "Bought two of good Nft"],
+    year: "2023",
+    info: ["Listing on other Centralized Exchanges"],
     icon: cha3,
   },
 ];
