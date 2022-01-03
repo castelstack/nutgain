@@ -36,7 +36,7 @@ const Products = () => {
         <div
           className={`${paddingX} grid md:grid-cols-2 grid-cols-1 w-full gap-12`}
         >
-          <div className={`grid s-2 grid-cols-1 w-full gap-4`}>
+          <div className={`grid grid-cols-1 w-full gap-4`}>
             <div
               style={{ borderRadius: "97px 0px 97px 0px" }}
               className='mb-8 shadow-new-1 relative'
@@ -65,6 +65,7 @@ const Products = () => {
                 games and much more. NutGain Metaverse would be accessed via
                 NutGain’s Web 3 Browser called ZOR.
               </SmText>
+           
               <p className='text-primary-800 text-base'>More Info &rarr;</p>
             </div>
           </div>
@@ -93,10 +94,9 @@ const Products = () => {
             <div>
               <SubText className='text-white mb-4'>Wallet</SubText>
               <SmText className='text-white'>
-                NutGain is building Metaverse. It would allow users to make
-                video/audio calls, do shopping for their metaverse avatars, play
-                games and much more. NutGain Metaverse would be accessed via
-                NutGain’s Web 3 Browser called ZOR.
+                This user optimized crypto wallet offers users easy access to
+                their cryptocurrencies, both those earned on NutGain as well as
+                their other digital coin types.
               </SmText>
               <p className='text-primary-800 text-base'>More Info &rarr;</p>
             </div>
@@ -111,30 +111,41 @@ const Products = () => {
             className='mb-8 shadow-new-1 relative'
           >
             <ScrollDotUp>
-                <img
-                  src={dot}
-                  alt='zor'
-                  className='h-4 w-4 absolute -top-1 -right-1'
-                />{" "}
-              </ScrollDotUp>
-              <ScrollDot>
-                <img
-                  src={dot}
-                  alt='zor'
-                  className='h-4 w-4 absolute -bottom-1 -left-1'
-                />
-              </ScrollDot>
+              <img
+                src={dot}
+                alt='zor'
+                className='h-4 w-4 absolute -top-1 -right-1'
+              />{" "}
+            </ScrollDotUp>
+            <ScrollDot>
+              <img
+                src={dot}
+                alt='zor'
+                className='h-4 w-4 absolute -bottom-1 -left-1'
+              />
+            </ScrollDot>
             <img src={pro3} alt='zor' className='h-80 py-2 w-full' />
           </div>
           <div>
             <SubText className='text-white mb-4'>E-hype E-commerce</SubText>
             <SmText className='text-white'>
-              This user optimized crypto wallet offers users easy access to
-              their cryptocurrencies, both those earned on NutGain as well as
-              their other digital coin types. Additionally, users will be able
-              to make purchases of general goods and receive special discounts.
-              Purchases can be made using various cryptocurrencies as well as by
-              directly redeeming NutGain Token.
+              Presenting NutGain Decentralized Hyper Ecommerce platform. It is
+              connected to NutGain’s Web3 browser called ZOR.
+            </SmText>
+
+            <SmText className='text-white text-xl'>&bull;  No Advertisements</SmText>
+              <SmText className='text-white text-xl'>&bull; Privacy maintained as no personal data shared</SmText>
+              <SmText className='text-white text-xl'>&bull; No banking required as it is connected via secured NutGain Crypto Wallet</SmText>
+              <SmText className='text-white text-xl'>&bull; Seamless online shopping experience</SmText>
+             
+
+
+
+            <SmText className='text-white'>
+              Additionally, users will be able to make purchases of general
+              goods and receive special discounts. Purchases can be made using
+              various cryptocurrencies as well as by directly redeeming NutGain
+              Token.
             </SmText>
             <p className='text-primary-800 text-base'>More Info &rarr;</p>
           </div>

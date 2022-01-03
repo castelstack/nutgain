@@ -18,7 +18,7 @@ export const TimeCard = ({ year, info, title, icon }) => {
             </SmText>
           ))}
         </div>
-        <img src={icon} alt='zor' className='h-20 w-20 ml-4 mt-6' />
+        <img src={icon} alt='zor' className='justify-self-end h-20 w-20 ml-4 mt-6' />
       </div>
     </div>
   );
