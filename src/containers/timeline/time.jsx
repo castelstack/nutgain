@@ -37,12 +37,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -73,12 +73,12 @@ const Time = () => {
                     <h5 className='text-sm text-white font-bold px-1'>
                       {el.verified ? (
                         <i
-                          class='fa fa-check-circle text-base text-green-400'
+                          className='fa fa-check-circle text-base text-green-400'
                           aria-hidden='true'
                         ></i>
                       ) : (
                         <i
-                          class='fa fa-check-circle text-base text-gray-800'
+                          className='fa fa-check-circle text-base text-gray-800'
                           aria-hidden='true'
                         ></i>
                       )}{" "}
@@ -103,12 +103,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -133,12 +133,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -163,12 +163,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -217,12 +217,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -253,12 +253,12 @@ const Time = () => {
                     <h5 className='text-sm text-white font-bold px-1'>
                       {el.verified ? (
                         <i
-                          class='fa fa-check-circle text-base text-green-400'
+                          className='fa fa-check-circle text-base text-green-400'
                           aria-hidden='true'
                         ></i>
                       ) : (
                         <i
-                          class='fa fa-check-circle text-base text-gray-800'
+                          className='fa fa-check-circle text-base text-gray-800'
                           aria-hidden='true'
                         ></i>
                       )}{" "}
@@ -285,12 +285,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -316,12 +316,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -346,12 +346,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -495,7 +495,7 @@ const data = [
     ],
     quarterFour: [
       {
-        id: 24,
+        id: 244,
         verified: false,
         desc: "Go-live on 28th Feb 2023",
         subDesc: [],
@@ -661,7 +661,7 @@ const dataTwo = [
     ],
     quarterFour: [
       {
-        id: 24,
+        id: 2400,
         verified: false,
         desc: "Customer Portal",
         subDesc: [],

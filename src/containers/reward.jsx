@@ -20,7 +20,7 @@ const styleDiv = {
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   backgroundSize: "100%",
-  '@media (max-width:640px)': {
+  '@media (maxWidth:640px)': {
     background: 'none'
   }
 };

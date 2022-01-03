@@ -95,7 +95,7 @@ const Redistro = () => {
       </div>
 {/* <img src={bg} alt='' className='h-screen min-w-full py-8'/> */}
       {/* <div className='w-full' style={style}></div> */}
-      <video src={vid} type='video/mp4'  loop autoPlay autoStart muted className='h-full w-full self-stretch' />
+      <video src={vid} type='video/mp4'  loop autoPlay muted className='h-full w-full self-stretch' />
     </div> 
   );
 };
