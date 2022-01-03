@@ -69,7 +69,7 @@ const Time = () => {
               </div>
               {el.quarterTwo.map((el) => (
                 <div key={el.id} className='flex flex-col  p-1'>
-                  {el.dec ? (
+                 
                     <h5 className='text-sm text-white font-bold px-1'>
                       {el.verified ? (
                         <i
@@ -84,9 +84,6 @@ const Time = () => {
                       )}{" "}
                       {el.desc}
                     </h5>
-                  ) : (
-                    ""
-                  )}
                   {el.subDesc.map((el) => (
                     <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
                       {el}
@@ -252,7 +249,7 @@ const Time = () => {
               </div>
               {el.quarterTwo.map((el) => (
                 <div key={el.id} className='flex flex-col  p-1'>
-                  {el.dec ? (
+                  
                     <h5 className='text-sm text-white font-bold px-1'>
                       {el.verified ? (
                         <i
@@ -267,9 +264,6 @@ const Time = () => {
                       )}{" "}
                       {el.desc}
                     </h5>
-                  ) : (
-                    ""
-                  )}
                   {el.subDesc.map((el) => (
                     <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
                       {el}
@@ -286,6 +280,8 @@ const Time = () => {
               </div>
               {el.quarterThree.map((el) => (
                 <div key={el.id} className='flex flex-col '>
+                  {
+                    el.desc === "" ? "":
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
@@ -299,7 +295,8 @@ const Time = () => {
                       ></i>
                     )}{" "}
                     {el.desc}
-                  </h5>
+                  </h5> 
+                  }
                   {el.subDesc.map((el) => (
                     <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
                       {el}
@@ -430,13 +427,7 @@ const data = [
         verified: false,
         desc: "",
         subDesc: [],
-      },
-      {
-        id: 24,
-        verified: false,
-        desc: "",
-        subDesc: [],
-      },
+      }
     ],
     quarterFour: [
       {
