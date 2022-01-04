@@ -30,13 +30,14 @@ const Team = () => {
         <Heading className='text-primary-800 text-center'>
           Meet Our Team
         </Heading>
-        <div className='flex flex-wrap items-start gap-8 justify-center'>
+        <div className='grid md:grid-cols-4 grid-cols-1 items-start gap-8 justify-center'>
           {team.map((el, idx) => (
             <TeamMember
               key={idx}
               image={el.image}
               desc={el.desc}
               name={el.name}
+              position={el.position}
             />
           ))}
         </div>
@@ -66,7 +67,7 @@ export default Team;
 
 const TeamMember = ({ image, position, desc, name }) => {
   return (
-    <div className='sm:w-60 w-full'>
+    <div className='w-full'>
       <img src={image} alt='web3 browser' className='sm:h-40 h-32' />
       <SubText className='text-primary-800 text-center capitalize'>{name}</SubText>
       <SubText className='text-white text-center'>{position}</SubText>
