@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/svg/logo.svg";
 import cup from "../assets/svg/cup.svg";
+import fb from "../assets/svg/fb.svg";
 import insta from "../assets/svg/in.svg";
 import bg from "../assets/svg/bghead.svg";
 import msg from "../assets/svg/mm.svg";
@@ -38,7 +39,14 @@ const Hero = () => {
     <div style={style} className={`${paddingX} flex flex-col gap-8 relative    py-12`}>
       <div className='flex flex-row  justify-between w-full items-center '>
         <img src={logo} alt='nutgain logo' className='h-12 w-32' />
+       
+        <a  rel='noreferrer'
+                href='https://online.flippingbook.com/view/956899460'
+                target='_blank'
+              >
         <Button>Whitepaper</Button>
+               
+              </a>
       </div>
       <div className='grid md:grid-cols-2 grid-cols-1 gap-8'>
             <div className='flex flex-col gap-8'>
@@ -53,11 +61,41 @@ const Hero = () => {
           <Button>Buy Now</Button>
           <Button>Whitelist your Wallet</Button>
         </div>
-        <div className='flex gap-2 items-center'>
-          <img src={insta} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
-          <img src={linkdin} alt='linkdin logo' className='md:h-20 md:w-20 h-12 w-12' />
-          <img src={msg} alt='msg ' className='md:h-20 md:w-20 h-12 w-12' />
-          <img src={cup} alt='cup ' className='md:h-20 md:w-20 h-12 w-12' />
+        <div className='flex gap-2 items-center'> <a
+                rel='noreferrer'
+                href='https://www.facebook.com/nutgain/'
+                target='_blank'
+              >
+                <img src={fb} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
+              </a>
+              <a
+                rel='noreferrer'
+                href='https://instagram.com/nutgainofficial/'
+                target='_blank'
+              >
+                <img src={insta} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
+              </a>
+              <a
+                href='https://linkedin.com/company/nutgain'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={linkdin} alt='linkdin logo' className='md:h-20 md:w-20 h-12 w-12' />
+              </a>
+              <a
+                href='https://nutgain.medium.com'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={msg} alt='msg ' className='md:h-20 md:w-20 h-12 w-12' />
+              </a>
+              <a
+                href='https://www.reddit.com/user/nutgainofficial'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={cup} alt='cup ' className='md:h-20 md:w-20 h-12 w-12' />
+              </a>
                   </div>
                   <div>
             <ScrollInRight>
