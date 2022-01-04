@@ -14,7 +14,7 @@ const Completionist = () => (
   </span>
 );
 
-const renderer = ({ hours, minutes, seconds, completed }) => {
+const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
     // Render a completed state
     return <Completionist />;
@@ -22,6 +22,15 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
     // Render a countdown
     return (
       <div className="flex gap-8 my-2">
+        <div className="flex gap-2 items-center">
+          <span
+            style={styleDiv}
+            className="text-white sm:text-2xl text-base p-4  rounded-md shadow-new-2 font-bold"
+          >
+            {days}
+          </span>
+          <span className="text-white sm:text-2xl text-base ">Days</span>
+        </div>
         <div className="flex gap-2 items-center">
           <span
             style={styleDiv}
