@@ -27,12 +27,13 @@ const Team = () => {
         className={`${paddingX} py-12 0 grid grid-cols-1 gap-12`}
         style={style1}
       >
-        <Heading className='text-primary-800 text-center'>
+        <Heading className="text-primary-800 text-center">
           Meet Our Team
         </Heading>
-        <div className='flex flex-wrap items-start gap-8 justify-center'>
+        <div className="flex flex-wrap items-start gap-8 justify-center">
           {team.map((el, idx) => (
             <TeamMember
+              position={el.position}
               key={idx}
               image={el.image}
               desc={el.desc}
@@ -41,12 +42,12 @@ const Team = () => {
           ))}
         </div>
 
-        <Heading className='text-primary-800 text-center'>Advisors</Heading>
+        <Heading className="text-primary-800 text-center">Advisors</Heading>
         <div
           style={style}
           className={`${paddingX} bg-dark-700 shadow-new-3  py-8`}
         >
-          <div className='flex flex-wrap items-start sm:gap-12 gap-4 justify-center'>
+          <div className="flex flex-wrap items-start sm:gap-12 gap-4 justify-center">
             {adteam.map((el, idx) => (
               <Advisor
                 key={idx}
@@ -66,23 +67,25 @@ export default Team;
 
 const TeamMember = ({ image, position, desc, name }) => {
   return (
-    <div className='sm:w-60 w-full'>
-      <img src={image} alt='web3 browser' className='sm:h-40 h-32' />
-      <SubText className='text-primary-800 text-center capitalize'>{name}</SubText>
-      <SubText className='text-white text-center'>{position}</SubText>
-      <SmText className='text-white text-center'>{desc}</SmText>
+    <div className="sm:w-60 w-full">
+      <img src={image} alt="web3 browser" className="sm:h-40 h-32" />
+      <SubText className="text-primary-800 text-center capitalize">
+        {name}
+      </SubText>
+      <SubText className="text-white text-center">{position}</SubText>
+      <SmText className="text-white text-center">{desc}</SmText>
     </div>
   );
 };
 
 const Advisor = ({ image, desc, name }) => {
   return (
-    <div className='sm:w-80 w-full flex items-center'>
-      <img src={image} alt='web3 browser ' className='sm:h-40 h-32' />
+    <div className="sm:w-80 w-full flex items-center">
+      <img src={image} alt="web3 browser " className="sm:h-40 h-32" />
       <div>
-        <MdHeading className='text-primary-800 capitalize'>{name}</MdHeading>
+        <MdHeading className="text-primary-800 capitalize">{name}</MdHeading>
 
-        <SmText className='text-white font-bold'>{desc}</SmText>
+        <SmText className="text-white font-bold">{desc}</SmText>
       </div>
     </div>
   );
