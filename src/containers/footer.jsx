@@ -91,7 +91,7 @@ const Footer = () => {
               </a>
               <a
                 rel='noreferrer'
-                href='https://instagram.com/nutgainofficial//'
+                href='https://instagram.com/nutgainofficial/'
                 target='_blank'
               >
                 <img src={insta} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
