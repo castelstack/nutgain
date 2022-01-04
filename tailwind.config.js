@@ -90,7 +90,7 @@ module.exports = {
         72: "500px",
       },
       fontFamily: {
-        prime: ["Courier Prime", "monospace"],
+        prime: ["Montserrat", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         exo:['Exo 2', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
