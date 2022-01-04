@@ -22,7 +22,7 @@ const Exchange = () => {
             </div>
             </div>
             <ScrollBottom>
-            <img src={hero} alt='stroke' className='w-full md:transform -translate-y-40' />
+            <img src={hero} alt='stroke' className='w-full md:transform  transform-none -translate-y-40' />
       
            </ScrollBottom>
              </div>

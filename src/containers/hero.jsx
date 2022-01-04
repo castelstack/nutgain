@@ -16,8 +16,8 @@ export const Button = ({ children, className, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className={`${className} rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 sm:text-base
-      transition ease-in  text-sm font-bold sm:px-12 px-6  sm:py-4 py-3 bg-primary-800`}
+      className={`${className} rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 md:text-base
+      transition ease-in  text-sm font-bold md:px-12 px-6  md:py-4 py-3 bg-primary-800`}
     >
       {children}
     </button>
@@ -40,7 +40,7 @@ const Hero = () => {
         <img src={logo} alt='nutgain logo' className='h-12 w-32' />
         <Button>Whitepaper</Button>
       </div>
-      <div className='grid sm:grid-cols-2 grid-cols-1 gap-8'>
+      <div className='grid md:grid-cols-2 grid-cols-1 gap-8'>
             <div className='flex flex-col gap-8'>
         <Heading className='text-white'>NutGain Ecosystem</Heading>
         <SmText className='text-primary-200'>
@@ -54,14 +54,14 @@ const Hero = () => {
           <Button>Whitelist your Wallet</Button>
         </div>
         <div className='flex gap-2 items-center'>
-          <img src={insta} alt='insta' className='sm:h-20 sm:w-20 h-12 w-12' />
-          <img src={linkdin} alt='linkdin logo' className='sm:h-20 sm:w-20 h-12 w-12' />
-          <img src={msg} alt='msg ' className='sm:h-20 sm:w-20 h-12 w-12' />
-          <img src={cup} alt='cup ' className='sm:h-20 sm:w-20 h-12 w-12' />
+          <img src={insta} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
+          <img src={linkdin} alt='linkdin logo' className='md:h-20 md:w-20 h-12 w-12' />
+          <img src={msg} alt='msg ' className='md:h-20 md:w-20 h-12 w-12' />
+          <img src={cup} alt='cup ' className='md:h-20 md:w-20 h-12 w-12' />
                   </div>
                   <div>
             <ScrollInRight>
-            <img src={squ} alt='cup ' className=' absolute h-full w-full -bottom-20 -right-80 bg-no-repeat sm:block hidden'/>
+            <img src={squ} alt='cup ' className=' absolute h-full w-full -bottom-20 -right-80 bg-no-repeat md:block hidden'/>
               
 </ScrollInRight>
                    </div>

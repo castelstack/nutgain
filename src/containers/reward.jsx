@@ -1,6 +1,6 @@
 import React from "react";
 // import { paddingX } from "../constant/styles/spacing";
-// import { Heading } from "../constant/styles/text";
+import { SmText } from "../constant/styles/text";
 import bg from "../assets/svg/bit.svg";
 import gift from "../assets/svg/gift.svg";
 import nft from "../assets/svg/nft.svg";
@@ -29,11 +29,11 @@ const Reward = () => {
     <div className={` bg-dark-700  overflow-hidden`}>
       <div className='grid sm:grid-cols-3 grid-cols-1 sm:gap-12 gap-2 items-center sm:px-0 px-4  py-12'>
       <img src={linerl} alt='stroke' className='self-center sm:block hidden'/>
-      <img src={bgward} alt='stroke' className=' w-full'/>
+      <img src={bgward} alt='stroke' className=' w-full justify-self-center'/>
       <img src={liner} alt='stroke' className='self-center sm:block hidden'/>
       </div>
       <div
-        className='md:h-screen   sm:mt-8 relative '
+        className='md:h-screen pt-8   sm:mt-8 relative '
        style={styleDiv}
       >
         {/* <Nut className='z-10' /> */}
@@ -65,23 +65,23 @@ const Reward = () => {
             </div>
           </div>
           {/* rewards and giveaway */}
-          <div className='flex items-center md:gap-20 gap-4 '>
+          <div className='flex items-center md:gap-20 gap-1 md:w-2/4 w-full  '>
             {/* <Rewards /> */}
              <img src={gift} alt='msg ' className='h-32 w-32' />
             <div className='flex flex-col'>
-              <p className='text-primary-800 sm:text-base text-sm'>
+              <SmText className='font-bold text-primary-800 sm:text-base text-sm'>
                 Rewards
-              </p>
+              </SmText>
               <p className='text-white sm:text-base text-sm'>
                 Assured Rewards to all investor inIDO of up to BUSD 20,000
               </p>
             </div>
           </div>
-          <div className='flex items-center md:gap-20 gap-4'>
+          <div className='flex items-center md:gap-20 gap-1 md:w-2/4 w-full  '>
             <div className='flex flex-col'>
-              <p className='text-primary-800 sm:text-base text-sm'>
+              <SmText className='font-bold text-primary-800 sm:text-base text-sm'>
                 Giveaway
-              </p>
+              </SmText>
               <p className='text-white sm:text-base text-sm'>
                 Unique NFT Giveaways up to 5,000 BUSD
               </p>

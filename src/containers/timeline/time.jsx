@@ -15,7 +15,7 @@ const Time = () => {
       <div className='grid gird-cols-1  w-full'>
         {data.map((el) => (
           <div key={el.id} className='flex  items-stretch   '>
-            <div className='flex-col flex px-6'>
+            <div className='flex-col flex px-1 w-full'>
               <Heading className='text-white tracking-wider '>{el.day}</Heading>
               <SmText className='text-primary-800 text-base font-bold '>
                 {el.title}
@@ -195,7 +195,7 @@ const Time = () => {
       <div className='grid gird-cols-1  w-full'>
         {dataTwo.map((el) => (
           <div key={el.id} className='flex  items-stretch   '>
-            <div className='flex-col flex px-6'>
+            <div className='flex-col flex w-full px-1'>
               <Heading className='text-white tracking-wider '>{el.day}</Heading>
               <SmText className='text-primary-800 text-base font-bold '>
                 {el.title}
@@ -449,7 +449,7 @@ const data = [
   {
     id: 2,
     day: "02",
-    title: "DeFi Exchange",
+    title: "Zor Web 3.0",
     year: 2020,
 
     quarterOne: [
@@ -548,7 +548,7 @@ const dataTwo = [
   {
     id: 1,
     day: "03",
-    title: "DeFi Exchange",
+    title: "DeFi Wallet",
     year: 2020,
 
     quarterOne: [
@@ -631,7 +631,7 @@ const dataTwo = [
   {
     id: 2,
     day: "04",
-    title: "DeFi Exchange",
+    title: "Hyper E-commerce",
     year: 2020,
 
     quarterOne: [

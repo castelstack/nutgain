@@ -15,7 +15,7 @@ const ProjectTimeline = () => {
     <div className={` pt-12 bg-dark-900 flex flex-col gap-12`}>
       <div className={`${paddingX} pt-12  flex flex-col gap-12`}>
         <Heading className='text-primary-800'>Project Timelines</Heading>
-        <div className='flex w-full sm:flex-row flex-col justify-between gap-8 mt-4'>
+        <div className='flex w-full items-stretch sm:flex-row flex-col justify-between gap-8 mt-4'>
           {data.map((el, idx) => (
             <TimeCard
               key={idx}
@@ -184,14 +184,14 @@ export default ProjectTimeline;
 const data = [
   {
     title: "Quarter 1",
-    year: "2020",
+    year: "2022",
     info: ["IDO (PinkSale)", "Listing on PancakeSwap"],
     icon: cha3,
   },
   {
     title: "Quarter 2",
     year: "",
-    info: ["Listing on other DEX"],
+    info: ["Listing on other ", "DEX"],
     icon: cha3,
   },
   {

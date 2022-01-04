@@ -104,7 +104,7 @@ const Products = () => {
         </div>
         {/* third card */}
         <div
-          className={`${paddingX} grid sm:grid-cols-2 grid-cols-1 w-full sm:gap-12 gap-8`}
+          className={`${paddingX} grid md:grid-cols-2 grid-cols-1 w-full sm:gap-12 gap-8`}
         >
           <div
             style={{ borderRadius: "97px 0px 97px 0px" }}
