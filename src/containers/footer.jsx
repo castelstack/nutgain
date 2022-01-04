@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "../assets/svg/logo.svg";
 import cup from "../assets/svg/cup.svg";
+import fb from "../assets/svg/fb.svg";
+import tel from "../assets/svg/tel.svg";
+import twitter from "../assets/svg/twitter.svg";
 import insta from "../assets/svg/in.svg";
 import msg from "../assets/svg/mm.svg";
 import linkdin from "../assets/svg/link.svg";
@@ -56,26 +59,66 @@ const Footer = () => {
               ))}
             </div>
           </div>
+          <div className='flex flex-col gap-2'>
           <div className='flex flex-col'>
-            <SubText className='font-bold text-white'>Social</SubText>
-            <div className='flex gap-2 items-start'>
-              <a rel="noreferrer" href='https://instagram.com/nutgainofficial//' target="_blank">
-              <img src={insta} alt='insta' className='h-20 w-20' />
-             
+            <SubText className='font-bold text-white'>Contact Us</SubText>
+            <div className='flex gap-1 items-start'>
+            <a
+                rel='noreferrer'
+                href='https://t.me/nutgainofficial/'
+                target='_blank'
+              >
+                <img src={tel} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
               </a>
-  <a href='https://linkedin.com/company/nutgain' target="_blank" rel="noreferrer" >
-  <img src={linkdin} alt='linkdin logo' className='h-20 w-20' />
-              
+              <a
+                rel='noreferrer'
+                href='https://twitter.com/nutgainofficial/'
+                target='_blank'
+              >
+                <img src={twitter} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
               </a>
-                <a href='https://nutgain.medium.com' target="_blank" rel="noreferrer" >
-                <img src={msg} alt='msg ' className='h-20 w-20' />
-             
+            </div>
+            </div>
+          <div className='flex flex-col'>
+            <SubText className='font-bold text-white'>Our Pages</SubText>
+            <div className='flex gap-1 items-start'>
+            <a
+                rel='noreferrer'
+                href='https://www.facebook.com/nutgain/'
+                target='_blank'
+              >
+                <img src={fb} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
               </a>
-                <a href='https://www.reddit.com/user/nutgainofficial' target="_blank" rel="noreferrer" >
-                <img src={cup} alt='cup ' className='h-20 w-20' />
-         
+              <a
+                rel='noreferrer'
+                href='https://instagram.com/nutgainofficial//'
+                target='_blank'
+              >
+                <img src={insta} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
               </a>
-                 </div>
+              <a
+                href='https://linkedin.com/company/nutgain'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={linkdin} alt='linkdin logo' className='md:h-20 md:w-20 h-12 w-12' />
+              </a>
+              <a
+                href='https://nutgain.medium.com'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={msg} alt='msg ' className='md:h-20 md:w-20 h-12 w-12' />
+              </a>
+              <a
+                href='https://www.reddit.com/user/nutgainofficial'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <img src={cup} alt='cup ' className='md:h-20 md:w-20 h-12 w-12' />
+              </a>
+            </div>
+            </div>
           </div>
         </div>
         <hr className='text-white py-1' />
