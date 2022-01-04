@@ -49,7 +49,7 @@ const company = [
     company: "PancakeSwap",
   },
   {
-    image: pb2,
+    image: pb5,
     company: "AnyX",
   },
   {
@@ -61,7 +61,7 @@ const company = [
     company: "CoinMarketCap",
   },
   {
-    image: pb5,
+    image: pb2,
     company: "CoinGecko",
   },
   {

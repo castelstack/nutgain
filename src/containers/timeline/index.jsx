@@ -59,7 +59,10 @@ const ProjectTimeline = () => {
               BUSD Reflections on every transaction.{" "}
             </SmText>
             <SmText className='text-white mr-2'>
-            NutGain Token constitutes the ecosystem’s unique crytopcurrency. After receiving pay-outs for their use of the NutGain Browser and for holding the e-commerce offers available only to the NutGain community.
+              NutGain Token constitutes the ecosystem’s unique crytopcurrency.
+              After receiving pay-outs for their use of the NutGain Browser and
+              for holding the e-commerce offers available only to the NutGain
+              community.
             </SmText>
             <div className='grid grid-cols-2 justify-between gap-12 mt-12'>
               <div className='sm:w-56 w-full'>
@@ -109,7 +112,7 @@ const ProjectTimeline = () => {
               className='bg-primary-800'
             >
               <SmText className='text-gray-900 px-8 py-4 '>
-              Liquidity Pool
+                Liquidity Pool
               </SmText>
             </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>
@@ -135,7 +138,7 @@ const ProjectTimeline = () => {
               className='bg-primary-800'
             >
               <SmText className='text-gray-900 px-8 py-4 '>
-              Product Development
+                Product Development
               </SmText>
             </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>
@@ -161,7 +164,7 @@ const ProjectTimeline = () => {
               className='bg-primary-800'
             >
               <SmText className='text-gray-900 px-8 py-4 '>
-              Redistribution
+                Redistribution
               </SmText>
             </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>

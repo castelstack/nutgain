@@ -139,7 +139,7 @@ const products = [
   "wallet",
   "NFTs",
   "MetaVerse",
-  "E-Hype E-Commerce",
+  "D-Hyper E-commerce",
 ];
 
 const site = [

@@ -8,7 +8,8 @@ import ad5 from "../assets/svg/ad5.svg";
 import ad1 from "../assets/svg/adm.svg";
 import te1 from "../assets/svg/te1.svg";
 import ta2 from "../assets/svg/ta2.svg";
-import ta4 from "../assets/svg/tam.svg";
+import ta4 from "../assets/svg/ta4.svg";
+import tam from "../assets/svg/tam.svg";
 import bg from "../assets/svg/bgtime.svg";
 
 const style = {
@@ -47,7 +48,7 @@ const Team = () => {
           style={style}
           className={`${paddingX} bg-dark-700 shadow-new-3  py-8`}
         >
-          <div className='flex flex-wrap items-start sm:gap-12 gap-4 justify-center'>
+          <div className='grid md:grid-cols-3 grid-cols-1 items-start sm:gap-12 gap-4 justify-center'>
             {adteam.map((el, idx) => (
               <Advisor
                 key={idx}
@@ -70,7 +71,7 @@ const TeamMember = ({ image, position, desc, name }) => {
     <div className='w-full'>
       <img src={image} alt='web3 browser' className='sm:h-40 h-32' />
       <SubText className='text-primary-800 text-center capitalize'>{name}</SubText>
-      <SubText className='text-white text-center'>{position}</SubText>
+      <SmText className='text-white text-center font-bold'>{position}</SmText>
       <SmText className='text-white text-center'>{desc}</SmText>
     </div>
   );
@@ -78,7 +79,7 @@ const TeamMember = ({ image, position, desc, name }) => {
 
 const Advisor = ({ image, desc, name }) => {
   return (
-    <div className='sm:w-80 w-full flex items-center'>
+    <div className='w-full flex items-center'>
       <img src={image} alt='web3 browser ' className='sm:h-40 h-32' />
       <div>
         <MdHeading className='text-primary-800 capitalize'>{name}</MdHeading>
@@ -92,7 +93,7 @@ const Advisor = ({ image, desc, name }) => {
 const team = [
   {
     name: "MB",
-    image: ta4,
+    image: tam,
     position: "CEO",
     desc: "A real NUT with wealth of knowledge and experience of Blockchain and Crypto Smart Contract Development",
   },
@@ -110,7 +111,7 @@ const team = [
   },
   {
     name: "KP",
-    image: ta2,
+    image: ta4,
     position: "CMO",
     desc: "Not so Nuts! A marketing professional with over 10 years of working experience. An avid crypto follower and believer.",
   },
@@ -135,7 +136,7 @@ const adteam = [
   {
     desc: "Technology Advisor",
     image: ad3,
-    name: "F-LS",
+    name: "KS",
   },
   {
     desc: "Talent Hunt",
