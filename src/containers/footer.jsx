@@ -59,11 +59,23 @@ const Footer = () => {
           <div className='flex flex-col'>
             <SubText className='font-bold text-white'>Social</SubText>
             <div className='flex gap-2 items-start'>
+              <a rel="noreferrer" href='https://instagram.com/nutgainofficial//' target="_blank">
               <img src={insta} alt='insta' className='h-20 w-20' />
-              <img src={linkdin} alt='linkdin logo' className='h-20 w-20' />
-              <img src={msg} alt='msg ' className='h-20 w-20' />
-              <img src={cup} alt='cup ' className='h-20 w-20' />
-            </div>
+             
+              </a>
+  <a href='https://linkedin.com/company/nutgain' target="_blank" rel="noreferrer" >
+  <img src={linkdin} alt='linkdin logo' className='h-20 w-20' />
+              
+              </a>
+                <a href='https://nutgain.medium.com' target="_blank" rel="noreferrer" >
+                <img src={msg} alt='msg ' className='h-20 w-20' />
+             
+              </a>
+                <a href='https://www.reddit.com/user/nutgainofficial' target="_blank" rel="noreferrer" >
+                <img src={cup} alt='cup ' className='h-20 w-20' />
+         
+              </a>
+                 </div>
           </div>
         </div>
         <hr className='text-white py-1' />

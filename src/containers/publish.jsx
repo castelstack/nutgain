@@ -17,7 +17,7 @@ const Publish = () => {
       <div className={`${paddingX} flex md:flex-nowrap flex-wrap items-start md:gap-12 gap-6 justify-between`}>
         {company.map((el) => (
     
-          <div key={el.position} className='flex flex-col justify-items-center items-center'>
+          <div key={el.company} className='flex flex-col justify-items-center items-center'>
             <img src={el.image} alt='zor' className='sm:h-32 sm:w-32 h-12 w-12' />
             <SmText className='text-gray-900 font-bold'>{el.company}</SmText>
           </div>

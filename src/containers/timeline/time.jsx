@@ -15,7 +15,7 @@ const Time = () => {
       <div className='grid gird-cols-1  w-full'>
         {data.map((el) => (
           <div key={el.id} className='flex  items-stretch   '>
-            <div className='flex-col flex px-6'>
+            <div className='flex-col flex px-1 w-full'>
               <Heading className='text-white tracking-wider '>{el.day}</Heading>
               <SmText className='text-primary-800 text-base font-bold '>
                 {el.title}
@@ -37,12 +37,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -73,12 +73,12 @@ const Time = () => {
                     <h5 className='text-sm text-white font-bold px-1'>
                       {el.verified ? (
                         <i
-                          class='fa fa-check-circle text-base text-green-400'
+                          className='fa fa-check-circle text-base text-green-400'
                           aria-hidden='true'
                         ></i>
                       ) : (
                         <i
-                          class='fa fa-check-circle text-base text-gray-800'
+                          className='fa fa-check-circle text-base text-gray-800'
                           aria-hidden='true'
                         ></i>
                       )}{" "}
@@ -103,12 +103,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -133,12 +133,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -163,12 +163,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -195,7 +195,7 @@ const Time = () => {
       <div className='grid gird-cols-1  w-full'>
         {dataTwo.map((el) => (
           <div key={el.id} className='flex  items-stretch   '>
-            <div className='flex-col flex px-6'>
+            <div className='flex-col flex w-full px-1'>
               <Heading className='text-white tracking-wider '>{el.day}</Heading>
               <SmText className='text-primary-800 text-base font-bold '>
                 {el.title}
@@ -217,12 +217,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -253,12 +253,12 @@ const Time = () => {
                     <h5 className='text-sm text-white font-bold px-1'>
                       {el.verified ? (
                         <i
-                          class='fa fa-check-circle text-base text-green-400'
+                          className='fa fa-check-circle text-base text-green-400'
                           aria-hidden='true'
                         ></i>
                       ) : (
                         <i
-                          class='fa fa-check-circle text-base text-gray-800'
+                          className='fa fa-check-circle text-base text-gray-800'
                           aria-hidden='true'
                         ></i>
                       )}{" "}
@@ -285,12 +285,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -316,12 +316,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -346,12 +346,12 @@ const Time = () => {
                   <h5 className='text-sm text-white font-bold px-1'>
                     {el.verified ? (
                       <i
-                        class='fa fa-check-circle text-base text-green-400'
+                        className='fa fa-check-circle text-base text-green-400'
                         aria-hidden='true'
                       ></i>
                     ) : (
                       <i
-                        class='fa fa-check-circle text-base text-gray-800'
+                        className='fa fa-check-circle text-base text-gray-800'
                         aria-hidden='true'
                       ></i>
                     )}{" "}
@@ -449,7 +449,7 @@ const data = [
   {
     id: 2,
     day: "02",
-    title: "DeFi Exchange",
+    title: "Zor Web 3.0",
     year: 2020,
 
     quarterOne: [
@@ -495,7 +495,7 @@ const data = [
     ],
     quarterFour: [
       {
-        id: 24,
+        id: 244,
         verified: false,
         desc: "Go-live on 28th Feb 2023",
         subDesc: [],
@@ -548,7 +548,7 @@ const dataTwo = [
   {
     id: 1,
     day: "03",
-    title: "DeFi Exchange",
+    title: "DeFi Wallet",
     year: 2020,
 
     quarterOne: [
@@ -631,7 +631,7 @@ const dataTwo = [
   {
     id: 2,
     day: "04",
-    title: "DeFi Exchange",
+    title: "Hyper E-commerce",
     year: 2020,
 
     quarterOne: [
@@ -661,7 +661,7 @@ const dataTwo = [
     ],
     quarterFour: [
       {
-        id: 24,
+        id: 2400,
         verified: false,
         desc: "Customer Portal",
         subDesc: [],
