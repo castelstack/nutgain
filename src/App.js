@@ -9,7 +9,7 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => {
       setLoaded(false);
-    }, 8000);
+    }, 3000);
   }, []);
   return <div className="App">{loaded ? <Loader /> : <Homepage />}</div>;
 }
