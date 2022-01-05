@@ -93,7 +93,7 @@ const ProjectTimeline = () => {
           </div>
         </div>
         {/* ./second div containig squ img and trading view box */}
-        <div className='flex flex-col sm:px-0 px-4 gap-4 md:transform transform-none -translate-x-20 mb-12'>
+        <div className='flex flex-col   gap-4 md:transform transform-none -translate-x-20 mb-12'>
           <img
             src={squ}
             alt='nutgain '
@@ -123,7 +123,7 @@ const ProjectTimeline = () => {
               }}
               className='bg-primary-800'
             >
-              <SmText className='text-gray-900 px-8 py-4 '>
+              <SmText className='text-gray-900 md:px-8 px-2 py-4 '>
                 Liquidity Pool
               </SmText>
             </div>
@@ -149,7 +149,7 @@ const ProjectTimeline = () => {
               }}
               className='bg-primary-800'
             >
-              <SmText className='text-gray-900 px-8 py-4 '>
+              <SmText className='text-gray-900 md:px-8 px-2 py-4 '>
                 Product Development
               </SmText>
             </div>
@@ -175,7 +175,7 @@ const ProjectTimeline = () => {
               }}
               className='bg-primary-800'
             >
-              <SmText className='text-gray-900 px-8 py-4 '>
+              <SmText className='text-gray-900 md:px-8 px-2 py-4 '>
                 Redistribution
               </SmText>
             </div>

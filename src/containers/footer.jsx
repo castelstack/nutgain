@@ -78,7 +78,7 @@ const Footer = () => {
                   <img
                     src={tel}
                     alt="insta"
-                    className="md:h-20 md:w-20 h-12 w-12"
+                    className="md:h-14 md:w-14 h-12 w-12"
                   />
                 </a>
                 <a
@@ -89,7 +89,7 @@ const Footer = () => {
                   <img
                     src={twitter}
                     alt="insta"
-                    className="md:h-20 md:w-20 h-12 w-12"
+                    className="md:h-14 md:w-14 h-12 w-12"
                   />
                 </a>
               </div>

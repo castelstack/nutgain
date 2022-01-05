@@ -3,7 +3,7 @@ import { ReactComponent as Pie } from "../../assets/svg/pie.svg";
 import {  SubText, SmText,MdHeading } from "../../constant/styles/text";
 const PieChart = () => {
   return (
-    <section className='grid md:grid-cols-2 grid-cols-1 py-12 items-center -space-x-10'>
+    <section className='grid md:grid-cols-2 grid-cols-1 pb-12 items-center md:-space-x-10 -space-x-0'>
       <Pie className='w-full' />
       <aside className='w-full'>
         <div className=' w-full flex flex-col items-end p-8 gap-8 rounded bg-opacity-5 bg-primary-800'>

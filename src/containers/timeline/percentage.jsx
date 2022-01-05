@@ -8,8 +8,8 @@ const Percentage = () => {
     return (
         <div className={`${paddingX} py-12`}>
              <div
-              style={{ borderRadius: "97px 0px 97px 0px" }}
-              className=' shadow-new-1 relative md:p-8 p-2'
+              style={{ borderRadius: "65px 0px 65px 0px" }}
+              className=' shadow-new-1 relative md:p-8 p-4'
             >
               <ScrollDotUp>
                 <img
