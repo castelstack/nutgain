@@ -61,8 +61,8 @@ const Hero = () => {
               Wallet, D-Hyper Ecommerce and dApps.
             </SmText>
             <CountdownView />
-            <div className="flex gap-4 items-center">
-              <Button>Buy Now</Button>
+            <div className="flex gap-4 py-2 items-center">
+              {/* <Button>Buy Now</Button> */}
 
               <a
                 rel="noreferrer"
