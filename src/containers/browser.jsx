@@ -31,12 +31,14 @@ const Browser = () => {
           style={{ borderRadius: "97px 0px 97px 0px" }}
         >
           <div
-            className='hidden sm:flex  bg-primary-800 overflow-none'
+            className='relative hidden md:flex flex-col overflow-none bg-primary-800 overflow-none'
             style={{ borderRadius: "97px 0px 0px 0px" }}
           >
-            <img src={hero} className='h-full' alt='web3.0 browser' />
-            <img src={hero1} className='h-full' alt='web3.0 browser' />
+           
+            <img src={hero} className='h-full z-0 absolute -top-20 left-0' alt='web3.0 browser' />
+            <img src={hero1} className='h-full z-20 absolute -bottom-96 left-0' alt='web3.0 browser' />
             {/* <Hero className='w-full' /> */}
+          
           </div>
           {/* features of web3 browser */}
           <div
@@ -82,17 +84,18 @@ const Browser = () => {
                 </div>
               </div>
 
-              <div className='grid grid-cols-fr-mx mr-12  gap-4'>
+              <div className='flex mr-12  gap-4'>
                 <img src={stroke} alt='stroke' className='w-full' />{" "}
                 <p className='text-primary-800 text-sm self-end'>
-                  Find Out More &rarr;
+                  Watch Video &rarr;
                 </p>
+                
               </div>
             </div>
           </div>
         </main>
         <div
-          className={`${paddingX} w-full flex flex-col items-end py-12 bg-dark-800`}
+          className={`${paddingX} w-full flex flex-col items-end py-20 bg-dark-800`}
         >
           <SubText className='text-primary-800 text-right pl-4 py-2 border-b-2  w-max border-white'>
             Some characteristics of Web 3.0 Browser

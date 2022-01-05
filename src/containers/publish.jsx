@@ -18,8 +18,16 @@ const Publish = () => {
         {company.map((el) => (
     
           <div key={el.company} className='flex flex-col justify-items-center items-center'>
-            <img src={el.image} alt='zor' className='sm:h-32 sm:w-32 h-12 w-12' />
-            <SmText className='text-gray-900 font-bold'>{el.company}</SmText>
+              <a
+          className='z-50'
+            rel='noreferrer'
+            href={el.link}
+            target='_blank'
+          >
+           <img src={el.image} alt='zor' className='sm:h-32 sm:w-32 h-12 w-12' />
+           
+          </a>
+             <SmText className='text-gray-900 font-bold'>{el.company}</SmText>
           </div>
        
         ))}
@@ -47,27 +55,50 @@ const company = [
   {
     image: pb1,
     company: "PancakeSwap",
+    link:'https://pancakeswap.finance/'
   },
   {
     image: pb5,
     company: "AnyX",
+    link:''
   },
   {
     image: pb3,
     company: "BscScan",
+    link:'https://bscscan.com/address/0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab'
   },
   {
     image: pb4,
     company: "CoinMarketCap",
+    link:'https://coinmarketcap.com/'
   },
   {
     image: pb2,
     company: "CoinGecko",
+    link:'https://www.coingecko.com/en'
   },
   {
     image: pb6,
     company: "InterFi Network",
+    link:'https://github.com/interfinetwork/smart-contract-audits/blob/main/NutGain_0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab.pdf'
   },
 ];
 
 export default Publish;
+
+// NFT Market Place | Web3 | DeFi | Metaverse | dApps
+
+// https://www.coingecko.com/en
+
+// https://coinmarketcap.com/
+
+// https://bscscan.com/address/0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab
+
+// https://pancakeswap.finance/
+
+// Interfi
+// https://github.com/interfinetwork/smart-contract-audits/blob/main/NutGain_0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab.pdf
+
+// Pinksale icon to be addd 
+
+// https://www.pinksale.finance/#/
