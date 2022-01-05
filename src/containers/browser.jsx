@@ -35,7 +35,7 @@ const Browser = () => {
             style={{ borderRadius: "97px 0px 0px 0px" }}
           >
            
-            <img src={hero} className='h-full z-0 absolute -top-20 left-0' alt='web3.0 browser' />
+            <img src={hero} className='h-full z-0 absolute -top-20 left-8' alt='web3.0 browser' />
             <img src={hero1} className='h-full z-20 absolute -bottom-96 left-0' alt='web3.0 browser' />
             {/* <Hero className='w-full' /> */}
           

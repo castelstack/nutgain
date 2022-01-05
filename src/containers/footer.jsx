@@ -1,12 +1,12 @@
 import React from "react";
 import logo from "../assets/svg/logo.svg";
-import cup from "../assets/svg/cup.svg";
-import fb from "../assets/svg/fb.svg";
-import tel from "../assets/svg/tel.svg";
-import twitter from "../assets/svg/twitter.svg";
-import insta from "../assets/svg/in.svg";
-import msg from "../assets/svg/mm.svg";
-import linkdin from "../assets/svg/link.svg";
+import cup from "../assets/svg/Group.svg";
+import fb from "../assets/svg/facebook.svg";
+import tel from "../assets/svg/telegram.svg";
+import twitter from "../assets/svg/twitter1.svg";
+import insta from "../assets/svg/instagram.svg";
+import msg from "../assets/svg/medium.svg";
+import linkdin from "../assets/svg/linkedin.svg";
 import { SmText, SubText } from "../constant/styles/text";
 import { paddingX } from "../constant/styles/spacing";
 import bg from "../assets/svg/bghead.svg";
@@ -53,9 +53,16 @@ const Footer = () => {
             <SubText className="font-bold text-white">Help</SubText>
             <div className="flex flex-col gap-3 ">
               {help.map((el) => (
-                <SmText key={el} className="text-white capitalize">
-                  {el}
+                 <a
+                 key={el}
+                 rel="noreferrer"
+                 href={el.link}
+                 target="_blank"
+               >
+                <SmText  className="text-white capitalize">
+                  {el.title}
                 </SmText>
+               </a>
               ))}
             </div>
           </div>
@@ -89,7 +96,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col">
               <SubText className="font-bold text-white">Our Pages</SubText>
-              <div className="flex gap-1 items-start">
+              <div className="flex gap-2 items-start">
                 <a
                   rel="noreferrer"
                   href="https://www.facebook.com/nutgain/"
@@ -98,7 +105,7 @@ const Footer = () => {
                   <img
                     src={fb}
                     alt="insta"
-                    className="md:h-20 md:w-20 h-12 w-12"
+                    className="md:h-14 md:w-14 h-12 w-12"
                   />
                 </a>
                 <a
@@ -109,7 +116,7 @@ const Footer = () => {
                   <img
                     src={insta}
                     alt="insta"
-                    className="md:h-20 md:w-20 h-12 w-12"
+                    className="md:h-14 md:w-14 h-12 w-12"
                   />
                 </a>
                 <a
@@ -120,7 +127,7 @@ const Footer = () => {
                   <img
                     src={linkdin}
                     alt="linkdin logo"
-                    className="md:h-20 md:w-20 h-12 w-12"
+                    className="md:h-14 md:w-14 h-12 w-12"
                   />
                 </a>
                 <a
@@ -131,7 +138,7 @@ const Footer = () => {
                   <img
                     src={msg}
                     alt="msg "
-                    className="md:h-20 md:w-20 h-12 w-12"
+                    className="md:h-14 md:w-14 h-12 w-12"
                   />
                 </a>
                 <a
@@ -142,7 +149,7 @@ const Footer = () => {
                   <img
                     src={cup}
                     alt="cup "
-                    className="md:h-20 md:w-20 h-12 w-12"
+                    className="md:h-14 md:w-14 h-12 w-12"
                   />
                 </a>
               </div>
@@ -176,4 +183,13 @@ const site = [
   "career oppurtunity",
   "report a security issue",
 ];
-const help = ["FAQ", "Legal and risk disclaimer"];
+const help =[
+  {
+    title:'FAQ',
+    link:''
+  },
+  {
+    title:'Legal and risk disclaimer',
+    link:''
+  }
+] 
