@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../assets/svg/logo.svg";
-import tel from "../assets/svg/tel.svg";
-import twitter from "../assets/svg/twitter.svg";
-import cup from "../assets/svg/cup.svg";
-import linkdin from "../assets/svg/link.svg";
-import msg from "../assets/svg/mm.svg";
+import tel from "../assets/svg/telegram.svg";
+import twitter from "../assets/svg/twitter1.svg";
+import cup from "../assets/svg/Group.svg";
+import linkdin from "../assets/svg/linkedin.svg";
+import msg from "../assets/svg/medium.svg";
 import bg from "../assets/svg/bghead.svg";
 import squ from "../assets/svg/squ.svg";
 import { Heading, SmText } from "../constant/styles/text";
@@ -82,7 +82,7 @@ const Hero = () => {
                 <img
                   src={tel}
                   alt="twitter"
-                  className="md:h-20 md:w-20 h-12 w-12"
+                  className="md:h-14 md:w-14 h-12 w-12"
                 />
               </a>
               <a
@@ -94,7 +94,7 @@ const Hero = () => {
                 <img
                   src={twitter}
                   alt="insta"
-                  className="md:h-20 md:w-20 h-12 w-12 z-50"
+                  className="md:h-14 md:w-14 h-12 w-12 z-50"
                 />
               </a>
 
@@ -107,7 +107,7 @@ const Hero = () => {
                 <img
                   src={linkdin}
                   alt="linkdin logo"
-                  className="md:h-20 md:w-20 h-12 w-12"
+                  className="md:h-14 md:w-14 h-12 w-12"
                 />
               </a>
               <a
@@ -119,7 +119,7 @@ const Hero = () => {
                 <img
                   src={msg}
                   alt="msg "
-                  className="md:h-20 md:w-20 h-12 w-12"
+                  className="md:h-14 md:w-14 h-12 w-12"
                 />
               </a>
               <a
@@ -131,7 +131,7 @@ const Hero = () => {
                 <img
                   src={cup}
                   alt="cup "
-                  className="md:h-20 md:w-20 h-12 w-12"
+                  className="md:h-14 md:w-14 h-12 w-12"
                 />
               </a>
             </div>

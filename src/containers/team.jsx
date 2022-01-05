@@ -28,10 +28,10 @@ const Team = () => {
         className={`${paddingX} py-12 0 grid grid-cols-1 gap-12`}
         style={style1}
       >
-        <Heading className='text-primary-800 text-center'>
+        <Heading className="text-primary-800 text-center">
           Meet Our Team
         </Heading>
-        <div className='grid md:grid-cols-4 grid-cols-1 items-start gap-8 justify-center'>
+        <div className="grid md:grid-cols-4 grid-cols-1 items-start gap-8 justify-center">
           {team.map((el, idx) => (
             <TeamMember
               position={el.position}
@@ -43,12 +43,12 @@ const Team = () => {
           ))}
         </div>
 
-        <Heading className='text-primary-800 text-center'>Advisors</Heading>
+        <Heading className="text-primary-800 text-center">Advisors</Heading>
         <div
           style={style}
           className={`${paddingX} bg-dark-700 shadow-new-3  py-8`}
         >
-          <div className='grid md:grid-cols-3 grid-cols-1 items-start sm:gap-12 gap-4 justify-center'>
+          <div className="grid md:grid-cols-3 grid-cols-1 items-start sm:gap-12 gap-4 justify-center">
             {adteam.map((el, idx) => (
               <Advisor
                 key={idx}
@@ -68,25 +68,25 @@ export default Team;
 
 const TeamMember = ({ image, position, desc, name }) => {
   return (
-    <div className='w-full'>
-      <img src={image} alt='web3 browser' className='sm:h-40 h-32' />
-      <SubText className='text-primary-800 text-center capitalize'>
+    <div className="w-full">
+      <img src={image} alt="web3 browser" className="sm:h-40 h-32" />
+      <SubText className="text-primary-800 text-center capitalize">
         {name}
       </SubText>
-      <SmText className='text-white text-center font-bold'>{position}</SmText>
-      <SmText className='text-white text-center'>{desc}</SmText>
+      <SmText className="text-white text-center font-bold">{position}</SmText>
+      <SmText className="text-white text-center">{desc}</SmText>
     </div>
   );
 };
 
 const Advisor = ({ image, desc, name }) => {
   return (
-    <div className='w-full flex items-center'>
-      <img src={image} alt='web3 browser ' className='sm:h-40 h-32' />
+    <div className="w-full flex items-center">
+      <img src={image} alt="web3 browser " className="sm:h-40 h-32" />
       <div>
-        <MdHeading className='text-primary-800 capitalize'>{name}</MdHeading>
+        <MdHeading className="text-primary-800 capitalize">{name}</MdHeading>
 
-        <SmText className='text-white font-bold'>{desc}</SmText>
+        <SmText className="text-white font-bold">{desc}</SmText>
       </div>
     </div>
   );
@@ -100,7 +100,7 @@ const team = [
     desc: "A real NUT with wealth of knowledge and experience of Blockchain and Crypto Smart Contract Development",
   },
   {
-    name: "Vk",
+    name: "VK",
     image: ta2,
     position: "CFO",
     desc: "A total NUTs in the team with expertise in money management with Masters in economics.",
