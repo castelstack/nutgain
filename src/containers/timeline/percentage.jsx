@@ -25,7 +25,7 @@ const Percentage = () => {
                   className='h-4 w-4 absolute -bottom-1 -left-1'
                 />
               </ScrollDot>
-                <div className='md:grid lg:grid-cols-5  md:grid-cols-3 grid-cols-2  gap-4 content-center'>
+                <div className='grid lg:grid-cols-5  md:grid-cols-3 grid-cols-2  gap-4 content-center'>
                     
             
                 {
