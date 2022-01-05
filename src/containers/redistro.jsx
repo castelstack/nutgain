@@ -56,7 +56,7 @@ const Redistro = () => {
         <div className='flex flex-col mt-4 w-full'>
           <div
             className='grid grid-cols-2 items-center content-center overflow-none object-fit '
-            style={{ borderRadius: "97px 0px 97px 0px" }}
+            style={{ borderRadius: "60px 0px 60px 0px" }}
           >
             <div></div>
             <div
@@ -75,11 +75,11 @@ const Redistro = () => {
           card 1 */}
           <div
             className='grid grid-cols-2 items-center content-center  object-fit shadow-new-2 bg-white mb-4'
-            style={{ borderRadius: "97px 0px 97px 0px" }}
+            style={{ borderRadius: "60px 0px 60px 0px" }}
           >
             <div
               style={{
-                borderRadius: "97px 0px 0px 0px",
+                borderRadius: "60px 0px 0px 0px",
                 clipPath: "polygon(0 0, 100% 0, 90% 100%, 0% 100%)",
               }}
               className='bg-primary-800'
