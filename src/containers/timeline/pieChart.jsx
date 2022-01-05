@@ -4,7 +4,7 @@ import {  SubText, SmText,MdHeading } from "../../constant/styles/text";
 const PieChart = () => {
   return (
     <section className='grid md:grid-cols-2 grid-cols-1 py-12 items-center -space-x-10'>
-      <Pie classname='w-full' />
+      <Pie className='w-full' />
       <aside className='w-full'>
         <div className=' w-full flex flex-col items-end p-8 gap-8 rounded bg-opacity-5 bg-primary-800'>
           <MdHeading className='text-primary-800 flex'>
@@ -16,7 +16,7 @@ const PieChart = () => {
         </div>
         {/* //   legend */}
         <div className='full md:mx-12 mx-0'>
-          <SubText className='w-full text-white py-2 border-b-2 border-white'>
+          <SubText className='w-full text-white py-4 border-b-2 border-white'>
             Legend
           </SubText>
           <main className='grid grid-cols-2 justisy-between gap-4'>

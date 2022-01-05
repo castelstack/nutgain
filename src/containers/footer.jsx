@@ -169,7 +169,7 @@ const Footer = () => {
 export default Footer;
 
 const products = [
-  "Web3 Browser",
+  "Web 3.0 Browser",
   "DeFi exchange",
   "wallet",
   "NFTs",
@@ -190,6 +190,6 @@ const help =[
   },
   {
     title:'Legal and risk disclaimer',
-    link:''
+    link:'https://github.com/nutgain/Legal-and-risk-disclaimer/wiki/Risk-&-Legal-Disclaimer'
   }
 ] 
