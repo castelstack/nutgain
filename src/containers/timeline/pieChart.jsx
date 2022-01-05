@@ -1,0 +1,67 @@
+import React from "react";
+import { ReactComponent as Pie } from "../../assets/svg/pie.svg";
+import {  SubText, SmText,MdHeading } from "../../constant/styles/text";
+const PieChart = () => {
+  return (
+    <section className='grid md:grid-cols-2 grid-cols-1 py-12 items-center -space-x-10'>
+      <Pie classname='w-full' />
+      <aside className='w-full'>
+        <div className=' w-full flex flex-col items-end p-8 gap-8 rounded bg-opacity-5 bg-primary-800'>
+          <MdHeading className='text-primary-800 flex'>
+            Total Supply <MdHeading className='text-white'>1,500,000,000</MdHeading>
+          </MdHeading>
+          <MdHeading className='text-primary-800 flex gap'>
+            Market Cap <MdHeading className='text-white'>1,500,000</MdHeading>
+          </MdHeading>
+        </div>
+        {/* //   legend */}
+        <div className='full md:mx-12 mx-0'>
+          <SubText className='w-full text-white py-2 border-b-2 border-white'>
+            Legend
+          </SubText>
+          <main className='grid grid-cols-2 justisy-between gap-4'>
+            {data.map((el) => (
+              <SmText key={el.title} className='flex items-center gap-3 text-white'>
+                <span className={`${el.color} w-4 h-4 rounded-full`}></span>
+                {el.title}
+              </SmText>
+            ))}
+          </main>
+        </div>
+      </aside>
+    </section>
+  );
+};
+
+const data = [
+  {
+    title: "parameters",
+    color: "bg-pie-100",
+  },
+  {
+    title: "Reward & Referrals",
+    color: "bg-pie-200",
+  },
+  {
+    title: "Intial investors",
+    color: "bg-pie-300",
+  },
+  {
+    title: "presale offering",
+    color: "bg-pie-400",
+  },
+  {
+    title: "product development",
+    color: "bg-pie-500",
+  },
+  {
+    title: "general public",
+    color: "bg-pie-600",
+  },
+
+  {
+    title: "marketing",
+    color: "bg-pie-700",
+  },
+];
+export default PieChart;

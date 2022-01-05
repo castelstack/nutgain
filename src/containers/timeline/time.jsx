@@ -29,7 +29,7 @@ const Time = () => {
                 style={style}
               >
                 <SmText className='text-white ' style={style}>
-                  Quater 1
+                  Quarter 1
                 </SmText>
               </div>
               {el.quarterOne.map((el) => (
@@ -64,26 +64,25 @@ const Time = () => {
                 style={style}
               >
                 <SmText className='text-white ' style={style}>
-                  Quater 2
+                  Quarter 2
                 </SmText>
               </div>
               {el.quarterTwo.map((el) => (
                 <div key={el.id} className='flex flex-col  p-1'>
-                 
-                    <h5 className='text-sm text-white font-bold px-1'>
-                      {el.verified ? (
-                        <i
-                          className='fa fa-check-circle text-base text-green-400'
-                          aria-hidden='true'
-                        ></i>
-                      ) : (
-                        <i
-                          className='fa fa-check-circle text-base text-gray-800'
-                          aria-hidden='true'
-                        ></i>
-                      )}{" "}
-                      {el.desc}
-                    </h5>
+                  <h5 className='text-sm text-white font-bold px-1'>
+                    {el.verified ? (
+                      <i
+                        className='fa fa-check-circle text-base text-green-400'
+                        aria-hidden='true'
+                      ></i>
+                    ) : (
+                      <i
+                        className='fa fa-check-circle text-base text-gray-800'
+                        aria-hidden='true'
+                      ></i>
+                    )}{" "}
+                    {el.desc}
+                  </h5>
                   {el.subDesc.map((el) => (
                     <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
                       {el}
@@ -95,7 +94,7 @@ const Time = () => {
             <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
               <div className=' px-6 w-full py-3 bg-dark-700 mb-2' style={style}>
                 <SmText className='text-white ' style={style}>
-                  Quater 3
+                  Quarter 3
                 </SmText>
               </div>
               {el.quarterThree.map((el) => (
@@ -125,7 +124,7 @@ const Time = () => {
             <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
               <div className=' px-6 w-full py-3 bg-dark-700 mb-2' style={style}>
                 <SmText className='text-white ' style={style}>
-                  Quater 4
+                  Quarter 4
                 </SmText>
               </div>
               {el.quarterFour.map((el) => (
@@ -155,7 +154,7 @@ const Time = () => {
             <div className=' w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch '>
               <div className=' px-6 w-full py-3 bg-dark-700 mb-2' style={style}>
                 <SmText className='text-white ' style={style}>
-                  Quater 5
+                  Quarter 5
                 </SmText>
               </div>
               {el.quarterFive.map((el) => (
@@ -188,68 +187,34 @@ const Time = () => {
 
       {/* second half of project timeline */}
       <div className='my-12'>
-      <Heading className='text-primary-800 font-bold mb-2'>
-        Product Timeline
-      </Heading>
+        <Heading className='text-primary-800 font-bold mb-2'>
+          Product Timeline
+        </Heading>
 
-      <div className='grid gird-cols-1  w-full'>
-        {dataTwo.map((el) => (
-          <div key={el.id} className='flex  items-stretch   '>
-            <div className='flex-col flex w-full px-1'>
-              <Heading className='text-white tracking-wider '>{el.day}</Heading>
-              <SmText className='text-primary-800 text-base font-bold '>
-                {el.title}
-              </SmText>
-            </div>
-
-            <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
-              <div
-                key={el}
-                className=' px-6 w-full py-3 bg-dark-700 mb-2'
-                style={style}
-              >
-                <SmText className='text-white ' style={style}>
-                  Quater 1
+        <div className='grid gird-cols-1  w-full'>
+          {dataTwo.map((el) => (
+            <div key={el.id} className='flex  items-stretch   '>
+              <div className='flex-col flex w-full px-1'>
+                <Heading className='text-white tracking-wider '>
+                  {el.day}
+                </Heading>
+                <SmText className='text-primary-800 text-base font-bold '>
+                  {el.title}
                 </SmText>
               </div>
-              {el.quarterOne.map((el) => (
-                <div key={el.id} className='flex flex-col  p-1'>
-                  <h5 className='text-sm text-white font-bold px-1'>
-                    {el.verified ? (
-                      <i
-                        className='fa fa-check-circle text-base text-green-400'
-                        aria-hidden='true'
-                      ></i>
-                    ) : (
-                      <i
-                        className='fa fa-check-circle text-base text-gray-800'
-                        aria-hidden='true'
-                      ></i>
-                    )}{" "}
-                    {el.desc}
-                  </h5>
-                  {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
-                      {el}
-                    </p>
-                  ))}
+
+              <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+                <div
+                  key={el}
+                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  style={style}
+                >
+                  <SmText className='text-white ' style={style}>
+                    Quarter 1
+                  </SmText>
                 </div>
-              ))}
-            </div>
-
-            <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
-              <div
-                key={el}
-                className=' px-6 w-full py-3 bg-dark-700 mb-2'
-                style={style}
-              >
-                <SmText className='text-white ' style={style}>
-                  Quater 2
-                </SmText>
-              </div>
-              {el.quarterTwo.map((el) => (
-                <div key={el.id} className='flex flex-col  p-1'>
-                  
+                {el.quarterOne.map((el) => (
+                  <div key={el.id} className='flex flex-col  p-1'>
                     <h5 className='text-sm text-white font-bold px-1'>
                       {el.verified ? (
                         <i
@@ -264,110 +229,170 @@ const Time = () => {
                       )}{" "}
                       {el.desc}
                     </h5>
-                  {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
-                      {el}
-                    </p>
-                  ))}
-                </div>
-              ))}
-            </div>
-            <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
-              <div className=' px-6 w-full py-3 bg-dark-700 mb-2' style={style}>
-                <SmText className='text-white ' style={style}>
-                  Quater 3
-                </SmText>
+                    {el.subDesc.map((el) => (
+                      <p
+                        key={el}
+                        className='ml-4 text-sm rounded text-gray-500 '
+                      >
+                        {el}
+                      </p>
+                    ))}
+                  </div>
+                ))}
               </div>
-              {el.quarterThree.map((el) => (
-                <div key={el.id} className='flex flex-col '>
-                  {
-                    el.desc === "" ? "":
-                  <h5 className='text-sm text-white font-bold px-1'>
-                    {el.verified ? (
-                      <i
-                        className='fa fa-check-circle text-base text-green-400'
-                        aria-hidden='true'
-                      ></i>
-                    ) : (
-                      <i
-                        className='fa fa-check-circle text-base text-gray-800'
-                        aria-hidden='true'
-                      ></i>
-                    )}{" "}
-                    {el.desc}
-                  </h5> 
-                  }
-                  {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
-                      {el}
-                    </p>
-                  ))}
+
+              <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+                <div
+                  key={el}
+                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  style={style}
+                >
+                  <SmText className='text-white ' style={style}>
+                    Quarter 2
+                  </SmText>
                 </div>
-              ))}
-            </div>
-            <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
-              <div className=' px-6 w-full py-3 bg-dark-700 mb-2' style={style}>
-                <SmText className='text-white ' style={style}>
-                  Quater 4
-                </SmText>
+                {el.quarterTwo.map((el) => (
+                  <div key={el.id} className='flex flex-col  p-1'>
+                    <h5 className='text-sm text-white font-bold px-1'>
+                      {el.verified ? (
+                        <i
+                          className='fa fa-check-circle text-base text-green-400'
+                          aria-hidden='true'
+                        ></i>
+                      ) : (
+                        <i
+                          className='fa fa-check-circle text-base text-gray-800'
+                          aria-hidden='true'
+                        ></i>
+                      )}{" "}
+                      {el.desc}
+                    </h5>
+                    {el.subDesc.map((el) => (
+                      <p
+                        key={el}
+                        className='ml-4 text-sm rounded text-gray-500 '
+                      >
+                        {el}
+                      </p>
+                    ))}
+                  </div>
+                ))}
               </div>
-              {el.quarterFour.map((el) => (
-                <div key={el.id} className='flex flex-col '>
-                  <h5 className='text-sm text-white font-bold px-1'>
-                    {el.verified ? (
-                      <i
-                        className='fa fa-check-circle text-base text-green-400'
-                        aria-hidden='true'
-                      ></i>
-                    ) : (
-                      <i
-                        className='fa fa-check-circle text-base text-gray-800'
-                        aria-hidden='true'
-                      ></i>
-                    )}{" "}
-                    {el.desc}
-                  </h5>
-                  {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
-                      {el}
-                    </p>
-                  ))}
+              <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+                <div
+                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  style={style}
+                >
+                  <SmText className='text-white ' style={style}>
+                    Quarter 3
+                  </SmText>
                 </div>
-              ))}
-            </div>
-            <div className=' w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch '>
-              <div className=' px-6 w-full py-3 bg-dark-700 mb-2' style={style}>
-                <SmText className='text-white ' style={style}>
-                  Quater 5
-                </SmText>
+                {el.quarterThree.map((el) => (
+                  <div key={el.id} className='flex flex-col '>
+                    {el.desc === "" ? (
+                      ""
+                    ) : (
+                      <h5 className='text-sm text-white font-bold px-1'>
+                        {el.verified ? (
+                          <i
+                            className='fa fa-check-circle text-base text-green-400'
+                            aria-hidden='true'
+                          ></i>
+                        ) : (
+                          <i
+                            className='fa fa-check-circle text-base text-gray-800'
+                            aria-hidden='true'
+                          ></i>
+                        )}{" "}
+                        {el.desc}
+                      </h5>
+                    )}
+                    {el.subDesc.map((el) => (
+                      <p
+                        key={el}
+                        className='ml-4 text-sm rounded text-gray-500 '
+                      >
+                        {el}
+                      </p>
+                    ))}
+                  </div>
+                ))}
               </div>
-              {el.quarterFive.map((el) => (
-                <div key={el.id} className='flex flex-col '>
-                  <h5 className='text-sm text-white font-bold px-1'>
-                    {el.verified ? (
-                      <i
-                        className='fa fa-check-circle text-base text-green-400'
-                        aria-hidden='true'
-                      ></i>
-                    ) : (
-                      <i
-                        className='fa fa-check-circle text-base text-gray-800'
-                        aria-hidden='true'
-                      ></i>
-                    )}{" "}
-                    {el.desc}
-                  </h5>
-                  {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
-                      {el}
-                    </p>
-                  ))}
+              <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+                <div
+                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  style={style}
+                >
+                  <SmText className='text-white ' style={style}>
+                    Quarter 4
+                  </SmText>
                 </div>
-              ))}
+                {el.quarterFour.map((el) => (
+                  <div key={el.id} className='flex flex-col '>
+                    <h5 className='text-sm text-white font-bold px-1'>
+                      {el.verified ? (
+                        <i
+                          className='fa fa-check-circle text-base text-green-400'
+                          aria-hidden='true'
+                        ></i>
+                      ) : (
+                        <i
+                          className='fa fa-check-circle text-base text-gray-800'
+                          aria-hidden='true'
+                        ></i>
+                      )}{" "}
+                      {el.desc}
+                    </h5>
+                    {el.subDesc.map((el) => (
+                      <p
+                        key={el}
+                        className='ml-4 text-sm rounded text-gray-500 '
+                      >
+                        {el}
+                      </p>
+                    ))}
+                  </div>
+                ))}
+              </div>
+              <div className=' w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch '>
+                <div
+                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  style={style}
+                >
+                  <SmText className='text-white ' style={style}>
+                    Quarter 5
+                  </SmText>
+                </div>
+                {el.quarterFive.map((el) => (
+                  <div key={el.id} className='flex flex-col '>
+                    <h5 className='text-sm text-white font-bold px-1'>
+                      {el.verified ? (
+                        <i
+                          className='fa fa-check-circle text-base text-green-400'
+                          aria-hidden='true'
+                        ></i>
+                      ) : (
+                        <i
+                          className='fa fa-check-circle text-base text-gray-800'
+                          aria-hidden='true'
+                        ></i>
+                      )}{" "}
+                      {el.desc}
+                    </h5>
+                    {el.subDesc.map((el) => (
+                      <p
+                        key={el}
+                        className='ml-4 text-sm rounded text-gray-500 '
+                      >
+                        {el}
+                      </p>
+                    ))}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -394,18 +419,20 @@ const data = [
         id: 2,
         verified: true,
         desc: "UI & Domain Finalization",
-        subDesc: ['Swap & Liquidity',
-          'Smart Contract Development',
-          'Yield Farming Integration',
-          'Staking Integration',
-        '  Spin & Win'],
+        subDesc: [
+          "Swap & Liquidity",
+          "Smart Contract Development",
+          "Yield Farming Integration",
+          "Staking Integration",
+          "  Spin & Win",
+        ],
       },
       {
         id: 124,
         verified: true,
         desc: "Conceptualization of Metaverse",
         subDesc: [],
-      }
+      },
     ],
     quarterTwo: [
       {
@@ -427,7 +454,7 @@ const data = [
         verified: false,
         desc: "",
         subDesc: [],
-      }
+      },
     ],
     quarterFour: [
       {
@@ -443,7 +470,7 @@ const data = [
         verified: false,
         desc: "",
         subDesc: [],
-      }
+      },
     ],
   },
   {
@@ -457,11 +484,13 @@ const data = [
         id: 12,
         verified: true,
         desc: "Finalizing the Web 3.0 Functionalities",
-        subDesc: ['Firewall',
-         ' Web Protection',
-         ' Zor Connect – Audio / Chat / Video',
-        '  Secured VPN',
-         ' Play to Earn Games'],
+        subDesc: [
+          "Firewall",
+          " Web Protection",
+          " Zor Connect – Audio / Chat / Video",
+          "  Secured VPN",
+          " Play to Earn Games",
+        ],
       },
       {
         id: 2,
@@ -482,7 +511,7 @@ const data = [
         verified: false,
         desc: "Deployment & Testing on Test Bed",
         subDesc: [],
-      }
+      },
     ],
     quarterThree: [
       {
@@ -491,7 +520,6 @@ const data = [
         desc: "Beta Version Release 11th Sep 2022",
         subDesc: [],
       },
-    
     ],
     quarterFour: [
       {
@@ -499,7 +527,7 @@ const data = [
         verified: false,
         desc: "Go-live on 28th Feb 2023",
         subDesc: [],
-      }
+      },
     ],
     quarterFive: [
       {
@@ -526,7 +554,7 @@ const data = [
         desc: "VR Testing",
         subDesc: [],
       },
-       {
+      {
         id: 101,
         verified: false,
         desc: "Release Web 3.0 with Metaverse",
@@ -542,7 +570,7 @@ const data = [
   },
 ];
 
-// data for mock 
+// data for mock
 const dataTwo = [
   // first
   {
@@ -570,12 +598,12 @@ const dataTwo = [
         desc: "Deployment of Nodes",
         subDesc: [],
       },
-       {
+      {
         id: 125,
         verified: false,
         desc: "Functional Flow of Wallet",
         subDesc: [],
-      }
+      },
     ],
     quarterTwo: [
       {
@@ -606,7 +634,7 @@ const dataTwo = [
     quarterThree: [
       {
         id: 111,
-        verified: '',
+        verified: "",
         desc: "",
         subDesc: [],
       },
@@ -614,7 +642,7 @@ const dataTwo = [
     quarterFour: [
       {
         id: 115,
-        verified: '',
+        verified: "",
         desc: "",
         subDesc: [],
       },
@@ -622,10 +650,10 @@ const dataTwo = [
     quarterFive: [
       {
         id: 1199,
-        verified: '',
+        verified: "",
         desc: "",
         subDesc: [],
-      }
+      },
     ],
   },
   {
@@ -637,10 +665,10 @@ const dataTwo = [
     quarterOne: [
       {
         id: 12,
-        verified:'',
+        verified: "",
         desc: "",
         subDesc: [],
-      }
+      },
     ],
     quarterTwo: [
       {
@@ -648,7 +676,7 @@ const dataTwo = [
         verified: false,
         desc: "UI/UX Development",
         subDesc: [],
-      }
+      },
     ],
     quarterThree: [
       {
@@ -657,7 +685,6 @@ const dataTwo = [
         desc: "Backend Integration",
         subDesc: [],
       },
-    
     ],
     quarterFour: [
       {
@@ -677,7 +704,7 @@ const dataTwo = [
         verified: false,
         desc: "Product Listing",
         subDesc: [],
-      }
+      },
     ],
     quarterFive: [
       {
@@ -697,7 +724,7 @@ const dataTwo = [
         verified: false,
         desc: "Beta Version Release",
         subDesc: [],
-      }
+      },
     ],
   },
 ];

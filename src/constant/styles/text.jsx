@@ -17,7 +17,7 @@ export const MdHeading = ({children, className}) => {
 };
 export const SubText = ({children, className}) => {
     return (
-        <h4 className={`${className} font-primefont-bold lg:text-2xl md:text-xl text-base`} >
+        <h4 className={`${className} font-prime font-bold lg:text-2xl md:text-xl text-base`} >
             {children}
         </h4>
     );
