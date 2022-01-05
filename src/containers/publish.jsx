@@ -14,38 +14,39 @@ import { paddingX } from "../constant/styles/spacing";
 
 const Publish = () => {
   return (
-    <div className=' pt-12 bg-primary-800 flex flex-col gap-12'>
-      <div className={`${paddingX} flex md:flex-nowrap flex-wrap items-start md:gap-12 gap-6 justify-between`}>
+    <div className=" pt-12 bg-primary-800 flex flex-col gap-12">
+      <div
+        className={`${paddingX} flex md:flex-nowrap flex-wrap items-start md:gap-12 gap-6 justify-between`}
+      >
         {company.map((el) => (
-    
-          <div key={el.company} className='flex flex-col justify-items-center items-center'>
-              <a
-          className='z-50'
-            rel='noreferrer'
-            href={el.link}
-            target='_blank'
+          <div
+            key={el.company}
+            className="flex flex-col justify-items-center items-center"
           >
-           <img src={el.image} alt='zor' className='sm:h-32 sm:w-32 h-12 w-12' />
-           
-          </a>
-             <SmText className='text-gray-900 font-bold'>{el.company}</SmText>
+            <a className="z-50" rel="noreferrer" href={el.link} target="_blank">
+              <img
+                src={el.image}
+                alt="zor"
+                className="sm:h-32 sm:w-32 h-12 w-12"
+              />
+            </a>
+            <SmText className="text-gray-900 font-bold">{el.company}</SmText>
           </div>
-       
         ))}
       </div>
-      <div className='flex sm:flex-row flex-col items-center md:gap-20 gap-4 justify-self-end'>
-        <SubText className='w-96 sm:pl-24 pl-4 flex text-gray-900'>
+      <div className="flex sm:flex-row flex-col items-center md:gap-20 gap-4 justify-self-end">
+        <SubText className="w-96 sm:pl-24 pl-4 flex text-gray-900">
           Published By
         </SubText>
         <div
-          className='flex justify-evenly bg-white w-full sm:py-8 py-4'
+          className="flex justify-evenly bg-white w-full sm:py-8 py-4"
           style={{ clipPath: "polygon(22% 0, 100% 0%, 100% 100%, 0% 100%)" }}
         >
           <div></div>
 
-          <img src={yahoo} alt='zor' className='h-32 md:w-1/4 w-32' />
-          
-          <img src={pre} alt='zor' className='h-32 md:w-1/4 w-32' />
+          <img src={yahoo} alt="zor" className="h-32 md:w-1/4 w-32" />
+
+          <img src={pre} alt="zor" className="h-32 md:w-1/4 w-32" />
         </div>
       </div>
     </div>
@@ -56,37 +57,37 @@ const company = [
   {
     image: pb1,
     company: "PancakeSwap",
-    link:'https://pancakeswap.finance/'
+    link: "https://pancakeswap.finance/",
   },
   {
     image: pb5,
     company: "AnyX",
-    link:'www.projectxnft.com'
+    link: "https://www.projectxnft.com",
   },
   {
     image: pb3,
     company: "BscScan",
-    link:'https://bscscan.com/address/0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab'
+    link: "https://bscscan.com/address/0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab",
   },
   {
     image: pb4,
     company: "CoinMarketCap",
-    link:'https://coinmarketcap.com/'
+    link: "https://coinmarketcap.com/",
   },
   {
     image: pb2,
     company: "CoinGecko",
-    link:'https://www.coingecko.com/en'
+    link: "https://www.coingecko.com/en",
   },
   {
     image: pbk,
     company: "Pinksale",
-    link:'https://www.pinksale.finance/#/'
+    link: "https://www.pinksale.finance/#/",
   },
   {
     image: pb6,
     company: "InterFi Network",
-    link:'https://github.com/interfinetwork/smart-contract-audits/blob/main/NutGain_0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab.pdf'
+    link: "https://github.com/interfinetwork/smart-contract-audits/blob/main/NutGain_0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab.pdf",
   },
 ];
 
@@ -105,6 +106,6 @@ export default Publish;
 // Interfi
 // https://github.com/interfinetwork/smart-contract-audits/blob/main/NutGain_0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab.pdf
 
-// Pinksale icon to be addd 
+// Pinksale icon to be addd
 
 // https://www.pinksale.finance/#/
