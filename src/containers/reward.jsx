@@ -1,14 +1,14 @@
 import React from "react";
 // import { paddingX } from "../constant/styles/spacing";
 import { SmText } from "../constant/styles/text";
-// import bg from "../assets/svg/bit.svg";
+import dia from "../assets/svg/dia.svg";
 import gift from "../assets/svg/gift.svg";
 import nft from "../assets/svg/nft.svg";
 import bgward from "../assets/svg/bgward.svg";
 import liner from "../assets/svg/liner.svg";
 import linerl from "../assets/svg/strokel.svg";
 
-import { ReactComponent as Dia } from "../assets/svg/dia.svg";
+// import { ReactComponent as Dia } from "../assets/svg/dia.svg";
 import { ReactComponent as Whole } from "../assets/svg/whole.svg";
 const style = {
   borderRadius: "97px 0px 97px 0px",
@@ -43,7 +43,7 @@ const Reward = () => {
             style={style}
             className='shadow-new-1  flex justify-evenly items-center gap-8 p-12 md:w-3/5 w-full '
           >
-            <Dia className='h-32 w-32' />
+            <img src={dia} alt='reward from nutgain' className='h-32 w-32' />
             {/* <img src={dia} alt='msg ' className='h-24 w-32' /> */}
             <div className='flex flex-col gap-2'>
               <div className='flex flex-col'>
