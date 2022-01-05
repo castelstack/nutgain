@@ -8,10 +8,10 @@ const PieChart = () => {
       <aside className='w-full'>
         <div className=' w-full flex flex-col items-end p-8 gap-8 rounded bg-opacity-5 bg-primary-800'>
           <MdHeading className='text-primary-800 flex'>
-            Total Supply <MdHeading className='text-white'>1,500,000,000</MdHeading>
+            Total Supply <MdHeading className='text-white pl-4'>1,500,000,000</MdHeading>
           </MdHeading>
           <MdHeading className='text-primary-800 flex gap'>
-            Market Cap <MdHeading className='text-white'>1,500,000</MdHeading>
+            Market Cap <MdHeading className='text-white pl-4'>1,500,000</MdHeading>
           </MdHeading>
         </div>
         {/* //   legend */}
@@ -21,7 +21,7 @@ const PieChart = () => {
           </SubText>
           <main className='grid grid-cols-2 justisy-between gap-4'>
             {data.map((el) => (
-              <SmText key={el.title} className='flex items-center gap-3 text-white'>
+              <SmText key={el.title} className='flex capitalize items-center gap-3 text-white'>
                 <span className={`${el.color} w-4 h-4 rounded-full`}></span>
                 {el.title}
               </SmText>

@@ -32,7 +32,7 @@ const Percentage = () => {
                     data.map(el=>
                         <div key={el.title} className='flex flex-col  items-center'>
                             <SubText className='font-extrabold text-primary-800 text-center'>{el.percentage}%</SubText>
-                            <SmText className='text-white w-min text-center'>{el.title}</SmText>
+                            <SmText className='capitalize text-white w-min text-center'>{el.title}</SmText>
                             </div>)
              }
                </div>
