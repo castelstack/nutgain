@@ -8,48 +8,48 @@ const style = {
 const Time = () => {
   return (
     <div className={`${paddingX} bg-dark-800 hidden md:flex flex-col py-12 `}>
-      <Heading className='text-primary-800 font-bold mb-2'>
+      <Heading className="text-primary-800 font-bold mb-2">
         Product Timeline
       </Heading>
 
-      <div className='grid gird-cols-1  w-full'>
+      <div className="grid gird-cols-1  w-full">
         {data.map((el) => (
-          <div key={el.id} className='flex  items-stretch   '>
-            <div className='flex-col flex px-1 w-full'>
-              <Heading className='text-white tracking-wider '>{el.day}</Heading>
-              <SmText className='text-primary-800 text-base font-bold '>
+          <div key={el.id} className="flex  items-stretch   ">
+            <div className="flex-col flex px-1 w-full">
+              <Heading className="text-white tracking-wider ">{el.day}</Heading>
+              <SmText className="text-primary-800 text-base font-bold ">
                 {el.title}
               </SmText>
             </div>
 
-            <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+            <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
               <div
                 key={el}
-                className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
                 style={style}
               >
-                <SmText className='text-white ' style={style}>
+                <SmText className="text-white " style={style}>
                   Quarter 1
                 </SmText>
               </div>
               {el.quarterOne.map((el) => (
-                <div key={el.id} className='flex flex-col  p-1'>
-                  <h5 className='text-sm text-white font-bold px-1'>
+                <div key={el.id} className="flex flex-col  p-1">
+                  <h5 className="text-sm text-white font-bold px-1">
                     {el.verified ? (
                       <i
-                        className='fa fa-check-circle text-base text-green-400'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-green-400"
+                        aria-hidden="true"
                       ></i>
                     ) : (
                       <i
-                        className='fa fa-check-circle text-base text-gray-800'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-gray-800"
+                        aria-hidden="true"
                       ></i>
                     )}{" "}
                     {el.desc}
                   </h5>
                   {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
+                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
                       {el}
                     </p>
                   ))}
@@ -57,124 +57,124 @@ const Time = () => {
               ))}
             </div>
 
-            <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+            <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
               <div
                 key={el}
-                className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
                 style={style}
               >
-                <SmText className='text-white ' style={style}>
+                <SmText className="text-white " style={style}>
                   Quarter 2
                 </SmText>
               </div>
               {el.quarterTwo.map((el) => (
-                <div key={el.id} className='flex flex-col  p-1'>
-                  <h5 className='text-sm text-white font-bold px-1'>
+                <div key={el.id} className="flex flex-col  p-1">
+                  <h5 className="text-sm text-white font-bold px-1">
                     {el.verified ? (
                       <i
-                        className='fa fa-check-circle text-base text-green-400'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-green-400"
+                        aria-hidden="true"
                       ></i>
                     ) : (
                       <i
-                        className='fa fa-check-circle text-base text-gray-800'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-gray-800"
+                        aria-hidden="true"
                       ></i>
                     )}{" "}
                     {el.desc}
                   </h5>
                   {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
+                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
                       {el}
                     </p>
                   ))}
                 </div>
               ))}
             </div>
-            <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
-              <div className=' px-6 w-full py-3 bg-dark-700 mb-2' style={style}>
-                <SmText className='text-white ' style={style}>
+            <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
+              <div className=" px-6 w-full py-3 bg-dark-700 mb-2" style={style}>
+                <SmText className="text-white " style={style}>
                   Quarter 3
                 </SmText>
               </div>
               {el.quarterThree.map((el) => (
-                <div key={el.id} className='flex flex-col '>
-                  <h5 className='text-sm text-white font-bold px-1'>
+                <div key={el.id} className="flex flex-col ">
+                  <h5 className="text-sm text-white font-bold px-1">
                     {el.verified ? (
                       <i
-                        className='fa fa-check-circle text-base text-green-400'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-green-400"
+                        aria-hidden="true"
                       ></i>
                     ) : (
                       <i
-                        className='fa fa-check-circle text-base text-gray-800'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-gray-800"
+                        aria-hidden="true"
                       ></i>
                     )}{" "}
                     {el.desc}
                   </h5>
                   {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
+                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
                       {el}
                     </p>
                   ))}
                 </div>
               ))}
             </div>
-            <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
-              <div className=' px-6 w-full py-3 bg-dark-700 mb-2' style={style}>
-                <SmText className='text-white ' style={style}>
+            <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
+              <div className=" px-6 w-full py-3 bg-dark-700 mb-2" style={style}>
+                <SmText className="text-white " style={style}>
                   Quarter 4
                 </SmText>
               </div>
               {el.quarterFour.map((el) => (
-                <div key={el.id} className='flex flex-col '>
-                  <h5 className='text-sm text-white font-bold px-1'>
+                <div key={el.id} className="flex flex-col ">
+                  <h5 className="text-sm text-white font-bold px-1">
                     {el.verified ? (
                       <i
-                        className='fa fa-check-circle text-base text-green-400'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-green-400"
+                        aria-hidden="true"
                       ></i>
                     ) : (
                       <i
-                        className='fa fa-check-circle text-base text-gray-800'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-gray-800"
+                        aria-hidden="true"
                       ></i>
                     )}{" "}
                     {el.desc}
                   </h5>
                   {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
+                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
                       {el}
                     </p>
                   ))}
                 </div>
               ))}
             </div>
-            <div className=' w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch '>
-              <div className=' px-6 w-full py-3 bg-dark-700 mb-2' style={style}>
-                <SmText className='text-white ' style={style}>
+            <div className=" w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch ">
+              <div className=" px-6 w-full py-3 bg-dark-700 mb-2" style={style}>
+                <SmText className="text-white " style={style}>
                   Quarter 5
                 </SmText>
               </div>
               {el.quarterFive.map((el) => (
-                <div key={el.id} className='flex flex-col '>
-                  <h5 className='text-sm text-white font-bold px-1'>
+                <div key={el.id} className="flex flex-col ">
+                  <h5 className="text-sm text-white font-bold px-1">
                     {el.verified ? (
                       <i
-                        className='fa fa-check-circle text-base text-green-400'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-green-400"
+                        aria-hidden="true"
                       ></i>
                     ) : (
                       <i
-                        className='fa fa-check-circle text-base text-gray-800'
-                        aria-hidden='true'
+                        className="fa fa-check-circle text-base text-gray-800"
+                        aria-hidden="true"
                       ></i>
                     )}{" "}
                     {el.desc}
                   </h5>
                   {el.subDesc.map((el) => (
-                    <p key={el} className='ml-4 text-sm rounded text-gray-500 '>
+                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
                       {el}
                     </p>
                   ))}
@@ -186,45 +186,45 @@ const Time = () => {
       </div>
 
       {/* second half of project timeline */}
-      <div className='my-12'>
-        <Heading className='text-primary-800 font-bold mb-2'>
+      <div className="my-12">
+        <Heading className="text-primary-800 font-bold mb-2">
           Product Timeline
         </Heading>
 
-        <div className='grid gird-cols-1  w-full'>
+        <div className="grid gird-cols-1  w-full">
           {dataTwo.map((el) => (
-            <div key={el.id} className='flex  items-stretch   '>
-              <div className='flex-col flex w-full px-1'>
-                <Heading className='text-white tracking-wider '>
+            <div key={el.id} className="flex  items-stretch   ">
+              <div className="flex-col flex w-full px-1">
+                <Heading className="text-white tracking-wider ">
                   {el.day}
                 </Heading>
-                <SmText className='text-primary-800 text-base font-bold '>
+                <SmText className="text-primary-800 text-base font-bold ">
                   {el.title}
                 </SmText>
               </div>
 
-              <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+              <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
                 <div
                   key={el}
-                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
                   style={style}
                 >
-                  <SmText className='text-white ' style={style}>
+                  <SmText className="text-white " style={style}>
                     Quarter 1
                   </SmText>
                 </div>
                 {el.quarterOne.map((el) => (
-                  <div key={el.id} className='flex flex-col  p-1'>
-                    <h5 className='text-sm text-white font-bold px-1'>
+                  <div key={el.id} className="flex flex-col  p-1">
+                    <h5 className="text-sm text-white font-bold px-1">
                       {el.verified ? (
                         <i
-                          className='fa fa-check-circle text-base text-green-400'
-                          aria-hidden='true'
+                          className="fa fa-check-circle text-base text-green-400"
+                          aria-hidden="true"
                         ></i>
                       ) : (
                         <i
-                          className='fa fa-check-circle text-base text-gray-800'
-                          aria-hidden='true'
+                          className="fa fa-check-circle text-base text-gray-800"
+                          aria-hidden="true"
                         ></i>
                       )}{" "}
                       {el.desc}
@@ -232,7 +232,7 @@ const Time = () => {
                     {el.subDesc.map((el) => (
                       <p
                         key={el}
-                        className='ml-4 text-sm rounded text-gray-500 '
+                        className="ml-4 text-sm rounded text-gray-500 "
                       >
                         {el}
                       </p>
@@ -241,28 +241,28 @@ const Time = () => {
                 ))}
               </div>
 
-              <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+              <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
                 <div
                   key={el}
-                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
                   style={style}
                 >
-                  <SmText className='text-white ' style={style}>
+                  <SmText className="text-white " style={style}>
                     Quarter 2
                   </SmText>
                 </div>
                 {el.quarterTwo.map((el) => (
-                  <div key={el.id} className='flex flex-col  p-1'>
-                    <h5 className='text-sm text-white font-bold px-1'>
+                  <div key={el.id} className="flex flex-col  p-1">
+                    <h5 className="text-sm text-white font-bold px-1">
                       {el.verified ? (
                         <i
-                          className='fa fa-check-circle text-base text-green-400'
-                          aria-hidden='true'
+                          className="fa fa-check-circle text-base text-green-400"
+                          aria-hidden="true"
                         ></i>
                       ) : (
                         <i
-                          className='fa fa-check-circle text-base text-gray-800'
-                          aria-hidden='true'
+                          className="fa fa-check-circle text-base text-gray-800"
+                          aria-hidden="true"
                         ></i>
                       )}{" "}
                       {el.desc}
@@ -270,7 +270,7 @@ const Time = () => {
                     {el.subDesc.map((el) => (
                       <p
                         key={el}
-                        className='ml-4 text-sm rounded text-gray-500 '
+                        className="ml-4 text-sm rounded text-gray-500 "
                       >
                         {el}
                       </p>
@@ -278,30 +278,30 @@ const Time = () => {
                   </div>
                 ))}
               </div>
-              <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+              <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
                 <div
-                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
                   style={style}
                 >
-                  <SmText className='text-white ' style={style}>
+                  <SmText className="text-white " style={style}>
                     Quarter 3
                   </SmText>
                 </div>
                 {el.quarterThree.map((el) => (
-                  <div key={el.id} className='flex flex-col '>
+                  <div key={el.id} className="flex flex-col ">
                     {el.desc === "" ? (
                       ""
                     ) : (
-                      <h5 className='text-sm text-white font-bold px-1'>
+                      <h5 className="text-sm text-white font-bold px-1">
                         {el.verified ? (
                           <i
-                            className='fa fa-check-circle text-base text-green-400'
-                            aria-hidden='true'
+                            className="fa fa-check-circle text-base text-green-400"
+                            aria-hidden="true"
                           ></i>
                         ) : (
                           <i
-                            className='fa fa-check-circle text-base text-gray-800'
-                            aria-hidden='true'
+                            className="fa fa-check-circle text-base text-gray-800"
+                            aria-hidden="true"
                           ></i>
                         )}{" "}
                         {el.desc}
@@ -310,7 +310,7 @@ const Time = () => {
                     {el.subDesc.map((el) => (
                       <p
                         key={el}
-                        className='ml-4 text-sm rounded text-gray-500 '
+                        className="ml-4 text-sm rounded text-gray-500 "
                       >
                         {el}
                       </p>
@@ -318,27 +318,27 @@ const Time = () => {
                   </div>
                 ))}
               </div>
-              <div className='w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch'>
+              <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
                 <div
-                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
                   style={style}
                 >
-                  <SmText className='text-white ' style={style}>
+                  <SmText className="text-white " style={style}>
                     Quarter 4
                   </SmText>
                 </div>
                 {el.quarterFour.map((el) => (
-                  <div key={el.id} className='flex flex-col '>
-                    <h5 className='text-sm text-white font-bold px-1'>
+                  <div key={el.id} className="flex flex-col ">
+                    <h5 className="text-sm text-white font-bold px-1">
                       {el.verified ? (
                         <i
-                          className='fa fa-check-circle text-base text-green-400'
-                          aria-hidden='true'
+                          className="fa fa-check-circle text-base text-green-400"
+                          aria-hidden="true"
                         ></i>
                       ) : (
                         <i
-                          className='fa fa-check-circle text-base text-gray-800'
-                          aria-hidden='true'
+                          className="fa fa-check-circle text-base text-gray-800"
+                          aria-hidden="true"
                         ></i>
                       )}{" "}
                       {el.desc}
@@ -346,7 +346,7 @@ const Time = () => {
                     {el.subDesc.map((el) => (
                       <p
                         key={el}
-                        className='ml-4 text-sm rounded text-gray-500 '
+                        className="ml-4 text-sm rounded text-gray-500 "
                       >
                         {el}
                       </p>
@@ -354,27 +354,27 @@ const Time = () => {
                   </div>
                 ))}
               </div>
-              <div className=' w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch '>
+              <div className=" w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch ">
                 <div
-                  className=' px-6 w-full py-3 bg-dark-700 mb-2'
+                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
                   style={style}
                 >
-                  <SmText className='text-white ' style={style}>
+                  <SmText className="text-white " style={style}>
                     Quarter 5
                   </SmText>
                 </div>
                 {el.quarterFive.map((el) => (
-                  <div key={el.id} className='flex flex-col '>
-                    <h5 className='text-sm text-white font-bold px-1'>
+                  <div key={el.id} className="flex flex-col ">
+                    <h5 className="text-sm text-white font-bold px-1">
                       {el.verified ? (
                         <i
-                          className='fa fa-check-circle text-base text-green-400'
-                          aria-hidden='true'
+                          className="fa fa-check-circle text-base text-green-400"
+                          aria-hidden="true"
                         ></i>
                       ) : (
                         <i
-                          className='fa fa-check-circle text-base text-gray-800'
-                          aria-hidden='true'
+                          className="fa fa-check-circle text-base text-gray-800"
+                          aria-hidden="true"
                         ></i>
                       )}{" "}
                       {el.desc}
@@ -382,7 +382,7 @@ const Time = () => {
                     {el.subDesc.map((el) => (
                       <p
                         key={el}
-                        className='ml-4 text-sm rounded text-gray-500 '
+                        className="ml-4 text-sm rounded text-gray-500 "
                       >
                         {el}
                       </p>

@@ -21,109 +21,137 @@ const Footer = () => {
   };
 
   return (
-    <div className='bg-dark-900'>
+    <div className="bg-dark-900">
       <div
         style={style}
         className={`${paddingX} flex flex-col gap-12 items-start  py-12`}
       >
-        <img src={logo} alt='nutgain logo' className='h-12 w-32' />
+        <img src={logo} alt="nutgain logo" className="h-12 w-32" />
         {/* footer list */}
-        <div className='flex md:flex-row flex-col gap-8 items-start w-full justify-between'>
-          <div className='flex flex-col'>
-            <SubText className='font-bold text-white'>Product</SubText>
-            <div className='flex flex-col gap-3 '>
+        <div className="flex md:flex-row flex-col gap-8 items-start w-full justify-between">
+          <div className="flex flex-col">
+            <SubText className="font-bold text-white">Product</SubText>
+            <div className="flex flex-col gap-3 ">
               {products.map((el) => (
-                <SmText key={el} className='text-white capitalize'>
+                <SmText key={el} className="text-white capitalize">
                   {el}
                 </SmText>
               ))}
             </div>
           </div>
-          <div className='flex flex-col'>
-            <SubText className='font-bold text-white'>Site</SubText>
-            <div className='flex flex-col gap-3 '>
+          <div className="flex flex-col">
+            <SubText className="font-bold text-white">Site</SubText>
+            <div className="flex flex-col gap-3 ">
               {site.map((el) => (
-                <SmText key={el} className='text-white capitalize'>
+                <SmText key={el} className="text-white capitalize">
                   {el}
                 </SmText>
               ))}
             </div>
           </div>
-          <div className='flex flex-col'>
-            <SubText className='font-bold text-white'>Help</SubText>
-            <div className='flex flex-col gap-3 '>
+          <div className="flex flex-col">
+            <SubText className="font-bold text-white">Help</SubText>
+            <div className="flex flex-col gap-3 ">
               {help.map((el) => (
-                <SmText key={el} className='text-white capitalize'>
+                <SmText key={el} className="text-white capitalize">
                   {el}
                 </SmText>
               ))}
             </div>
           </div>
-          <div className='flex flex-col gap-2'>
-          <div className='flex flex-col'>
-            <SubText className='font-bold text-white'>Contact Us</SubText>
-            <div className='flex gap-1 items-start'>
-            <a
-                rel='noreferrer'
-                href='https://t.me/nutgainofficial/'
-                target='_blank'
-              >
-                <img src={tel} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
-              </a>
-              <a
-                rel='noreferrer'
-                href='https://twitter.com/nutgainofficial/'
-                target='_blank'
-              >
-                <img src={twitter} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
-              </a>
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-col">
+              <SubText className="font-bold text-white">Contact Us</SubText>
+              <div className="flex gap-1 items-start">
+                <a
+                  rel="noreferrer"
+                  href="https://t.me/nutgainofficial/"
+                  target="_blank"
+                >
+                  <img
+                    src={tel}
+                    alt="insta"
+                    className="md:h-20 md:w-20 h-12 w-12"
+                  />
+                </a>
+                <a
+                  rel="noreferrer"
+                  href="https://twitter.com/nutgainofficial/"
+                  target="_blank"
+                >
+                  <img
+                    src={twitter}
+                    alt="insta"
+                    className="md:h-20 md:w-20 h-12 w-12"
+                  />
+                </a>
+              </div>
             </div>
-            </div>
-          <div className='flex flex-col'>
-            <SubText className='font-bold text-white'>Our Pages</SubText>
-            <div className='flex gap-1 items-start'>
-            <a
-                rel='noreferrer'
-                href='https://www.facebook.com/nutgain/'
-                target='_blank'
-              >
-                <img src={fb} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
-              </a>
-              <a
-                rel='noreferrer'
-                href='https://instagram.com/nutgainofficial/'
-                target='_blank'
-              >
-                <img src={insta} alt='insta' className='md:h-20 md:w-20 h-12 w-12' />
-              </a>
-              <a
-                href='https://linkedin.com/company/nutgain'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={linkdin} alt='linkdin logo' className='md:h-20 md:w-20 h-12 w-12' />
-              </a>
-              <a
-                href='https://nutgain.medium.com'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={msg} alt='msg ' className='md:h-20 md:w-20 h-12 w-12' />
-              </a>
-              <a
-                href='https://www.reddit.com/user/nutgainofficial'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <img src={cup} alt='cup ' className='md:h-20 md:w-20 h-12 w-12' />
-              </a>
-            </div>
+            <div className="flex flex-col">
+              <SubText className="font-bold text-white">Our Pages</SubText>
+              <div className="flex gap-1 items-start">
+                <a
+                  rel="noreferrer"
+                  href="https://www.facebook.com/nutgain/"
+                  target="_blank"
+                >
+                  <img
+                    src={fb}
+                    alt="insta"
+                    className="md:h-20 md:w-20 h-12 w-12"
+                  />
+                </a>
+                <a
+                  rel="noreferrer"
+                  href="https://instagram.com/nutgainofficial/"
+                  target="_blank"
+                >
+                  <img
+                    src={insta}
+                    alt="insta"
+                    className="md:h-20 md:w-20 h-12 w-12"
+                  />
+                </a>
+                <a
+                  href="https://linkedin.com/company/nutgain"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={linkdin}
+                    alt="linkdin logo"
+                    className="md:h-20 md:w-20 h-12 w-12"
+                  />
+                </a>
+                <a
+                  href="https://nutgain.medium.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={msg}
+                    alt="msg "
+                    className="md:h-20 md:w-20 h-12 w-12"
+                  />
+                </a>
+                <a
+                  href="https://www.reddit.com/user/nutgainofficial"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={cup}
+                    alt="cup "
+                    className="md:h-20 md:w-20 h-12 w-12"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <hr className='text-white py-1' />
+        <hr className="text-white py-1" />
 
-        <p className='text-white text-sm tracking-wider'>
+        <p className="text-white text-sm tracking-wider">
           Copyright &copy;2021 NutGain All right reserved.
         </p>
       </div>

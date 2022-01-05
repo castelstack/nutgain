@@ -35,88 +35,111 @@ const style = {
 // hero component
 const Hero = () => {
   return (
-    <div className='bg-dark-800'>
+    <div className="bg-dark-800">
       <div
         style={style}
         className={`${paddingX} flex flex-col gap-8 relative    py-12`}
       >
-        <div className='flex flex-row  justify-between w-full items-center '>
-          <img src={logo} alt='nutgain logo' className='h-12 w-32' />
+        <div className="flex flex-row  justify-between w-full items-center ">
+          <img src={logo} alt="nutgain logo" className="h-12 w-32" />
 
           <a
-          className='z-50'
-            rel='noreferrer'
-            href='https://online.flippingbook.com/view/956899460'
-            target='_blank'
+            className="z-50"
+            rel="noreferrer"
+            href="https://online.flippingbook.com/view/956899460"
+            target="_blank"
           >
             <Button>Whitepaper</Button>
           </a>
         </div>
-        <div className='grid md:grid-cols-2 grid-cols-1 gap-8 z-30'>
-          <div className='flex flex-col gap-8'>
-            <Heading className='text-white'>NutGain Ecosystem</Heading>
-            <SmText className='text-primary-200'>
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 z-30">
+          <div className="flex flex-col gap-8">
+            <Heading className="text-white">NutGain Ecosystem</Heading>
+            <SmText className="text-primary-200">
               NutGain is a security protocol offering users and developers
               powerful tools including Web3, DeFi, Metaverse, NFT, Crypto
               Wallet, D-Hyper Ecommerce and dApps.
             </SmText>
             <CountdownView />
-            <div className='flex gap-4 items-center'>
+            <div className="flex gap-4 items-center">
               <Button>Buy Now</Button>
-              
+
               <a
-            rel='noreferrer'
-            href='https://forms.gle/g8A7L46t6Cdd2Vm26'
-            target='_blank'
-          >
-         
-              <Button>Whitelist your Wallet</Button>
-          </a>
+                rel="noreferrer"
+                href="https://forms.gle/g8A7L46t6Cdd2Vm26"
+                target="_blank"
+              >
+                <Button>Whitelist your Wallet</Button>
+              </a>
             </div>
-            <div className='flex gap-2 items-center'>
-            <a className='z-50'
-                rel='noreferrer'
-                href='https://t.me/nutgainofficial/'
-                target='_blank'
+            <div className="flex gap-2 items-center">
+              <a
+                className="z-50"
+                rel="noreferrer"
+                href="https://t.me/nutgainofficial/"
+                target="_blank"
               >
-                <img src={tel} alt='twitter' className='md:h-20 md:w-20 h-12 w-12' />
+                <img
+                  src={tel}
+                  alt="twitter"
+                  className="md:h-20 md:w-20 h-12 w-12"
+                />
               </a>
-              <a 
-           className='z-50'
-                rel='noreferrer'
-                href='https://twitter.com/nutgainofficial/'
-                target='_blank'
+              <a
+                className="z-50"
+                rel="noreferrer"
+                href="https://twitter.com/nutgainofficial/"
+                target="_blank"
               >
-                <img src={twitter} alt='insta' className='md:h-20 md:w-20 h-12 w-12 z-50' />
+                <img
+                  src={twitter}
+                  alt="insta"
+                  className="md:h-20 md:w-20 h-12 w-12 z-50"
+                />
               </a>
-            
-              <a className='z-50'
-                href='https://linkedin.com/company/nutgain'
-                target='_blank'
-                rel='noreferrer'
+
+              <a
+                className="z-50"
+                href="https://linkedin.com/company/nutgain"
+                target="_blank"
+                rel="noreferrer"
               >
-                <img src={linkdin} alt='linkdin logo' className='md:h-20 md:w-20 h-12 w-12' />
+                <img
+                  src={linkdin}
+                  alt="linkdin logo"
+                  className="md:h-20 md:w-20 h-12 w-12"
+                />
               </a>
-              <a className='z-50'
-                href='https://nutgain.medium.com'
-                target='_blank'
-                rel='noreferrer'
+              <a
+                className="z-50"
+                href="https://nutgain.medium.com"
+                target="_blank"
+                rel="noreferrer"
               >
-                <img src={msg} alt='msg ' className='md:h-20 md:w-20 h-12 w-12' />
+                <img
+                  src={msg}
+                  alt="msg "
+                  className="md:h-20 md:w-20 h-12 w-12"
+                />
               </a>
-              <a className='z-50'
-                href='https://www.reddit.com/user/nutgainofficial'
-                target='_blank'
-                rel='noreferrer'
+              <a
+                className="z-50"
+                href="https://www.reddit.com/user/nutgainofficial"
+                target="_blank"
+                rel="noreferrer"
               >
-                <img src={cup} alt='cup ' className='md:h-20 md:w-20 h-12 w-12' />
+                <img
+                  src={cup}
+                  alt="cup "
+                  className="md:h-20 md:w-20 h-12 w-12"
+                />
               </a>
             </div>
             <div>
               <img
                 src={squ}
-                alt='cup '
-                className=' absolute h-full w-full -bottom-20 -right-80 bg-no-repeat md:block hidden z-0'
+                alt="cup "
+                className=" absolute h-full w-full -bottom-20 -right-80 bg-no-repeat md:block hidden z-0"
               />
             </div>
           </div>
