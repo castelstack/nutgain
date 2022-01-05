@@ -90,10 +90,10 @@ const Redistro = () => {
             </div>
             <div className='grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4'>
               <SmText className='text-gray-900 px-4 w-full text-center'>
-                2.33
+                5.5%
               </SmText>
               <SmText className='text-gray-900 px-4 w-full text-center'>
-                4.65
+                4.25%
               </SmText>
             </div>
           </div>

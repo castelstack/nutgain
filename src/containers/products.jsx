@@ -139,7 +139,7 @@ const Products = () => {
             <img src={pro3} alt="zor" className="h-80 py-2 w-full" />
           </div>
           <div>
-            <SubText className="text-white mb-4">E-hype E-commerce</SubText>
+            <SubText className="text-white mb-4">D-Hyper E-commerce</SubText>
             <SmText className="text-white">
               Presenting NutGain Decentralized Hyper Ecommerce platform. It is
               connected to NutGain’s Web3 browser called ZOR.

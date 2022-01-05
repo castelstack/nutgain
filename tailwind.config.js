@@ -6,13 +6,12 @@
 //   plugins: [],
 // }
 module.exports = {
+  content: [
+    "./src/**/**/*.{js,jsx,ts,tsx}",
+    "./*.{js,jsx,ts,tsx}, ./public/index.html',",
+  ],
+  // These options are passed through directly to PurgeCSS
 
-    content: [
-      "./src/**/**/*.{js,jsx,ts,tsx}",
-      "./*.{js,jsx,ts,tsx}, ./public/index.html',",
-    ],
-    // These options are passed through directly to PurgeCSS
-  
   darkMode: "class",
   theme: {
     extend: {
@@ -38,9 +37,18 @@ module.exports = {
           800: "#FFC350",
           900: "#7F4556",
         },
+        pie: {
+           100: "#DDB798",
+          200: "#FFCA64",
+          300: "#F6E5CF",
+          400: "#EF792B",
+          500: "#FEAE16",
+          600: "#BD772F",
+          700: "#854220",
+        },
         dark: {
           500: "#1D1D1D",
-        600: "#303030",
+          600: "#303030",
           700: "#2F2F2F",
           800: "#151515",
           900: "#1A1A1A",
@@ -71,10 +79,8 @@ module.exports = {
         none: "none",
         new: " rgba(0, 0, 0, 0.15) 0px 5px 15px 0px",
         white: " rgba(0, 0, 0, 0.1) 0px 4px 12px",
-        "new-1":
-          "1px 0px 5px 0px rgba(255,255,255,0.75)",
-        "new-2":
-          "0 0 0 1px rgba(0, 0, 0, 0.16)",
+        "new-1": "1px 0px 5px 0px rgba(255,255,255,0.75)",
+        "new-2": "0 0 0 1px rgba(0, 0, 0, 0.16)",
         "new-3":
           " rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
         "new-4": "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;",
@@ -92,8 +98,8 @@ module.exports = {
       fontFamily: {
         prime: ["Montserrat", "sans-serif"],
         inter: ["Inter", "sans-serif"],
-        exo:['Exo 2', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
+        exo: ["Exo 2", "sans-serif"],
+        serif: ["Merriweather", "serif"],
       },
       fontSize: {
         xs: "0.75rem",

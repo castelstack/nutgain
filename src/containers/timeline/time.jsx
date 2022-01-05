@@ -659,7 +659,7 @@ const dataTwo = [
   {
     id: 2,
     day: "04",
-    title: "Hyper E-commerce",
+    title: "D-Hyper E-commerce",
     year: 2020,
 
     quarterOne: [
