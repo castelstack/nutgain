@@ -31,19 +31,19 @@ const Browser = () => {
           style={{ borderRadius: "60px 0px 60px 0px" }}
         >
           <div
-            className="relative hidden md:flex flex-col overflow-none bg-primary-800 overflow-none"
+            className="relative hidden md:flex flex-col overflow-none overflow-none"
             style={{ borderRadius: "60px 0px 0px 0px" }}
           >
             <img
               src={hero}
-              className="h-full z-0 absolute -top-20 left-8"
+              className="h-full z-0 absolute left-8"
               alt="web3.0 browser"
             />
-            <img
+            {/* <img
               src={hero1}
               className="h-full z-20 absolute -bottom-96 left-0"
               alt="web3.0 browser"
-            />
+            /> */}
             {/* <Hero className='w-full' /> */}
           </div>
           {/* features of web3 browser */}
