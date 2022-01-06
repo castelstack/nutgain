@@ -42,10 +42,12 @@ const Footer = () => {
           <div className="flex flex-col">
             <SubText className="font-bold text-white">Site</SubText>
             <div className="flex flex-col gap-3 ">
-              {site.map((el) => (
-                <SmText key={el} className="text-white capitalize">
-                  {el}
+              {site.map((el, index) => (
+                <a href={el.link}>
+                <SmText key={index} className="text-white capitalize">
+                  {el.name}
                 </SmText>
+                </a>
               ))}
             </div>
           </div>
@@ -171,10 +173,22 @@ const products = [
 ];
 
 const site = [
-  "privacy policy",
-  "terms and conditions",
-  "career oppurtunity",
-  "report a security issue",
+  {
+    name :  "privacy policy",
+    link: 'https://www.privacypolicies.com/live/9423dd98-c6ba-4561-80c0-4f8204f965c4'
+  },
+  {
+    name:  "terms and conditions",
+    link: 'https://www.privacypolicies.com/live/49161a43-e3be-4dbc-97dd-a155424f793c'
+  },
+  {
+    name :  "career oppurtunity",
+    link: '#'
+  },
+  {
+    name:  "report a security issue",
+    link: '#'
+  },
 ];
 const help = [
   {
