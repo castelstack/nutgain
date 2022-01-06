@@ -6,9 +6,7 @@ const styleDiv = {
   background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`,
 };
 // Random component
-const Completionist = () => (
-  <Button>Buy Now</Button> 
-);
+const Completionist = () => <Button>Buy Now</Button>;
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
@@ -61,7 +59,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 
 export const CountdownView = () => (
   <Countdown
-    date={new Date("2022-01-10T00:00:00").setHours(0, 0, 0)}
+    date={new Date("2022-01-15T00:00:00").setHours(0, 0, 0)}
     renderer={renderer}
   />
 );

@@ -62,7 +62,7 @@ const company = [
   {
     image: pb5,
     company: "AnyX",
-    link: "https://www.projectxnft.com",
+    link: "https://anyx.app",
   },
   {
     image: pb3,

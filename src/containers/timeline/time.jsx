@@ -29,7 +29,7 @@ const Time = () => {
                 style={style}
               >
                 <SmText className="text-white " style={style}>
-                  Quarter 1
+                  Phase 1
                 </SmText>
               </div>
               {el.quarterOne.map((el) => (
@@ -64,7 +64,7 @@ const Time = () => {
                 style={style}
               >
                 <SmText className="text-white " style={style}>
-                  Quarter 2
+                  Phase 2
                 </SmText>
               </div>
               {el.quarterTwo.map((el) => (
@@ -94,7 +94,7 @@ const Time = () => {
             <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
               <div className=" px-6 w-full py-3 bg-dark-700 mb-2" style={style}>
                 <SmText className="text-white " style={style}>
-                  Quarter 3
+                  Phase 3
                 </SmText>
               </div>
               {el.quarterThree.map((el) => (
@@ -124,7 +124,7 @@ const Time = () => {
             <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
               <div className=" px-6 w-full py-3 bg-dark-700 mb-2" style={style}>
                 <SmText className="text-white " style={style}>
-                  Quarter 4
+                  Phase 4
                 </SmText>
               </div>
               {el.quarterFour.map((el) => (
@@ -154,7 +154,7 @@ const Time = () => {
             <div className=" w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch ">
               <div className=" px-6 w-full py-3 bg-dark-700 mb-2" style={style}>
                 <SmText className="text-white " style={style}>
-                  Quarter 5
+                  Phase 5
                 </SmText>
               </div>
               {el.quarterFive.map((el) => (
@@ -210,7 +210,7 @@ const Time = () => {
                   style={style}
                 >
                   <SmText className="text-white " style={style}>
-                    Quarter 1
+                    Phase 1
                   </SmText>
                 </div>
                 {el.quarterOne.map((el) => (
@@ -248,7 +248,7 @@ const Time = () => {
                   style={style}
                 >
                   <SmText className="text-white " style={style}>
-                    Quarter 2
+                    Phase 2
                   </SmText>
                 </div>
                 {el.quarterTwo.map((el) => (
@@ -284,7 +284,7 @@ const Time = () => {
                   style={style}
                 >
                   <SmText className="text-white " style={style}>
-                    Quarter 3
+                    Phase 3
                   </SmText>
                 </div>
                 {el.quarterThree.map((el) => (
@@ -324,7 +324,7 @@ const Time = () => {
                   style={style}
                 >
                   <SmText className="text-white " style={style}>
-                    Quarter 4
+                    Phase 4
                   </SmText>
                 </div>
                 {el.quarterFour.map((el) => (
@@ -360,7 +360,7 @@ const Time = () => {
                   style={style}
                 >
                   <SmText className="text-white " style={style}>
-                    Quarter 5
+                    Phase 5
                   </SmText>
                 </div>
                 {el.quarterFive.map((el) => (

@@ -53,16 +53,9 @@ const Footer = () => {
             <SubText className="font-bold text-white">Help</SubText>
             <div className="flex flex-col gap-3 ">
               {help.map((el) => (
-                 <a
-                 key={el}
-                 rel="noreferrer"
-                 href={el.link}
-                 target="_blank"
-               >
-                <SmText  className="text-white capitalize">
-                  {el.title}
-                </SmText>
-               </a>
+                <a key={el} rel="noreferrer" href={el.link} target="_blank">
+                  <SmText className="text-white capitalize">{el.title}</SmText>
+                </a>
               ))}
             </div>
           </div>
@@ -72,7 +65,7 @@ const Footer = () => {
               <div className="flex gap-1 items-start">
                 <a
                   rel="noreferrer"
-                  href="https://t.me/nutgainofficial/"
+                  href="https://t.me/Nutgaincommunity/"
                   target="_blank"
                 >
                   <img
@@ -183,13 +176,13 @@ const site = [
   "career oppurtunity",
   "report a security issue",
 ];
-const help =[
+const help = [
   {
-    title:'FAQ',
-    link:''
+    title: "FAQ",
+    link: "",
   },
   {
-    title:'Legal and risk disclaimer',
-    link:'https://github.com/nutgain/Legal-and-risk-disclaimer/wiki/Risk-&-Legal-Disclaimer'
-  }
-] 
+    title: "Legal and risk disclaimer",
+    link: "https://github.com/nutgain/Legal-and-risk-disclaimer/wiki/Risk-&-Legal-Disclaimer",
+  },
+];

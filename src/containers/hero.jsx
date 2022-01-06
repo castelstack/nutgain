@@ -56,9 +56,9 @@ const Hero = () => {
           <div className="flex flex-col gap-8">
             <Heading className="text-white">NutGain Ecosystem</Heading>
             <SmText className="text-primary-200">
-              NutGain is a security protocol offering users and developers
-              powerful tools including Web3, DeFi, Metaverse, NFT, Crypto
-              Wallet, D-Hyper Ecommerce and dApps.
+              NutGain is offering users and developers powerful tools including
+              Web3, DeFi, Metaverse, NFT, Crypto Wallet, D-Hyper Ecommerce and
+              dApps.
             </SmText>
             <CountdownView />
             <div className="flex gap-4 py-2 items-center">
@@ -76,7 +76,7 @@ const Hero = () => {
               <a
                 className="z-50"
                 rel="noreferrer"
-                href="https://t.me/nutgainofficial/"
+                href="https://t.me/Nutgaincommunity/"
                 target="_blank"
               >
                 <img
@@ -98,7 +98,7 @@ const Hero = () => {
                 />
               </a>
 
-              <a
+              {/* <a
                 className="z-50"
                 href="https://linkedin.com/company/nutgain"
                 target="_blank"
@@ -109,8 +109,8 @@ const Hero = () => {
                   alt="linkdin logo"
                   className="md:h-14 md:w-14 h-12 w-12"
                 />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 className="z-50"
                 href="https://nutgain.medium.com"
                 target="_blank"
@@ -121,8 +121,8 @@ const Hero = () => {
                   alt="msg "
                   className="md:h-14 md:w-14 h-12 w-12"
                 />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 className="z-50"
                 href="https://www.reddit.com/user/nutgainofficial"
                 target="_blank"
@@ -133,7 +133,7 @@ const Hero = () => {
                   alt="cup "
                   className="md:h-14 md:w-14 h-12 w-12"
                 />
-              </a>
+              </a> */}
             </div>
             <div>
               <img
