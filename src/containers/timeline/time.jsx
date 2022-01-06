@@ -13,7 +13,7 @@ const Time = () => {
       </Heading>
 
       <div className="grid gird-cols-1  w-full">
-        {data.map((el) => (
+        {data.map((el, index) => (
           <div key={el.id} className="flex  items-stretch   ">
             <div className="flex-col flex px-1 w-full">
               <Heading className="text-white tracking-wider ">{el.day}</Heading>
@@ -22,16 +22,20 @@ const Time = () => {
               </SmText>
             </div>
 
-            <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
+            <div className={`w-full ${data.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}>            
+            {index == 0 && (
               <div
                 key={el}
                 className=" px-6 w-full py-3 bg-dark-700 mb-2"
                 style={style}
-              >
+                >
+               
                 <SmText className="text-white " style={style}>
-                  Phase 1
+                  Quarter 1, 2022
                 </SmText>
               </div>
+              )}
+                 
               {el.quarterOne.map((el) => (
                 <div key={el.id} className="flex flex-col  p-1">
                   <h5 className="text-sm text-white font-bold px-1">
@@ -56,17 +60,20 @@ const Time = () => {
                 </div>
               ))}
             </div>
-
-            <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
+            <div className={`w-full ${data.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}>
+           
+            {index == 0 && (
               <div
                 key={el}
                 className=" px-6 w-full py-3 bg-dark-700 mb-2"
                 style={style}
-              >
+                >
+               
                 <SmText className="text-white " style={style}>
-                  Phase 2
+                  Quarter 3, 2022
                 </SmText>
               </div>
+              )}
               {el.quarterTwo.map((el) => (
                 <div key={el.id} className="flex flex-col  p-1">
                   <h5 className="text-sm text-white font-bold px-1">
@@ -91,13 +98,20 @@ const Time = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
-              <div className=" px-6 w-full py-3 bg-dark-700 mb-2" style={style}>
+
+            <div className={`w-full ${data.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}>          
+            {index == 0 && (
+              <div
+                key={el}
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
+                style={style}
+                >
+               
                 <SmText className="text-white " style={style}>
-                  Phase 3
+                  Quarter 3, 2022
                 </SmText>
               </div>
-              {el.quarterThree.map((el) => (
+              )}   {el.quarterThree.map((el) => (
                 <div key={el.id} className="flex flex-col ">
                   <h5 className="text-sm text-white font-bold px-1">
                     {el.verified ? (
@@ -121,12 +135,20 @@ const Time = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
-              <div className=" px-6 w-full py-3 bg-dark-700 mb-2" style={style}>
+            <div className={`w-full ${data.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}>
+           
+           {index == 0 && (
+              <div
+                key={el}
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
+                style={style}
+                >
+               
                 <SmText className="text-white " style={style}>
-                  Phase 4
+                  Quarter 5, 2022
                 </SmText>
               </div>
+              )}
               {el.quarterFour.map((el) => (
                 <div key={el.id} className="flex flex-col ">
                   <h5 className="text-sm text-white font-bold px-1">
@@ -151,12 +173,20 @@ const Time = () => {
                 </div>
               ))}
             </div>
-            <div className=" w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch ">
-              <div className=" px-6 w-full py-3 bg-dark-700 mb-2" style={style}>
+            <div className={`w-full ${data.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}>
+           
+           {index == 0 && (
+              <div
+                key={el}
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
+                style={style}
+                >
+               
                 <SmText className="text-white " style={style}>
-                  Phase 5
+                  Quarter 5, 2022
                 </SmText>
               </div>
+              )}
               {el.quarterFive.map((el) => (
                 <div key={el.id} className="flex flex-col ">
                   <h5 className="text-sm text-white font-bold px-1">
@@ -192,7 +222,7 @@ const Time = () => {
         </Heading>
 
         <div className="grid gird-cols-1  w-full">
-          {dataTwo.map((el) => (
+          {dataTwo.map((el, index) => (
             <div key={el.id} className="flex  items-stretch   ">
               <div className="flex-col flex w-full px-1">
                 <Heading className="text-white tracking-wider ">
@@ -203,16 +233,20 @@ const Time = () => {
                 </SmText>
               </div>
 
-              <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
-                <div
-                  key={el}
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
+              <div className={`w-full ${dataTwo.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}>
+            {index == 0 && (
+              <div
+                key={el}
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
+                style={style}
                 >
-                  <SmText className="text-white " style={style}>
-                    Phase 1
-                  </SmText>
-                </div>
+               
+                <SmText className="text-white " style={style}>
+                  Quarter 3, 2022
+                </SmText>
+              </div>
+              )}
+                
                 {el.quarterOne.map((el) => (
                   <div key={el.id} className="flex flex-col  p-1">
                     <h5 className="text-sm text-white font-bold px-1">
@@ -241,16 +275,19 @@ const Time = () => {
                 ))}
               </div>
 
-              <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
-                <div
-                  key={el}
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
+              <div className={`w-full ${dataTwo.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}> 
+              {index == 0 && (
+              <div
+                key={el}
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
+                style={style}
                 >
-                  <SmText className="text-white " style={style}>
-                    Phase 2
-                  </SmText>
-                </div>
+               
+                <SmText className="text-white " style={style}>
+                  Quarter 6, 2022
+                </SmText>
+              </div>
+              )}
                 {el.quarterTwo.map((el) => (
                   <div key={el.id} className="flex flex-col  p-1">
                     <h5 className="text-sm text-white font-bold px-1">
@@ -278,15 +315,19 @@ const Time = () => {
                   </div>
                 ))}
               </div>
-              <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
-                <div
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
+              <div className={`w-full ${dataTwo.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}>
+            {index == 0 && (
+              <div
+                key={el}
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
+                style={style}
                 >
-                  <SmText className="text-white " style={style}>
-                    Phase 3
-                  </SmText>
-                </div>
+               
+                <SmText className="text-white " style={style}>
+                  Quarter 2, 2022
+                </SmText>
+              </div>
+              )}
                 {el.quarterThree.map((el) => (
                   <div key={el.id} className="flex flex-col ">
                     {el.desc === "" ? (
@@ -318,15 +359,20 @@ const Time = () => {
                   </div>
                 ))}
               </div>
-              <div className="w-full   border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch">
-                <div
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
+              <div className={`w-full ${dataTwo.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}>
+              
+            {index == 0 && (
+              <div
+                key={el}
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
+                style={style}
                 >
-                  <SmText className="text-white " style={style}>
-                    Phase 4
-                  </SmText>
-                </div>
+               
+                <SmText className="text-white " style={style}>
+                  Quarter 1, 2022
+                </SmText>
+              </div>
+              )}
                 {el.quarterFour.map((el) => (
                   <div key={el.id} className="flex flex-col ">
                     <h5 className="text-sm text-white font-bold px-1">
@@ -354,15 +400,20 @@ const Time = () => {
                   </div>
                 ))}
               </div>
-              <div className=" w-full  border-b-2 border-l-2 border-gray-100 pb-6  justify-self-stretch ">
-                <div
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
+              <div className={`w-full ${dataTwo.length - 1 == index && 'border-b-2 pb-6'} border-l-2 border-gray-100 justify-self-stretch`}>
+              
+              {index == 0 && (
+              <div
+                key={el}
+                className=" px-6 w-full py-3 bg-dark-700 mb-2"
+                style={style}
                 >
-                  <SmText className="text-white " style={style}>
-                    Phase 5
-                  </SmText>
-                </div>
+               
+                <SmText className="text-white " style={style}>
+                  Quarter 4, 2022
+                </SmText>
+              </div>
+              )}
                 {el.quarterFive.map((el) => (
                   <div key={el.id} className="flex flex-col ">
                     <h5 className="text-sm text-white font-bold px-1">
@@ -564,6 +615,77 @@ const data = [
         id: 244,
         verified: false,
         desc: "Application Programming interfaces (APIs) for interfacing with VR and AR devices with OpenXR",
+        subDesc: [],
+      },
+    ],
+  },
+   {
+    id: 3,
+    day: "03",
+    title: "ZOR Web 3.0",
+    year: 2020,
+
+    quarterOne: [
+      {
+        id: 12,
+        verified: true,
+        desc: "UI & Domain Finalization",
+        subDesc: [],
+      },
+      {
+        id: 2,
+        verified: true,
+        desc: "UI & Domain Finalization",
+        subDesc: [
+          "Swap & Liquidity",
+          "Smart Contract Development",
+          "Yield Farming Integration",
+          "Staking Integration",
+          "  Spin & Win",
+        ],
+      },
+      {
+        id: 124,
+        verified: true,
+        desc: "Conceptualization of Metaverse",
+        subDesc: [],
+      },
+    ],
+    quarterTwo: [
+      {
+        id: 111,
+        verified: true,
+        desc: "Deployment & Testing on Test Bed",
+        subDesc: [],
+      },
+      {
+        id: 24,
+        verified: true,
+        desc: "Go-live on 13th July 2022",
+        subDesc: [],
+      },
+    ],
+    quarterThree: [
+      {
+        id: 111,
+        verified: false,
+        desc: "",
+        subDesc: [],
+      },
+    ],
+    quarterFour: [
+      {
+        id: 1189981,
+        verified: false,
+        desc: "",
+        subDesc: [],
+      },
+    ],
+    quarterFive: [
+      {
+        id: 118765561,
+        verified: false,
+        desc: "",
         subDesc: [],
       },
     ],
