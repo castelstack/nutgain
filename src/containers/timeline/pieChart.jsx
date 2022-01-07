@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Pie } from "../../assets/svg/pie.svg";
+import { ReactComponent as Pie } from "../../assets/svg/pie2.svg";
 import {  SubText, SmText,MdHeading } from "../../constant/styles/text";
 const PieChart = () => {
   return (
@@ -15,7 +15,7 @@ const PieChart = () => {
           </MdHeading>
         </div>
         {/* //   legend */}
-        <div className='full md:mx-12 mx-0'>
+        {/* <div className='full md:mx-12 mx-0'>
           <SubText className='w-full text-white py-4 border-b-2 border-white'>
             Legend
           </SubText>
@@ -27,7 +27,7 @@ const PieChart = () => {
               </SmText>
             ))}
           </main>
-        </div>
+        </div> */}
       </aside>
     </section>
   );

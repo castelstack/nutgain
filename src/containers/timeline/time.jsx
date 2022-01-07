@@ -456,7 +456,7 @@ const data = [
   {
     id: 1,
     day: "01",
-    title: "DeFi Exchange",
+    title: "NFT Marketplace",
     year: 2020,
 
     quarterOne: [
@@ -469,90 +469,77 @@ const data = [
       {
         id: 2,
         verified: true,
-        desc: "UI & Domain Finalization",
-        subDesc: [
-          "Swap & Liquidity",
-          "Smart Contract Development",
-          "Yield Farming Integration",
-          "Staking Integration",
-          "  Spin & Win",
-        ],
+        desc: "UX Development",
+        subDesc:[],
+        // subDesc: [
+        //   "Swap & Liquidity",
+        //   "Smart Contract Development",
+        //   "Yield Farming Integration",
+        //   "Staking Integration",
+        //   "  Spin & Win",
+        // ],
       },
       {
         id: 124,
-        verified: true,
-        desc: "Conceptualization of Metaverse",
+        verified: false,
+        desc: "Initiation of Product Development",
         subDesc: [],
       },
-    ],
-    quarterTwo: [
-      {
-        id: 111,
-        verified: true,
+       {
+        id: 124,
+        verified: false,
         desc: "Deployment & Testing on Test Bed",
         subDesc: [],
       },
-      {
-        id: 24,
-        verified: true,
-        desc: "Go-live on 13th July 2022",
+       {
+        id: 124,
+        verified: false,
+        desc: "Go-live on 28th Feb 2022",
         subDesc: [],
       },
     ],
+    quarterTwo: [],
+  
     quarterThree: [
-      {
-        id: 111,
-        verified: false,
-        desc: "",
-        subDesc: [],
-      },
+    
     ],
     quarterFour: [
-      {
-        id: 1189981,
-        verified: false,
-        desc: "",
-        subDesc: [],
-      },
+      
     ],
     quarterFive: [
-      {
-        id: 118765561,
-        verified: false,
-        desc: "",
-        subDesc: [],
-      },
+      
     ],
   },
   {
     id: 2,
     day: "02",
-    title: "Zor Web 3.0",
+    title: "DeFi Exchange",
     year: 2020,
 
     quarterOne: [
       {
-        id: 12,
-        verified: true,
-        desc: "Finalizing the Web 3.0 Functionalities",
-        subDesc: [
-          "Firewall",
-          " Web Protection",
-          " Zor Connect – Audio / Chat / Video",
-          "  Secured VPN",
-          " Play to Earn Games",
-        ],
-      },
-      {
-        id: 2,
+        id: 1,
         verified: true,
         desc: "UI & Domain Finalization",
         subDesc: [],
       },
       {
+        id: 12,
+        verified: false,
+        desc: "Initiation of Product Developmen",
+        subDesc: [
+          "Swap & Liquidity",
+          "Smart Contract Development",
+          "Yield Farming Integration",
+          "Staking Integration",
+          "Spin & Win",
+        ],
+      },
+      
+      {
         id: 212,
-        verified: true,
-        desc: "Conceptualization of Metaverse",
+        verified: false,
+        desc: "Interface and back end development",
         subDesc: [],
       },
     ],
@@ -563,61 +550,20 @@ const data = [
         desc: "Deployment & Testing on Test Bed",
         subDesc: [],
       },
+      {
+        id: 121,
+        verified: false,
+        desc: "Go-live on 13th July 2022",
+        subDesc: [],
+      },
     ],
     quarterThree: [
-      {
-        id: 111,
-        verified: false,
-        desc: "Beta Version Release 11th Sep 2022",
-        subDesc: [],
-      },
+      
     ],
     quarterFour: [
-      {
-        id: 244,
-        verified: false,
-        desc: "Go-live on 28th Feb 2023",
-        subDesc: [],
-      },
+      
     ],
-    quarterFive: [
-      {
-        id: 111,
-        verified: false,
-        desc: "Creation of 3D Virtual Environments",
-        subDesc: [],
-      },
-      {
-        id: 24,
-        verified: false,
-        desc: "Creation of NFTs for Metaverse",
-        subDesc: [],
-      },
-      {
-        id: 11,
-        verified: false,
-        desc: "Integration of Metaverse with Web 3.0",
-        subDesc: [],
-      },
-      {
-        id: 2,
-        verified: false,
-        desc: "VR Testing",
-        subDesc: [],
-      },
-      {
-        id: 101,
-        verified: false,
-        desc: "Release Web 3.0 with Metaverse",
-        subDesc: [],
-      },
-      {
-        id: 244,
-        verified: false,
-        desc: "Application Programming interfaces (APIs) for interfacing with VR and AR devices with OpenXR",
-        subDesc: [],
-      },
-    ],
+    quarterFive: [ ],
   },
    {
     id: 3,
@@ -629,24 +575,24 @@ const data = [
       {
         id: 12,
         verified: true,
-        desc: "UI & Domain Finalization",
-        subDesc: [],
+        desc: "Finalizing the Web 3.0 Functionalities",
+         subDesc: [
+          "Firewall",
+          "Web Protection",
+          "Zor Connect – Audio / Chat / Video",
+          "Secured VPN",
+          "Play to Earn Games",
+        ],
       },
       {
         id: 2,
         verified: true,
         desc: "UI & Domain Finalization",
-        subDesc: [
-          "Swap & Liquidity",
-          "Smart Contract Development",
-          "Yield Farming Integration",
-          "Staking Integration",
-          "  Spin & Win",
-        ],
+        subDesc: [],
       },
       {
         id: 124,
-        verified: true,
+        verified: false,
         desc: "Conceptualization of Metaverse",
         subDesc: [],
       },
@@ -654,22 +600,22 @@ const data = [
     quarterTwo: [
       {
         id: 111,
-        verified: true,
+        verified: false,
         desc: "Deployment & Testing on Test Bed",
         subDesc: [],
       },
-      {
-        id: 24,
-        verified: true,
-        desc: "Go-live on 13th July 2022",
-        subDesc: [],
-      },
+      // {
+      //   id: 24,
+      //   verified: true,
+      //   desc: "Go-live on 13th July 2022",
+      //   subDesc: [],
+      // },
     ],
     quarterThree: [
       {
         id: 111,
         verified: false,
-        desc: "",
+        desc: "Beta Version Release 11th Sep 2022",
         subDesc: [],
       },
     ],
@@ -677,7 +623,7 @@ const data = [
       {
         id: 1189981,
         verified: false,
-        desc: "",
+        desc: "Go-live on 28th Feb 2023",
         subDesc: [],
       },
     ],
@@ -685,7 +631,37 @@ const data = [
       {
         id: 118765561,
         verified: false,
-        desc: "",
+        desc: "Creation of 3D Virtual Environments",
+        subDesc: [],
+      },
+      {
+        id: 118765561,
+        verified: false,
+        desc: "Creation of NFTs for Metaverse",
+        subDesc: [],
+      },
+      {
+        id: 118765561,
+        verified: false,
+        desc: "Integration of Metaverse with Web 3.0",
+        subDesc: [],
+      },
+      {
+        id: 118765561,
+        verified: false,
+        desc: "VR Testing",
+        subDesc: [],
+      },
+      {
+        id: 118765561,
+        verified: false,
+        desc: "Release Web 3.0 with Metaverse",
+        subDesc: [],
+      },
+        {
+        id: 118765561,
+        verified: false,
+        desc: "Application Programming interfaces (APIs) for interfacing with VR and AR devices with OpenXR",
         subDesc: [],
       },
     ],
@@ -697,7 +673,7 @@ const dataTwo = [
   // first
   {
     id: 1,
-    day: "03",
+    day: "04",
     title: "DeFi Wallet",
     year: 2020,
 
@@ -780,7 +756,7 @@ const dataTwo = [
   },
   {
     id: 2,
-    day: "04",
+    day: "05",
     title: "D-Hyper E-commerce",
     year: 2020,
 
