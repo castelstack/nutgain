@@ -5,7 +5,7 @@ import cha0 from "../assets/svg/cha0.svg";
 import cha3 from "../assets/svg/cha3.svg";
 import cha4 from "../assets/svg/cha4.svg";
 import hero from "../assets/svg/hero1.svg";
-import hero1 from "../assets/svg/phone.svg";
+import video from "../assets/svg/video.svg";
 import stroke from "../assets/svg/line.svg";
 import rebg from "../assets/svg/rebg.svg";
 // import { ReactComponent as Hero } from "../assets/svg/hero.svg";
@@ -31,14 +31,16 @@ const Browser = () => {
           style={{ borderRadius: "60px 0px 60px 0px" }}
         >
           <div
-            className="relative hidden md:flex flex-col overflow-none overflow-none"
-            style={{ borderRadius: "60px 0px 0px 0px" }}
+            className="relative flex-col"
+
           >
-            <img
+            
+           <img
               src={hero}
-              className="h-full z-0 absolute left-8"
+              className="h-full z-0 left-8"
               alt="web3.0 browser"
             />
+             {/* <img src={stroke} alt="stroke" className="w-50 bottom-10" /> */}
             {/* <img
               src={hero1}
               className="h-full z-20 absolute -bottom-96 left-0"
@@ -90,11 +92,20 @@ const Browser = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-fr-mx mr-12  gap-4">
-                <img src={stroke} alt="stroke" className="w-full" />{" "}
-                <p className="text-primary-800 text-sm self-end">
-                  Watch Video &rarr;
-                </p>
+              <div className="flex gap-4 mt-20">
+                {/* <img src={stroke} alt="stroke" className="w-full" />{" "} */}
+              
+                 <SubText className="text-white text-xl text-primary-800 flex">
+                    Watch Video  
+                    <img
+                      src={video}
+                      className="w-10 pl-2"
+                      alt="web3.0 browser"
+                    />
+                  </SubText>
+                  <SubText className="text-white text-xl text-primary-800">
+                    Find out more &rarr;
+                  </SubText>
               </div>
             </div>
           </div>

@@ -30,7 +30,7 @@ const Footer = () => {
         {/* footer list */}
         <div className="flex md:flex-row flex-col gap-8 items-start w-full justify-between">
           <div className="flex flex-col">
-            <SubText className="font-bold text-white">Product</SubText>
+            <SubText className="font-bold text-white mb-3">Products</SubText>
             <div className="flex flex-col gap-3 ">
               {products.map((el) => (
                 <SmText key={el} className="text-white capitalize">
@@ -40,10 +40,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <SubText className="font-bold text-white">Site</SubText>
+            <SubText className="font-bold text-white mb-3">Site</SubText>
             <div className="flex flex-col gap-3 ">
               {site.map((el, index) => (
-                <a href={el.link}>
+                <a href={el.link} target={el.link !== '' ? "_blank" : 'none'}>
                 <SmText key={index} className="text-white capitalize">
                   {el.name}
                 </SmText>
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <SubText className="font-bold text-white">Help</SubText>
+            <SubText className="font-bold text-white mb-3">Help</SubText>
             <div className="flex flex-col gap-3 ">
               {help.map((el) => (
                 <a key={el} rel="noreferrer" href={el.link} target="_blank">
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex flex-col">
-              <SubText className="font-bold text-white">Contact Us</SubText>
+              <SubText className="font-bold text-white mb-4">Contact Us</SubText>
               <div className="flex gap-1 items-start">
                 <a
                   rel="noreferrer"
@@ -90,7 +90,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <SubText className="font-bold text-white">Our Pages</SubText>
+              <SubText className="font-bold text-white mt-20 mb-4">Our Pages</SubText>
               <div className="flex gap-2 items-start">
                 <a
                   rel="noreferrer"
@@ -151,7 +151,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="text-white py-1" />
+        <hr className="text-white py-1 w-full" />
 
         <p className="text-white text-sm tracking-wider">
           Copyright &copy;2021 NutGain All right reserved.
@@ -183,11 +183,11 @@ const site = [
   },
   {
     name :  "career oppurtunity",
-    link: '#'
+    link: ''
   },
   {
     name:  "report a security issue",
-    link: '#'
+    link: ''
   },
 ];
 const help = [

@@ -31,7 +31,7 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 1, 2022
+                 Phase 1 (Q1, 2022)
                 </SmText>
               </div>
               )}
@@ -70,7 +70,8 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 3, 2022
+                 Phase 2 (Q2, 2022)
+
                 </SmText>
               </div>
               )}
@@ -108,7 +109,7 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 3, 2022
+                 Phase 3 (Q3, 2022)
                 </SmText>
               </div>
               )}   {el.quarterThree.map((el) => (
@@ -145,7 +146,8 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 5, 2022
+                  Phase 4 (Q4, 2022)
+
                 </SmText>
               </div>
               )}
@@ -183,7 +185,8 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 5, 2022
+                 Phase 5 (Q5, 2022)
+
                 </SmText>
               </div>
               )}
@@ -242,7 +245,8 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 3, 2022
+                  Phase 1 (Q1, 2022)
+
                 </SmText>
               </div>
               )}
@@ -284,7 +288,8 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 6, 2022
+                  Phase 2 (Q2, 2022)
+
                 </SmText>
               </div>
               )}
@@ -324,7 +329,8 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 2, 2022
+                  Phase 3 (Q3, 2022)
+
                 </SmText>
               </div>
               )}
@@ -369,7 +375,7 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 1, 2022
+                  Phase 4 (Q4, 2022)
                 </SmText>
               </div>
               )}
@@ -410,7 +416,8 @@ const Time = () => {
                 >
                
                 <SmText className="text-white " style={style}>
-                  Quarter 4, 2022
+                  Phase 5 (Q5, 2022)
+
                 </SmText>
               </div>
               )}

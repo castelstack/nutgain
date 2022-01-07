@@ -7,3 +7,19 @@
   font-size: 90%;
   outline: none;
 }
+
+.ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+  background-color: 'rgb(0, 0, 0, 0.4)';
+  flex: content;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 10%; */
+}
+.ReactModal__Content{
+  width: 50%;
+  height: auto;
+  /* height: 50%; */
+  border-radius: 25px !important;
+  margin: auto;
+}
