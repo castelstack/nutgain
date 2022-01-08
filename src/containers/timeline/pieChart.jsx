@@ -1,17 +1,26 @@
 import React from "react";
 import { ReactComponent as Pie } from "../../assets/svg/pie2.svg";
-import {  SubText, SmText,MdHeading } from "../../constant/styles/text";
+import { SubText, SmText, MdHeading } from "../../constant/styles/text";
 const PieChart = () => {
   return (
-    <section className='grid md:grid-cols-2 grid-cols-1 pb-12 items-center md:-space-x-10 -space-x-0'>
-      <Pie className='w-full' />
-      <aside className='w-full'>
-        <div className=' w-full flex flex-col items-end p-8 gap-8 rounded bg-opacity-5 bg-primary-800'>
-          <MdHeading className='text-primary-800 flex'>
-            Total Supply <MdHeading className='text-white pl-4'>1,500,000,000</MdHeading>
+    <section className="grid md:grid-cols-2 grid-cols-1 items-center md:-space-x-10 -space-x-0">
+      <Pie className="w-full" />
+      <aside className="w-full">
+        <div
+          className=" w-full flex flex-col items-end p-8 gap-8 rounded bg-opacity-5 bg-primary-800"
+          style={{ borderRadius: "60px" }}
+        >
+          <MdHeading className=" md:text-5xl text-primary-800 flex">
+            Total Supply{" "}
+            <MdHeading className="text-white pl-4 md:text-5xl">
+              1,500,000,000
+            </MdHeading>
           </MdHeading>
-          <MdHeading className='text-primary-800 flex gap'>
-            Market Cap <MdHeading className='text-white pl-4'>1,500,000</MdHeading>
+          <MdHeading className="text-primary-800 md:text-5xl flex gap">
+            Market Cap{" "}
+            <MdHeading className="text-white pl-4 md:text-5xl">
+              1,500,000
+            </MdHeading>
           </MdHeading>
         </div>
         {/* //   legend */}

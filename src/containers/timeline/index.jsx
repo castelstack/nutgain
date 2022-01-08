@@ -52,7 +52,7 @@ const ProjectTimeline = () => {
               />
               <Stand className="md:h-52 md:w-52 h-32 w-32 z-10" />
             </div>
-            <Heading className="text-primary-800 md:tracking-widest tracking-normal ">
+            <Heading className="text-primary-800 tracking-normal ">
               Tokenomics
             </Heading>
           </aside>
@@ -78,13 +78,13 @@ const ProjectTimeline = () => {
               <div className="flex flex-col  gap-8 ">
                 <div className="flex  md:flex-row flex-col items-center ">
                   <img src={coin} alt="web3 browser " className="h-20 w-20" />
-                  <SmText className="text-primary-800 font-bold">
+                  <SmText className="text-primary-800 font-bold pl-10">
                     Passive income in BUSD{" "}
                   </SmText>
                 </div>
                 <div className="flex  md:flex-row flex-col items-center ">
                   <img src={box} alt="web3 browser " className="h-20 w-20" />
-                  <SmText className="text-primary-800 font-bold">
+                  <SmText className="text-primary-800 font-bold pl-10">
                     Powered by cutting-edge products
                   </SmText>
                 </div>
@@ -110,16 +110,16 @@ const ProjectTimeline = () => {
           card 1 */}
           <div
             className="shadow-new-2 grid grid-cols-2 items-center content-center  object-fit  bg-white"
-            style={{ borderRadius: "60px 0px 60px 0px" }}
+            style={{ borderRadius: "30px 0px 30px 0px" }}
           >
             <div
               style={{
-                borderRadius: "60px 0px 0px 0px",
+                borderRadius: "30px 0px 0px 0px",
                 clipPath: "polygon(0 0, 97% 0, 90% 100%, 0% 100%)",
               }}
               className="bg-primary-800"
             >
-              <SmText className="text-gray-900 md:px-8 px-2 py-4 ">
+              <SmText className="text-gray-900 md:px-8 px-2 py-4 font-bold ">
                 Liquidity Pool
               </SmText>
             </div>
@@ -136,16 +136,16 @@ const ProjectTimeline = () => {
           card 2 */}
           <div
             className="shadow-new-2 grid grid-cols-2 items-center content-center  object-fit  bg-white"
-            style={{ borderRadius: "60px 0px 60px 0px" }}
+            style={{ borderRadius: "30px 0px 30px 0px" }}
           >
             <div
               style={{
-                borderRadius: "60px 0px 0px 0px",
+                borderRadius: "30px 0px 0px 0px",
                 clipPath: "polygon(0 0, 97% 0, 90% 100%, 0% 100%)",
               }}
               className="bg-primary-800"
             >
-              <SmText className="text-gray-900 md:px-8 px-2 py-4 ">
+              <SmText className="text-gray-900 md:px-8 px-2 py-4 font-bold ">
                 Product Development
               </SmText>
             </div>
@@ -162,16 +162,16 @@ const ProjectTimeline = () => {
           card 3 */}
           <div
             className="shadow-new-2 grid grid-cols-2 items-center content-center  object-fit  bg-white"
-            style={{ borderRadius: "60px 0px 60px 0px" }}
+            style={{ borderRadius: "30px 0px 30px 0px" }}
           >
             <div
               style={{
-                borderRadius: "60px 0px 0px 0px",
+                borderRadius: "30px 0px 0px 0px",
                 clipPath: "polygon(0 0, 97% 0, 90% 100%, 0% 100%)",
               }}
               className="bg-primary-800"
             >
-              <SmText className="text-gray-900 md:px-8 px-2 py-4 ">
+              <SmText className="text-gray-900 md:px-8 px-2 py-4 font-bold ">
                 Redistribution
               </SmText>
             </div>

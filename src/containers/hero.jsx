@@ -44,14 +44,14 @@ const Hero = () => {
           <img src={logo} alt="nutgain logo" className="h-12 w-32" />
           <div className="flex flex-row  justify-between items-center ">
             <a
-             className="pr-4"
+              className="pr-4"
               rel="noreferrer"
               href="https://github.com/nutgain/Smart_Contract_Audit/blob/main/NutGain_0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab.pdf"
               target="_blank"
             >
-              <SubText className="text-primary-200">
-               Audit Report
-              </SubText>      
+              <p className="text-primary-200 font-prime font-bold sm:text-base">
+                Audit Report
+              </p>
             </a>
             <a
               // className="z-50"
@@ -59,9 +59,9 @@ const Hero = () => {
               href="https://online.flippingbook.com/view/956899460"
               target="_blank"
             >
-              <SubText className="text-primary-200">
-               Whitepaper
-              </SubText>
+              <p className="text-primary-200 font-prime font-bold sm:text-base">
+                Whitepaper
+              </p>
             </a>
           </div>
         </div>
@@ -74,11 +74,11 @@ const Hero = () => {
               dApps.
             </SmText>
             <CountdownView />
-          
-            <div className="flex gap-4 py-2 items-center">   
+
+            <div className="flex gap-4 py-2 items-center">
               <a
                 rel="noreferrer"
-                  className={` rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 md:text-base
+                className={` rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 md:text-base
                   transition ease-in  text-sm font-bold md:px-12 px-6  md:py-4 py-3 bg-primary-800`}
                 href="https://bscscan.com/address/0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab"
                 target="_blank"
@@ -87,14 +87,13 @@ const Hero = () => {
               </a>
               <a
                 rel="noreferrer2"
-                 className={`rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 md:text-base
+                className={`rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 md:text-base
                   transition ease-in  text-sm font-bold md:px-12 px-6  md:py-4 py-3 bg-primary-800`}
                 href="https://forms.gle/g8A7L46t6Cdd2Vm26"
                 target="_blank"
               >
-               Whitelist your Wallet
+                Whitelist your Wallet
               </a>
-            
             </div>
             <div className="flex gap-2 items-center">
               <a
@@ -163,7 +162,7 @@ const Hero = () => {
               <img
                 src={squ}
                 alt="cup "
-                className=" absolute h-full w-full -bottom-20 -right-80 bg-no-repeat md:block hidden z-0"
+                className=" absolute h-full -bottom-20 right-80 bg-no-repeat md:block hidden z-0"
               />
             </div>
           </div>

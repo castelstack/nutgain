@@ -14,19 +14,19 @@ import Modal from "./modal";
 
 const Home = () => {
   return (
-    <div className='overflow-hidden'>
-      {/* <Modal/> */}
+    <div className="overflow-hidden">
+      {/* <Modal /> */}
       <Hero />
       <Reward />
       <Redistro />
       <Browser />
       <Exchange />
       <Products />
-      <Time/>
+      <Time />
       <ProjectTimeline />
-      <Publish/>
-      <Team/>
-      <Footer/>
+      <Publish />
+      <Team />
+      <Footer />
     </div>
   );
 };

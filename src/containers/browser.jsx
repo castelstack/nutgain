@@ -15,11 +15,11 @@ import { paddingX } from "../constant/styles/spacing";
 //     borderRadius: "60px 0px 60px 0px",
 //   };
 const stylebg = {
-  background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${rebg})`,
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  borderRadius: "0px 0px 60px 0px",
+  // background: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${rebg})`,
+  // backgroundRepeat: "no-repeat",
+  // backgroundPosition: "center",
+  // backgroundSize: "cover",
+  // borderRadius: "0px 0px 60px 0px",
 };
 
 const Browser = () => {
@@ -30,17 +30,13 @@ const Browser = () => {
           className="grid sm:grid-cols-2 grid-cols-1 "
           style={{ borderRadius: "60px 0px 60px 0px" }}
         >
-          <div
-            className="relative flex-col"
-
-          >
-            
-           <img
+          <div className="relative flex-col">
+            <img
               src={hero}
-              className="h-full z-0 left-8"
+              className="imageWidth z-0 left-8"
               alt="web3.0 browser"
             />
-             {/* <img src={stroke} alt="stroke" className="w-50 bottom-10" /> */}
+            {/* <img src={stroke} alt="stroke" className="w-50 -bottom-10" /> */}
             {/* <img
               src={hero1}
               className="h-full z-20 absolute -bottom-96 left-0"
@@ -51,7 +47,7 @@ const Browser = () => {
           {/* features of web3 browser */}
           <div
             style={{ borderRadius: "0px 0px 60px 0px" }}
-            className="bg-dark-900"
+            // className="bg-dark-900"
           >
             <div style={stylebg} className=" py-12 flex flex-col gap-8">
               <div className="md:px-12 px-2">
@@ -91,21 +87,46 @@ const Browser = () => {
                   </SmText>
                 </div>
               </div>
-
-              <div className="flex gap-4 mt-20">
+            </div>
+          </div>
+        </main>
+        <main
+          className="grid sm:grid-cols-2 grid-cols-1 items-center justify-center  "
+          style={{ borderRadius: "60px 0px 60px 0px" }}
+        >
+          <div className="relative flex-col">
+            <img src={stroke} alt="stroke" className="w-50 " />
+            {/* <img
+              src={hero1}
+              className="h-full z-20 absolute -bottom-96 left-0"
+              alt="web3.0 browser"
+            /> */}
+            {/* <Hero className='w-full' /> */}
+          </div>
+          {/* features of web3 browser */}
+          <div
+            style={{ borderRadius: "0px 0px 60px 0px" }}
+            // className="bg-dark-900"
+          >
+            <div style={stylebg} className=" py-0 flex flex-col gap-8">
+              <div className="flex gap-4 mt-2 ml-6">
                 {/* <img src={stroke} alt="stroke" className="w-full" />{" "} */}
-              
-                 <SubText className="text-white text-xl text-primary-800 flex">
-                    Watch Video  
-                    <img
-                      src={video}
-                      className="w-10 pl-2"
-                      alt="web3.0 browser"
-                    />
-                  </SubText>
-                  <SubText className="text-white text-xl text-primary-800">
+                <p className="text-primary-800 font-prime text-xl font-bold text-center flex ">
+                  Watch Video
+                  <img
+                    src={video}
+                    className="w-15 pl-2  pr-5"
+                    alt="web3.0 browser"
+                  />
+                </p>
+                <a
+                  href="https://online.flippingbook.com/view/956899460/"
+                  target="_blank"
+                >
+                  <p className="text-primary-800 text-xl font-prime font-bold text-center flex ">
                     Find out more &rarr;
-                  </SubText>
+                  </p>
+                </a>
               </div>
             </div>
           </div>
