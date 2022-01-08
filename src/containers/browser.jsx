@@ -4,7 +4,7 @@ import cha1 from "../assets/svg/cha1.svg";
 import cha0 from "../assets/svg/cha0.svg";
 import cha3 from "../assets/svg/cha3.svg";
 import cha4 from "../assets/svg/cha4.svg";
-import hero from "../assets/svg/hero1.svg";
+import hero from "../assets/svg/hero2.svg";
 import video from "../assets/svg/video.svg";
 import stroke from "../assets/svg/line.svg";
 import rebg from "../assets/svg/rebg.svg";
@@ -33,7 +33,7 @@ const Browser = () => {
           <div className="relative flex-col">
             <img
               src={hero}
-              className="imageWidth z-0 left-8"
+              className="w-full z-0 left-8"
               alt="web3.0 browser"
             />
             {/* <img src={stroke} alt="stroke" className="w-50 -bottom-10" /> */}
@@ -49,7 +49,7 @@ const Browser = () => {
             style={{ borderRadius: "0px 0px 60px 0px" }}
             // className="bg-dark-900"
           >
-            <div style={stylebg} className=" py-12 flex flex-col gap-8">
+            <div style={stylebg} className=" pb-12 flex flex-col gap-8">
               <div className="md:px-12 px-2">
                 <Heading className="text-primary-800">Web 3.0 Browser</Heading>
                 <SmText className="text-white">

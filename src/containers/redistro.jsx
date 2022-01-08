@@ -75,16 +75,16 @@ const Redistro = () => {
           card 1 */}
           <div
             className="grid grid-cols-2 items-center content-center  object-fit shadow-new-2 bg-white mb-4"
-            style={{ borderRadius: "60px 0px 60px 0px" }}
+            style={{ borderRadius: "30px 0px 30px 0px" }}
           >
             <div
               style={{
-                borderRadius: "60px 0px 0px 0px",
+                borderRadius: "30px 0px 0px 0px",
                 clipPath: "polygon(0 0, 100% 0, 90% 100%, 0% 100%)",
               }}
               className="bg-primary-800"
             >
-              <SmText className="text-gray-900 px-8 py-4 ">
+              <SmText className="text-gray-900 px-8 py-4 font-bold ">
                 Redistribution
               </SmText>
             </div>

@@ -162,7 +162,7 @@ const Hero = () => {
               <img
                 src={squ}
                 alt="cup "
-                className=" absolute h-full -bottom-20 right-80 bg-no-repeat md:block hidden z-0"
+                className=" absolute h-full -bottom-10 right-80 bg-no-repeat md:block hidden z-0"
               />
             </div>
           </div>

@@ -11,11 +11,13 @@ import Team from "../team";
 import ProjectTimeline from "../timeline";
 import Time from "../timeline/time";
 import Modal from "./modal";
+import Modal2 from "./modal2";
 
 const Home = () => {
   return (
     <div className="overflow-hidden">
-      {/* <Modal /> */}
+      <Modal />
+      <Modal2 />
       <Hero />
       <Reward />
       <Redistro />

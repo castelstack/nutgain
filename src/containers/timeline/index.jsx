@@ -106,6 +106,7 @@ const ProjectTimeline = () => {
               </SmText>
             </div>
           </div>
+
           {/* 
           card 1 */}
           <div

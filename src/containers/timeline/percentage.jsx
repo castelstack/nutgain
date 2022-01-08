@@ -6,7 +6,7 @@ import { ScrollDot, ScrollDotUp } from "../../constant/layout/animateOnScroll";
 
 const Percentage = () => {
   return (
-    <div className={`${paddingX} pb-12 -bottom-20`}>
+    <div className={`${paddingX} py-12 -bottom-20`}>
       <div
         style={{ borderRadius: "65px 0px 65px 0px" }}
         className=" shadow-new-1 relative md:p-8 p-4"
