@@ -19,6 +19,9 @@ code {
 img {
   /* width: 100%; */
 }
+.imageStyle {
+  right: 13rem;
+}
 input,
 textarea,
 button {
@@ -33,4 +36,24 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+}
+.block {
+  background: #ffc350;
+  width: 50px;
+  border-radius: 25px;
+  align-self: center;
+  height: 50px;
+  text-align: center;
+  padding: 14px;
+  color: black;
+  margin: auto;
+}
+.dot {
+  background: #ffc350;
+  width: 10px;
+  border-radius: 5px;
+  top: 16px;
+  height: 10px;
+  position: absolute;
+  margin: auto;
 }

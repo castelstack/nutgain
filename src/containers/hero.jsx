@@ -6,7 +6,7 @@ import cup from "../assets/svg/Group.svg";
 import linkdin from "../assets/svg/linkedin.svg";
 import msg from "../assets/svg/medium.svg";
 import bg from "../assets/svg/bghead.svg";
-import squ from "../assets/svg/squ.svg";
+import squ from "../assets/svg/s.svg";
 import { Heading, SmText, SubText } from "../constant/styles/text";
 import { paddingX } from "../constant/styles/spacing";
 import { CountdownView } from "../components/countdown";
@@ -162,7 +162,7 @@ const Hero = () => {
               <img
                 src={squ}
                 alt="cup "
-                className=" absolute h-full -bottom-10 right-80 bg-no-repeat md:block hidden z-0"
+                className="imageStyle absolute h-full -bottom-10 -right-60 bg-no-repeat md:block hidden z-0"
               />
             </div>
           </div>

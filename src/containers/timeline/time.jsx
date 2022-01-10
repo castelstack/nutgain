@@ -1,218 +1,58 @@
 import React from "react";
 import { paddingX } from "../../constant/styles/spacing";
-import { Heading, SmText } from "../../constant/styles/text";
+import { Heading, SmText, SubText } from "../../constant/styles/text";
 
+import { ScrollDot, ScrollDotUp } from "../../constant/layout/animateOnScroll";
+
+import dot from "../../assets/svg/dot.svg";
+import LineDot from "../../assets/svg/LineDot.svg";
+import LineVertical from "../../assets/svg/LineVertical.svg";
+import noTick from "../../assets/svg/noTick.svg";
+import tick from "../../assets/svg/tick.svg";
 const style = {
   clipPath: "polygon(0 0, 95% 0, 80% 100%, 0% 100%)",
 };
 const Time = () => {
-  return (
-    <div className={`${paddingX} bg-dark-800 hidden md:flex flex-col py-12 `}>
-      <Heading className="text-primary-800 font-bold mb-2">
-        Product Timeline
-      </Heading>
-
-      <div className="grid gird-cols-1  w-full">
-        {data.map((el, index) => (
-          <div key={el.id} className="flex  items-stretch   ">
-            <div className="flex-col flex px-1 w-full">
-              <Heading className="text-white tracking-wider ">{el.day}</Heading>
-              <SmText className="text-primary-800 text-base font-bold ">
-                {el.title}
-              </SmText>
-            </div>
-
+  const BoxUI = (title, subTitle, array, Heading, index) => {
+    return (
+      <>
+        <div className={`grid grid-cols-1 w-full gap-4`}>
+          <div
+            style={{ borderRadius: "60px 0px 60px 0px", display: "flex" }}
+            className="mb-8 shadow-new-1 relative d-flex"
+          >
             <div
-              className={`w-full ${
-                data.length - 1 == index && "border-b-2 pb-6"
-              } border-l-2 border-gray-100 justify-self-stretch`}
+              style={{
+                borderRadius: "60px 0px 0px 0px",
+                background: "#141414",
+              }}
+              className="bg-dark-700 h-full w-40 flex items-center justify-center"
             >
-              {index == 0 && (
-                <div
-                  key={el}
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
-                >
-                  <SmText className="text-white " style={style}>
-                    Phase 1 (Q1, 2022)
-                  </SmText>
-                </div>
-              )}
-
-              {el.quarterOne.map((el) => (
+              <div>
+                <SubText className="text-white tracking-wider lg:text-3xl md:text-xl ">
+                  {title}
+                </SubText>
+                <SmText className=" text-white text-center text-base font-bold ">
+                  {subTitle}
+                </SmText>
+              </div>
+            </div>
+            <div className="p-10">
+              {array.map((el) => (
                 <div key={el.id} className="flex flex-col  p-1">
-                  <h5 className="text-sm text-white font-bold px-1">
+                  <h5 className="text-sm text-white font-bold px-1 flex items-center">
                     {el.verified ? (
-                      <i
-                        className="fa fa-check-circle text-base text-green-400"
-                        aria-hidden="true"
-                      ></i>
+                      <img
+                        src={tick}
+                        alt="nutgain logo"
+                        className="h-6 w-6 mr-5"
+                      />
                     ) : (
-                      <i
-                        className="fa fa-check-circle text-base text-gray-800"
-                        aria-hidden="true"
-                      ></i>
-                    )}{" "}
-                    {el.desc}
-                  </h5>
-                  {el.subDesc.map((el) => (
-                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
-                      {el}
-                    </p>
-                  ))}
-                </div>
-              ))}
-            </div>
-            <div
-              className={`w-full ${
-                data.length - 1 == index && "border-b-2 pb-6"
-              } border-l-2 border-gray-100 justify-self-stretch`}
-            >
-              {index == 0 && (
-                <div
-                  key={el}
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
-                >
-                  <SmText className="text-white " style={style}>
-                    Phase 2 (Q2, 2022)
-                  </SmText>
-                </div>
-              )}
-              {el.quarterTwo.map((el) => (
-                <div key={el.id} className="flex flex-col  p-1">
-                  <h5 className="text-sm text-white font-bold px-1">
-                    {el.verified ? (
-                      <i
-                        className="fa fa-check-circle text-base text-green-400"
-                        aria-hidden="true"
-                      ></i>
-                    ) : (
-                      <i
-                        className="fa fa-check-circle text-base text-gray-800"
-                        aria-hidden="true"
-                      ></i>
-                    )}{" "}
-                    {el.desc}
-                  </h5>
-                  {el.subDesc.map((el) => (
-                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
-                      {el}
-                    </p>
-                  ))}
-                </div>
-              ))}
-            </div>
-
-            <div
-              className={`w-full ${
-                data.length - 1 == index && "border-b-2 pb-6"
-              } border-l-2 border-gray-100 justify-self-stretch`}
-            >
-              {index == 0 && (
-                <div
-                  key={el}
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
-                >
-                  <SmText className="text-white " style={style}>
-                    Phase 3 (Q3, 2022)
-                  </SmText>
-                </div>
-              )}{" "}
-              {el.quarterThree.map((el) => (
-                <div key={el.id} className="flex flex-col ">
-                  <h5 className="text-sm text-white font-bold px-1">
-                    {el.verified ? (
-                      <i
-                        className="fa fa-check-circle text-base text-green-400"
-                        aria-hidden="true"
-                      ></i>
-                    ) : (
-                      <i
-                        className="fa fa-check-circle text-base text-gray-800"
-                        aria-hidden="true"
-                      ></i>
-                    )}{" "}
-                    {el.desc}
-                  </h5>
-                  {el.subDesc.map((el) => (
-                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
-                      {el}
-                    </p>
-                  ))}
-                </div>
-              ))}
-            </div>
-            <div
-              className={`w-full ${
-                data.length - 1 == index && "border-b-2 pb-6"
-              } border-l-2 border-gray-100 justify-self-stretch`}
-            >
-              {index == 0 && (
-                <div
-                  key={el}
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
-                >
-                  <SmText className="text-white " style={style}>
-                    Phase 4 (Q1, 2023)
-                  </SmText>
-                </div>
-              )}
-              {el.quarterFour.map((el) => (
-                <div key={el.id} className="flex flex-col ">
-                  <h5 className="text-sm text-white font-bold px-1">
-                    {el.verified ? (
-                      <i
-                        className="fa fa-check-circle text-base text-green-400"
-                        aria-hidden="true"
-                      ></i>
-                    ) : (
-                      <i
-                        className="fa fa-check-circle text-base text-gray-800"
-                        aria-hidden="true"
-                      ></i>
-                    )}{" "}
-                    {el.desc}
-                  </h5>
-                  {el.subDesc.map((el) => (
-                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
-                      {el}
-                    </p>
-                  ))}
-                </div>
-              ))}
-            </div>
-            <div
-              className={`w-full ${
-                data.length - 1 == index && "border-b-2 pb-6"
-              } border-l-2 border-gray-100 justify-self-stretch`}
-            >
-              {index == 0 && (
-                <div
-                  key={el}
-                  className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                  style={style}
-                >
-                  <SmText className="text-white " style={style}>
-                    Phase 5 (Q2, 2023)
-                  </SmText>
-                </div>
-              )}
-              {el.quarterFive.map((el) => (
-                <div key={el.id} className="flex flex-col ">
-                  <h5 className="text-sm text-white font-bold px-1">
-                    {el.verified ? (
-                      <i
-                        className="fa fa-check-circle text-base text-green-400"
-                        aria-hidden="true"
-                      ></i>
-                    ) : (
-                      <i
-                        className="fa fa-check-circle text-base text-gray-800"
-                        aria-hidden="true"
-                      ></i>
+                      <img
+                        src={noTick}
+                        alt="nutgain logo"
+                        className="h-6 w-6 mr-5"
+                      />
                     )}{" "}
                     {el.desc}
                   </h5>
@@ -225,251 +65,325 @@ const Time = () => {
               ))}
             </div>
           </div>
+        </div>
+      </>
+    );
+  };
+
+  const BoxRow = (
+    title1,
+    date1,
+    title2,
+    date2,
+    array,
+    phase1,
+    phase2,
+    phase3,
+    phase4,
+    phase5
+  ) => {
+    return (
+      <div className={`grid grid-cols-1 w-full gap-4`}>
+        <div
+          style={{ borderRadius: "60px 0px 60px 0px", display: "flex" }}
+          className="mb-8 shadow-new-1 relative d-flex"
+        >
+          <div
+            style={{
+              borderRadius: "60px 0px 0px 0px",
+              background: "#141414",
+              // width: "20%",
+            }}
+            className="bg-dark-700 h-full w-40 flex items-center justify-center"
+          >
+            <div>
+              <SubText className="text-white tracking-wider lg:text-3xl md:text-xl ">
+                {title1}
+              </SubText>
+              <SmText className=" text-white text-center text-base font-bold ">
+                {date1}
+              </SmText>
+              <SmText className=" text-white text-center text-base font-bold ">
+                {" -"}
+              </SmText>
+              <SubText className="text-white tracking-wider lg:text-3xl md:text-xl ">
+                {title2}
+              </SubText>
+              <SmText className=" text-white text-center text-base font-bold ">
+                {date2}
+              </SmText>
+            </div>
+          </div>
+          {phase5 ? (
+            <>
+              <div className="p-10" style={{ width: "28%" }}>
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase1}
+                </p>
+                {array.quarterOne.map((el) => BoxCol(el))}
+              </div>
+              <div className="p-10" style={{ width: "28%" }}>
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase2}
+                </p>
+                {array.quarterTwo.map((el) => BoxCol(el))}
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase3}
+                </p>
+                {array.quarterThree.map((el) => BoxCol(el))}
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase4}
+                </p>
+                {array.quarterFour.map((el) => BoxCol(el))}
+              </div>
+              <div className="p-10" style={{ width: "28%" }}>
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase4}
+                </p>
+                {array.quarterFive.map((el) => BoxCol(el))}
+              </div>
+            </>
+          ) : phase4 ? (
+            <>
+              <div className="p-10" style={{ width: "28%" }}>
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase1}
+                </p>
+                {array.quarterOne.map((el) => BoxCol(el))}
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase2}
+                </p>
+                {array.quarterTwo.map((el) => BoxCol(el))}
+              </div>
+              <div className="p-10" style={{ width: "28%" }}>
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase3}
+                </p>
+                {array.quarterThree.map((el) => BoxCol(el))}
+              </div>
+              <div className="p-10" style={{ width: "28%" }}>
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase4}
+                </p>
+                {array.quarterFour.map((el) => BoxCol(el))}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="p-10" style={{ width: "28%" }}>
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase1}
+                </p>
+                {array.quarterOne.map((el) => BoxCol(el))}
+              </div>
+              <div className="p-10" style={{ width: "28%" }}>
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase2}
+                </p>
+                {array.quarterTwo.map((el) => BoxCol(el))}
+              </div>
+              <div className="p-10" style={{ width: "28%" }}>
+                <p className="text-primary-800 text-base font-bold ">
+                  {phase3}
+                </p>
+                {array.quarterThree.map((el) => BoxCol(el))}
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+    );
+  };
+
+  const BoxCol = (el) => {
+    return (
+      <div key={el.id} className="flex flex-col  p-1">
+        <h5 className="text-sm text-white font-bold px-1 flex items-center">
+          {el.verified ? (
+            <img src={tick} alt="nutgain logo" className="h-6 w-6 mr-5" />
+          ) : (
+            <img src={noTick} alt="nutgain logo" className="h-6 w-6 mr-5" />
+          )}{" "}
+          {el.desc}
+        </h5>
+        {el.subDesc.map((el) => (
+          <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
+            {el}
+          </p>
         ))}
       </div>
+    );
+  };
 
-      {/* second half of project timeline */}
-      <div className="my-12">
-        <Heading className="text-primary-800 font-bold mb-2">
-          Product Timeline
-        </Heading>
-
-        <div className="grid gird-cols-1  w-full">
-          {dataTwo.map((el, index) => (
-            <div key={el.id} className="flex  items-stretch   ">
-              <div className="flex-col flex w-full px-1">
-                <Heading className="text-white tracking-wider ">
-                  {el.day}
-                </Heading>
-                <SmText className="text-primary-800 text-base font-bold ">
-                  {el.title}
-                </SmText>
-              </div>
-
-              <div
-                className={`w-full ${
-                  dataTwo.length - 1 == index && "border-b-2 pb-6"
-                } border-l-2 border-gray-100 justify-self-stretch`}
-              >
-                {index == 0 && (
-                  <div
-                    key={el}
-                    className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                    style={style}
-                  >
-                    <SmText className="text-white " style={style}>
-                      Phase 1 (Q3, 2023)
-                    </SmText>
-                  </div>
-                )}
-
-                {el.quarterOne.map((el) => (
-                  <div key={el.id} className="flex flex-col  p-1">
-                    <h5 className="text-sm text-white font-bold px-1">
-                      {el.verified ? (
-                        <i
-                          className="fa fa-check-circle text-base text-green-400"
-                          aria-hidden="true"
-                        ></i>
-                      ) : (
-                        <i
-                          className="fa fa-check-circle text-base text-gray-800"
-                          aria-hidden="true"
-                        ></i>
-                      )}{" "}
-                      {el.desc}
-                    </h5>
-                    {el.subDesc.map((el) => (
-                      <p
-                        key={el}
-                        className="ml-4 text-sm rounded text-gray-500 "
-                      >
-                        {el}
-                      </p>
-                    ))}
-                  </div>
-                ))}
-              </div>
-
-              <div
-                className={`w-full ${
-                  dataTwo.length - 1 == index && "border-b-2 pb-6"
-                } border-l-2 border-gray-100 justify-self-stretch`}
-              >
-                {index == 0 && (
-                  <div
-                    key={el}
-                    className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                    style={style}
-                  >
-                    <SmText className="text-white " style={style}>
-                      Phase 2 (Q4, 2022)
-                    </SmText>
-                  </div>
-                )}
-                {el.quarterTwo.map((el) => (
-                  <div key={el.id} className="flex flex-col  p-1">
-                    <h5 className="text-sm text-white font-bold px-1">
-                      {el.verified ? (
-                        <i
-                          className="fa fa-check-circle text-base text-green-400"
-                          aria-hidden="true"
-                        ></i>
-                      ) : (
-                        <i
-                          className="fa fa-check-circle text-base text-gray-800"
-                          aria-hidden="true"
-                        ></i>
-                      )}{" "}
-                      {el.desc}
-                    </h5>
-                    {el.subDesc.map((el) => (
-                      <p
-                        key={el}
-                        className="ml-4 text-sm rounded text-gray-500 "
-                      >
-                        {el}
-                      </p>
-                    ))}
-                  </div>
-                ))}
-              </div>
-              <div
-                className={`w-full ${
-                  dataTwo.length - 1 == index && "border-b-2 pb-6"
-                } border-l-2 border-gray-100 justify-self-stretch`}
-              >
-                {index == 0 && (
-                  <div
-                    key={el}
-                    className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                    style={style}
-                  >
-                    <SmText className="text-white " style={style}>
-                      Phase 3 (Q1, 2023)
-                    </SmText>
-                  </div>
-                )}
-                {el.quarterThree.map((el) => (
-                  <div key={el.id} className="flex flex-col ">
-                    {el.desc === "" ? (
-                      ""
-                    ) : (
-                      <h5 className="text-sm text-white font-bold px-1">
-                        {el.verified ? (
-                          <i
-                            className="fa fa-check-circle text-base text-green-400"
-                            aria-hidden="true"
-                          ></i>
-                        ) : (
-                          <i
-                            className="fa fa-check-circle text-base text-gray-800"
-                            aria-hidden="true"
-                          ></i>
-                        )}{" "}
-                        {el.desc}
-                      </h5>
-                    )}
-                    {el.subDesc.map((el) => (
-                      <p
-                        key={el}
-                        className="ml-4 text-sm rounded text-gray-500 "
-                      >
-                        {el}
-                      </p>
-                    ))}
-                  </div>
-                ))}
-              </div>
-              <div
-                className={`w-full ${
-                  dataTwo.length - 1 == index && "border-b-2 pb-6"
-                } border-l-2 border-gray-100 justify-self-stretch`}
-              >
-                {index == 0 && (
-                  <div
-                    key={el}
-                    className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                    style={style}
-                  >
-                    <SmText className="text-white " style={style}>
-                      Phase 4 (Q1, 2023)
-                    </SmText>
-                  </div>
-                )}
-                {el.quarterFour.map((el) => (
-                  <div key={el.id} className="flex flex-col ">
-                    <h5 className="text-sm text-white font-bold px-1">
-                      {el.verified ? (
-                        <i
-                          className="fa fa-check-circle text-base text-green-400"
-                          aria-hidden="true"
-                        ></i>
-                      ) : (
-                        <i
-                          className="fa fa-check-circle text-base text-gray-800"
-                          aria-hidden="true"
-                        ></i>
-                      )}{" "}
-                      {el.desc}
-                    </h5>
-                    {el.subDesc.map((el) => (
-                      <p
-                        key={el}
-                        className="ml-4 text-sm rounded text-gray-500 "
-                      >
-                        {el}
-                      </p>
-                    ))}
-                  </div>
-                ))}
-              </div>
-              <div
-                className={`w-full ${
-                  dataTwo.length - 1 == index && "border-b-2 pb-6"
-                } border-l-2 border-gray-100 justify-self-stretch`}
-              >
-                {index == 0 && (
-                  <div
-                    key={el}
-                    className=" px-6 w-full py-3 bg-dark-700 mb-2"
-                    style={style}
-                  >
-                    <SmText className="text-white " style={style}>
-                      Phase 5 (Q2, 2023)
-                    </SmText>
-                  </div>
-                )}
-                {el.quarterFive.map((el) => (
-                  <div key={el.id} className="flex flex-col ">
-                    <h5 className="text-sm text-white font-bold px-1">
-                      {el.verified ? (
-                        <i
-                          className="fa fa-check-circle text-base text-green-400"
-                          aria-hidden="true"
-                        ></i>
-                      ) : (
-                        <i
-                          className="fa fa-check-circle text-base text-gray-800"
-                          aria-hidden="true"
-                        ></i>
-                      )}{" "}
-                      {el.desc}
-                    </h5>
-                    {el.subDesc.map((el) => (
-                      <p
-                        key={el}
-                        className="ml-4 text-sm rounded text-gray-500 "
-                      >
-                        {el}
-                      </p>
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+  const HeadingFtn = (Heading, index) => {
+    return (
+      <div>
+        <p className="text-white text-center text-base font-bold block">
+          {index}
+        </p>
+        <p className="text-white text-center text-base font-bold py-6 ">
+          {Heading}
+        </p>
+      </div>
+    );
+  };
+  return (
+    <div
+      style={{ background: "#1D1D1D" }}
+      className={`${paddingX} bg-dark-800 hidden md:flex flex-col py-12 `}
+    >
+      <Heading className="text-primary-800 font-bold mb-2">
+        Product Timeline
+      </Heading>
+      <div style={{ position: "relative" }}>
+        <p className="dot" />
+        <div
+          style={{
+            background: ` url(${LineDot})`,
+            height: "1px",
+            position: "absolute",
+            top: "20px",
+            width: "100%",
+          }}
+        />{" "}
+        <div
+          style={{
+            background: ` url(${LineVertical})`,
+            width: "1px",
+            position: "absolute",
+            top: "20px",
+            right: "0px",
+            height: "450px",
+          }}
+        />
+        <div
+          className={`${paddingX} grid md:grid-cols-2 grid-cols-1 w-full gap-12 `}
+        >
+          {HeadingFtn("NFT Marketplace", "1")}
+          {HeadingFtn("DeFi Exchange", "2")}
         </div>
+      </div>
+
+      <div
+        className={`${paddingX} grid md:grid-cols-2 grid-cols-1 w-full gap-12`}
+      >
+        {BoxUI("Q1", "2022", data[0].quarterOne, "NFT Marketplace", "1")}
+        {/* second card */}
+        {BoxUI("Q1 - Q2", "2022", data[1].quarterOne, "DeFi Exchange", "2")}
+      </div>
+      <div style={{ position: "relative" }}>
+        <div
+          style={{
+            background: ` url(${LineDot})`,
+            height: "1px",
+            position: "absolute",
+            top: "20px",
+            width: "100%",
+          }}
+        />
+        <div
+          style={{
+            background: ` url(${LineVertical})`,
+            width: "1px",
+            position: "absolute",
+            top: "20px",
+            height: "487px",
+          }}
+        />
+        <div
+          className={`${paddingX} grid md:grid-cols-1 grid-cols-1 w-full gap-12 `}
+        >
+          {HeadingFtn("ZOR Web 3.0", "3")}
+        </div>
+      </div>
+
+      <div
+        className={`${paddingX} grid md:grid-cols-1 grid-cols-1 w-full gap-12`}
+      >
+        {BoxRow(
+          "Q1",
+          "2022",
+          "Q2",
+          "2023",
+          data[2],
+          "Phase 1 (Q1, 2022)",
+          "Phase 2 (Q2, 2022)",
+          "Phase 3 (Q3 2022)",
+          "Phase 4 (Q1, 2023)",
+          "Phase 5 (Q2 2023)"
+        )}
+      </div>
+      <div style={{ position: "relative" }}>
+        <div
+          style={{
+            background: ` url(${LineDot})`,
+            height: "1px",
+            position: "absolute",
+            top: "20px",
+            width: "100%",
+          }}
+        />
+        <div
+          style={{
+            background: ` url(${LineVertical})`,
+            width: "1px",
+            position: "absolute",
+            top: "20px",
+            right: "0px",
+            height: "350px",
+          }}
+        />
+        <div
+          className={`${paddingX} grid md:grid-cols-1 grid-cols-1 w-full gap-12 `}
+        >
+          {HeadingFtn("DeFi Wallets", "4")}
+        </div>
+      </div>
+      <div
+        className={`${paddingX} grid md:grid-cols-1 grid-cols-1 w-full gap-12`}
+      >
+        {BoxRow(
+          "Q4",
+          "2022",
+          "Q3",
+          "2023",
+          dataTwo[0],
+          "Phase 1 (Q3, 2022)",
+          "Phase 2 (Q4, 2022)",
+          "Phase 3 (Q1, 2023)"
+        )}
+      </div>
+      <div style={{ position: "relative" }}>
+        <div
+          style={{
+            background: ` url(${LineDot})`,
+            height: "1px",
+            position: "absolute",
+            top: "20px",
+            right: "0px",
+            width: "50%",
+          }}
+        />
+        <div
+          className={`${paddingX} grid md:grid-cols-1 grid-cols-1 w-full gap-12 `}
+        >
+          {HeadingFtn("Decentralized Hyper E-commerce", "5")}
+        </div>
+      </div>
+      <div
+        className={`${paddingX} grid md:grid-cols-1 grid-cols-1 w-full gap-12`}
+      >
+        {BoxRow(
+          "Q4",
+          "2022",
+          "Q3",
+          "2023",
+          dataTwo[1],
+          "Phase 1 (Q4, 2022)",
+          "Phase 2 (Q1, 2023)",
+          "Phase 3 (Q2, 2023)",
+          "Phase 4 (Q3, 2023)"
+        )}
       </div>
     </div>
   );
@@ -477,6 +391,46 @@ const Time = () => {
 export default Time;
 
 // mock data
+const quarterOne = [
+  {
+    id: 12,
+    verified: true,
+    desc: "UI & Domain Finalization",
+    subDesc: [],
+  },
+  {
+    id: 2,
+    verified: true,
+    desc: "UX Development",
+    subDesc: [],
+    // subDesc: [
+    //   "Swap & Liquidity",
+    //   "Smart Contract Development",
+    //   "Yield Farming Integration",
+    //   "Staking Integration",
+    //   "  Spin & Win",
+    // ],
+  },
+  {
+    id: 124,
+    verified: false,
+    desc: "Initiation of Product Development",
+    subDesc: [],
+  },
+  {
+    id: 124,
+    verified: false,
+    desc: "Deployment & Testing on Test Bed",
+    subDesc: [],
+  },
+  {
+    id: 124,
+    verified: false,
+    desc: "Go-live on 28th Feb 2022",
+    subDesc: [],
+  },
+];
+
 const data = [
   // first
   {
@@ -555,15 +509,12 @@ const data = [
           "Spin & Win",
         ],
       },
-
       {
         id: 212,
         verified: false,
         desc: "Interface and back end development",
         subDesc: [],
       },
-    ],
-    quarterTwo: [
       {
         id: 111,
         verified: false,
@@ -577,6 +528,7 @@ const data = [
         subDesc: [],
       },
     ],
+    quarterTwo: [],
     quarterThree: [],
     quarterFour: [],
     quarterFive: [],
