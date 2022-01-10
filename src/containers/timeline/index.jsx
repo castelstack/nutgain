@@ -6,7 +6,7 @@ import box from "../../assets/svg/box.svg";
 import { TimeCard } from "./card";
 import { paddingX } from "../../constant/styles/spacing";
 import squ from "../../assets/svg/squb.svg";
-import coin from "../../assets/svg/coin.svg";
+import coin from "../../assets/svg/coin2.svg";
 import card from "../../assets/svg/card.svg";
 import { ReactComponent as Stand } from "../../assets/svg/stand.svg";
 import PieChart from "./pieChart";
@@ -50,7 +50,7 @@ const ProjectTimeline = () => {
                 alt="msg "
                 className="md:h-52 md:w-52 h-32 w-32 z-20"
               />
-              <Stand className="md:h-52 md:w-52 h-32 w-32 z-10" />
+              {/* <Stand className="md:h-52 md:w-52 h-32 w-32 z-10" /> */}
             </div>
             <Heading className="text-primary-800 tracking-normal ">
               Tokenomics
@@ -95,21 +95,57 @@ const ProjectTimeline = () => {
         {/* ./second div containig squ img and trading view box */}
         <div className="flex flex-col   gap-4 md:transform transform-none -translate-x-20 mb-12">
           <img src={squ} alt="nutgain " className=" h-96 w-full mx-8" />
-          <div className=" grid grid-cols-2 items-center content-center overflow-none object-fit ">
-            <div></div>
-            <div className="grid grid-cols-2  justify-between justify-items-center px-4 py-4 ">
-              <SmText className="text-gray-100 px-4 w-full text-center">
-                Buy Fee
-              </SmText>
-              <SmText className="text-gray-100 px-4 w-full text-center">
-                Sell Fee
-              </SmText>
+
+          <div className="flex flex-col mt-4 w-full">
+            <div
+              className="grid grid-cols-2 items-center content-center overflow-none object-fit "
+              style={{ borderRadius: "60px 0px 60px 0px" }}
+            >
+              <div></div>
+              <div
+                className="grid grid-cols-2 bg-dark-700 justify-between justify-items-center px-4 py-4"
+                style={{
+                  clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%",
+                }}
+              >
+                <SmText className="text-gray-100 px-4 w-full text-center">
+                  Buy Fee
+                </SmText>
+                <SmText className="text-gray-100 px-4 w-full text-center">
+                  Sell Fee
+                </SmText>
+              </div>
+            </div>
+            {/* 
+          card 1 */}
+            <div
+              className="grid grid-cols-2 items-center content-center  object-fit shadow-new-2 bg-white"
+              style={{ borderRadius: "30px 0px 30px 0px" }}
+            >
+              <div
+                style={{
+                  borderRadius: "30px 0px 0px 0px",
+                  clipPath: "polygon(0 0, 100% 0, 90% 100%, 0% 100%)",
+                }}
+                className="bg-primary-800"
+              >
+                <SmText className="text-gray-900 px-8 py-4 font-bold ">
+                  Liquidity Pool
+                </SmText>
+              </div>
+              <div className="grid grid-cols-2 divide-x justify-between justify-items-center px-4 py-4">
+                <SmText className="text-gray-900 px-4 w-full text-center">
+                  3.00%
+                </SmText>
+                <SmText className="text-gray-900 px-4 w-full text-center">
+                  5.00%
+                </SmText>
+              </div>
             </div>
           </div>
-
           {/* 
           card 1 */}
-          <div
+          {/* <div
             className="shadow-new-2 grid grid-cols-2 items-center content-center  object-fit  bg-white"
             style={{ borderRadius: "30px 0px 30px 0px" }}
           >
@@ -132,7 +168,7 @@ const ProjectTimeline = () => {
                 5.00%
               </SmText>
             </div>
-          </div>
+          </div> */}
           {/* 
           card 2 */}
           <div
@@ -182,6 +218,20 @@ const ProjectTimeline = () => {
               </SmText>
               <SmText className="text-gray-900 px-4 w-full text-center">
                 5.00%
+              </SmText>
+            </div>
+          </div>
+          <div
+            className="shadow-new-2 grid grid-cols-2 items-center content-center  object-fit"
+            style={{ borderRadius: "30px 0px 30px 0px" }}
+          >
+            <div></div>
+            <div className="grid grid-cols-2 justify-between justify-items-center px-4 py-4">
+              <SmText className="text-white font-bold px-4 w-full text-center">
+                12.00%
+              </SmText>
+              <SmText className="text-white font-bold px-4 w-full text-center">
+                15.00%
               </SmText>
             </div>
           </div>

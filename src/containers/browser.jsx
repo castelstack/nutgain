@@ -134,8 +134,8 @@ const Browser = () => {
         <div
           className={`${paddingX} w-full flex flex-col items-end py-20 bg-dark-800`}
         >
-          <SubText className="text-primary-800 text-right pl-4 py-2 border-b-2  w-max border-white">
-            Some characteristics of Web 3.0 Browser
+          <SubText className="text-primary-800 text-center pl-4 py-2 self-center">
+            Some characteristics of ZOR
           </SubText>
           <div className="md:flex grid grid-cols-2 w-full pt-12 justify-between gap-8 ">
             <div className="flex flex-col  items-center">

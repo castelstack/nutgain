@@ -33,10 +33,10 @@ const Redistro = () => {
           <div className="-space-y-44 flex flex-col justify-items-center ">
             {/* <Coinn  className='h-40 w-40' /> */}
             <motion.img
-              animate={{
-                scale: 1.1,
-                transition: { ease: "linear", duration: 10, repeat: Infinity },
-              }}
+              // animate={{
+              //   scale: 1.1,
+              //   transition: { ease: "linear", duration: 10, repeat: Infinity },
+              // }}
               src={coin}
               alt="msg "
               className="h-52 w-52 mr8 z-20"

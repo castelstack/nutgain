@@ -43,13 +43,22 @@ const Team = () => {
           ))}
         </div>
 
-        <Heading className="text-primary-800 text-center">Advisors</Heading>
-        <div
-          style={style}
-          className={`${paddingX} bg-dark-700 shadow-new-3  py-8`}
-        >
+        {/* <Heading className="text-primary-800 text-center">Advisors</Heading> */}
+        <div style={style} className={`${paddingX} py-8`}>
           <div className="grid md:grid-cols-3 grid-cols-1 items-start sm:gap-12 gap-4 justify-center">
             {adteam.map((el, idx) => (
+              <Advisor
+                key={idx}
+                image={el.image}
+                desc={el.desc}
+                name={el.name}
+              />
+            ))}
+          </div>
+        </div>
+        <div style={style} className={`${paddingX} py-8`}>
+          <div className="grid md:grid-cols-2 grid-cols-1 items-start sm:gap-12 gap-4 justify-center">
+            {adteam2.map((el, idx) => (
               <Advisor
                 key={idx}
                 image={el.image}
@@ -69,10 +78,14 @@ export default Team;
 const TeamMember = ({ image, position, desc, name }) => {
   return (
     <div className="w-full">
-      <img src={image} alt="web3 browser" className="sm:h-40 h-32" />
-      <SubText className="text-primary-800 text-center capitalize">
+      <img
+        src={image}
+        alt="web3 browser"
+        className="sm:h-40 h-32 m-auto mb-5"
+      />
+      <MdHeading className="text-primary-800 text-center capitalize">
         {name}
-      </SubText>
+      </MdHeading>
       <SmText className="text-white text-center font-bold">{position}</SmText>
       <SmText className="text-white text-center">{desc}</SmText>
     </div>
@@ -81,13 +94,15 @@ const TeamMember = ({ image, position, desc, name }) => {
 
 const Advisor = ({ image, desc, name }) => {
   return (
-    <div className="w-full flex items-center">
-      <img src={image} alt="web3 browser " className="sm:h-40 h-32" />
-      <div>
-        <MdHeading className="text-primary-800 capitalize">{name}</MdHeading>
+    <div className="w-full items-center justify-content-center">
+      <img src={image} alt="web3 browser " className="sm:h-40 h-32 m-auto" />
+      {/* <div> */}
+      <MdHeading className="text-primary-800 capitalize text-center">
+        {name}
+      </MdHeading>
 
-        <SmText className="text-white font-bold">{desc}</SmText>
-      </div>
+      <SmText className="text-white font-bold text-center">{desc}</SmText>
+      {/* </div> */}
     </div>
   );
 };
@@ -135,6 +150,8 @@ const adteam = [
     image: ad5,
     name: "LS",
   },
+];
+const adteam2 = [
   {
     desc: "Technology Advisor",
     image: ad3,

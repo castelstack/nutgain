@@ -7,18 +7,18 @@ const PieChart = () => {
       <Pie className="w-full" />
       <aside className="w-full">
         <div
-          className=" w-full flex flex-col items-end p-8 gap-8 rounded bg-opacity-5 bg-primary-800"
+          className="w-full flex flex-col items-end p-8 gap-8 rounded bg-opacity-5 bg-primary-800"
           style={{ borderRadius: "60px" }}
         >
-          <MdHeading className=" md:text-5xl text-primary-800 flex">
+          <MdHeading className="md:text-5xl text-primary-800 flex">
             Total Supply{" "}
-            <MdHeading className="text-white pl-4 md:text-5xl">
+            <MdHeading className="text-white pl-6 md:text-5xl">
               1,500,000,000
             </MdHeading>
           </MdHeading>
           <MdHeading className="text-primary-800 md:text-5xl flex gap">
             Market Cap{" "}
-            <MdHeading className="text-white pl-4 md:text-5xl">
+            <MdHeading className="text-white pl-6 md:text-5xl">
               1,500,000
             </MdHeading>
           </MdHeading>
