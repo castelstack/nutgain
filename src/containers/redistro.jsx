@@ -1,7 +1,7 @@
 import React from "react";
 // import bg from "../assets/svg/debg.svg";
 import rebg from "../assets/svg/rebg.svg";
-import coin from "../assets/svg/coin.svg";
+import coin from "../assets/svg/nutG.svg";
 import { ReactComponent as Stand } from "../assets/svg/stand.svg";
 import vid from "../assets/gif.mp4";
 import { motion } from "framer-motion";

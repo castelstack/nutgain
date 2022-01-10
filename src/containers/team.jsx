@@ -78,15 +78,13 @@ export default Team;
 const TeamMember = ({ image, position, desc, name }) => {
   return (
     <div className="w-full">
-      <img
-        src={image}
-        alt="web3 browser"
-        className="sm:h-40 h-32 m-auto mb-5"
-      />
-      <MdHeading className="text-primary-800 text-center capitalize">
+      <img src={image} alt="web3 browser" className=" m-auto mb-5" />
+      <MdHeading className="text-primary-800 text-center capitalize pb-2">
         {name}
       </MdHeading>
-      <SmText className="text-white text-center font-bold">{position}</SmText>
+      <SmText className="text-white text-center font-bold pb-2">
+        {position}
+      </SmText>
       <SmText className="text-white text-center">{desc}</SmText>
     </div>
   );
@@ -95,7 +93,7 @@ const TeamMember = ({ image, position, desc, name }) => {
 const Advisor = ({ image, desc, name }) => {
   return (
     <div className="w-full items-center justify-content-center">
-      <img src={image} alt="web3 browser " className="sm:h-40 h-32 m-auto" />
+      <img src={image} alt="web3 browser " className="m-auto" />
       {/* <div> */}
       <MdHeading className="text-primary-800 capitalize text-center">
         {name}

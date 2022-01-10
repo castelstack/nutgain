@@ -7,6 +7,7 @@ import { TimeCard } from "./card";
 import { paddingX } from "../../constant/styles/spacing";
 import squ from "../../assets/svg/squb.svg";
 import coin from "../../assets/svg/coin2.svg";
+import coin2 from "../../assets/svg/BUSD.svg";
 import card from "../../assets/svg/card.svg";
 import { ReactComponent as Stand } from "../../assets/svg/stand.svg";
 import PieChart from "./pieChart";
@@ -77,7 +78,7 @@ const ProjectTimeline = () => {
               </SmText>
               <div className="flex flex-col  gap-8 ">
                 <div className="flex  md:flex-row flex-col items-center ">
-                  <img src={coin} alt="web3 browser " className="h-20 w-20" />
+                  <img src={coin2} alt="web3 browser " className="h-20 w-20" />
                   <SmText className="text-primary-800 font-bold pl-10">
                     Passive income in BUSD{" "}
                   </SmText>
