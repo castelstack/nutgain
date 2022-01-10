@@ -247,25 +247,25 @@ export default ProjectTimeline;
 
 const data = [
   {
-    title: "Phase 1",
+    title: "Quarter 1",
     year: "2022",
     info: ["IDO (PinkSale)", "Listing on PancakeSwap"],
     icon: cha3,
   },
   {
-    title: "Phase 2",
+    title: "Quarter 2",
     year: "",
     info: ["Listing on other ", "DEX"],
     icon: cha3,
   },
   {
-    title: "Phase 3",
+    title: "Quarter 3",
     year: "",
     info: ["Listing on Centralized Exchange (Binance)"],
     icon: cha3,
   },
   {
-    title: "Phase 4",
+    title: "Quarter 4",
     year: "2023",
     info: ["Listing on other Centralized Exchanges"],
     icon: cha3,
