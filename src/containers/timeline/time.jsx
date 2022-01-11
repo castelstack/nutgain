@@ -233,7 +233,7 @@ const Time = () => {
       className={`${paddingX} bg-dark-800 hidden md:flex flex-col py-12 `}
     >
       <Heading className="text-primary-800 font-bold mb-2">
-        Product Timeline
+        Product Timelines
       </Heading>
       <div style={{ position: "relative" }}>
         <p className="dot" />

@@ -139,19 +139,21 @@ const Browser = () => {
           </SubText>
           <div className="md:flex grid grid-cols-2 w-full pt-12 justify-between gap-8 ">
             <div className="flex flex-col  items-center">
-              <img src={cha0} alt="zor" className="h-24 w-24" />
+              <img src={cha0} alt="zor" className="h-40 w-40" />
               <SmText className="text-white">Fast and ad-free</SmText>
             </div>
             <div className="flex flex-col items-center">
-              <img src={cha1} alt="zor" className="h-24 w-24" />
-              <SmText className="text-white">Private</SmText>
+              <img src={cha1} alt="zor" className="h-40 w-40" />
+              <SmText className="text-white">
+                Private - reduces tracking and cookies
+              </SmText>
             </div>
             <div className="flex flex-col items-center">
-              <img src={cha3} alt="zor" className="h-24 w-24" />
+              <img src={cha3} alt="zor" className="h-40 w-40" />
               <SmText className="text-white">Optimized and efficient</SmText>
             </div>
             <div className="flex flex-col items-center">
-              <img src={cha4} alt="zor" className="h-24 w-24" />
+              <img src={cha4} alt="zor" className="h-40 w-40" />
               <SmText className="text-white">Has dark mode</SmText>
             </div>
           </div>

@@ -1,8 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Heading, SmText } from "../../constant/styles/text";
-import cha3 from "../../assets/svg/cha3.svg";
+import cha1 from "../../assets/svg/card1.svg";
+
+import cha2 from "../../assets/svg/cha2.svg";
 import box from "../../assets/svg/box.svg";
+
+import cha4 from "../../assets/svg/card4.svg";
+
 import { TimeCard } from "./card";
 import { paddingX } from "../../constant/styles/spacing";
 import squ from "../../assets/svg/squb.svg";
@@ -22,17 +27,18 @@ const ProjectTimeline = () => {
           {data.map((el, idx) => (
             <TimeCard
               key={idx}
-              icon={card}
+              icon={el.icon}
               year={el.year}
               title={el.title}
               info={el.info}
+              desc={el.desc}
             />
           ))}
         </div>
       </div>
       {/* tokenomics and mock trade view box */}
       <div
-        className={` py-12 grid md:grid-cols-2 grid-cols-1 items-end w-full`}
+        className={` py-24 grid md:grid-cols-2 grid-cols-1 items-end w-full`}
       >
         <div className="-space-y-4 flex flex-col ">
           <aside className="flex  items-center md:ml-12 ml-2  md:gap-8  gap-0">
@@ -94,8 +100,8 @@ const ProjectTimeline = () => {
           </div>
         </div>
         {/* ./second div containig squ img and trading view box */}
-        <div className="flex flex-col   gap-4 md:transform transform-none -translate-x-20 mb-12">
-          <img src={squ} alt="nutgain " className=" h-96 w-full mx-8" />
+        <div className="flex flex-col   gap-4 md:transform transform-none -translate-x-20 translate-y-20">
+          <img src={squ} alt="nutgain " className=" h-96 w-full mx-8 mb-5" />
 
           <div className="flex flex-col mt-4 w-full">
             <div
@@ -251,24 +257,28 @@ const data = [
     title: "Quarter 1",
     year: "2022",
     info: ["IDO (PinkSale)", "Listing on PancakeSwap"],
-    icon: cha3,
+    desc: "(Liquidity 500BNB locked for 5 years)",
+    icon: cha1,
   },
   {
     title: "Quarter 2",
     year: "",
-    info: ["Listing on other ", "DEX"],
-    icon: cha3,
+    info: ["Listing on other DEX", ""],
+    desc: "",
+    icon: card,
   },
   {
     title: "Quarter 3",
     year: "",
     info: ["Listing on Centralized Exchange (Binance)"],
-    icon: cha3,
+    desc: "",
+    icon: cha2,
   },
   {
     title: "Quarter 4",
     year: "2023",
     info: ["Listing on other Centralized Exchanges"],
-    icon: cha3,
+    desc: "",
+    icon: cha4,
   },
 ];

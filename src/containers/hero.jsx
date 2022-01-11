@@ -49,7 +49,7 @@ const Hero = () => {
               href="https://github.com/nutgain/Smart_Contract_Audit/blob/main/NutGain_0xc091377110acfb780dfb9f6c200b2ef81d8ce4ab.pdf"
               target="_blank"
             >
-              <p className="text-primary-200 font-prime font-bold sm:text-base">
+              <p className="text-primary-200 font-prime font-bold sm:text-base z-1000">
                 Audit Report
               </p>
             </a>

@@ -9,6 +9,7 @@ import ad1 from "../assets/svg/adm.svg";
 import te1 from "../assets/svg/te1.svg";
 import ta2 from "../assets/svg/ta2.svg";
 import ta4 from "../assets/svg/ta4.svg";
+import ta5 from "../assets/svg/ta5.svg";
 import tam from "../assets/svg/tam.svg";
 import bg from "../assets/svg/bgtime.svg";
 
@@ -31,7 +32,7 @@ const Team = () => {
         <Heading className="text-primary-800 text-center">
           Meet Our Team
         </Heading>
-        <div className="grid md:grid-cols-4 grid-cols-1 items-start gap-8 justify-center">
+        <div className="grid md:grid-cols-5 grid-cols-1 items-start gap-8 justify-center">
           {team.map((el, idx) => (
             <TeamMember
               position={el.position}
@@ -78,7 +79,12 @@ export default Team;
 const TeamMember = ({ image, position, desc, name }) => {
   return (
     <div className="w-full">
-      <img src={image} alt="web3 browser" className=" m-auto mb-5" />
+      <img
+        src={image}
+        alt="web3 browser"
+        style={{ height: "270px" }}
+        className=" m-auto mb-5"
+      />
       <MdHeading className="text-primary-800 text-center capitalize pb-2">
         {name}
       </MdHeading>
@@ -129,6 +135,12 @@ const team = [
     image: ta4,
     position: "CMO",
     desc: "Not so Nuts! A marketing professional with over 10 years of working experience. An avid crypto follower and believer.",
+  },
+  {
+    name: "MG",
+    image: ta5,
+    position: "CTO",
+    desc: "Over 20 years of experience in the domains of data privacy, data protection and blockchain.",
   },
 ];
 
