@@ -165,7 +165,7 @@ const adteam2 = [
   {
     desc: "Technology Advisor",
     image: ad3,
-    name: "KS",
+    name: "F-LS",
   },
   {
     desc: "Talent Hunt",

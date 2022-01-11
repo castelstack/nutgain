@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as Pie } from "../../assets/svg/pie2.svg";
+import { ReactComponent as Pie } from "../../assets/svg/pie3.svg";
 import { SubText, SmText, MdHeading } from "../../constant/styles/text";
 const PieChart = () => {
   return (
@@ -10,9 +10,9 @@ const PieChart = () => {
           className="w-full flex flex-col items-end p-8 gap-8 rounded bg-opacity-5 bg-primary-800"
           style={{ borderRadius: "60px" }}
         >
-          <MdHeading className="md:text-5xl text-primary-800 flex">
+          <MdHeading className="text-primary-800 flex  md:text-4xl">
             Total Supply{" "}
-            <MdHeading className="text-white pl-6 md:text-5xl">
+            <MdHeading className="text-white pl-6 md:text-4xl">
               1,500,000,000
             </MdHeading>
           </MdHeading>

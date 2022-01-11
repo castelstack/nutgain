@@ -31,7 +31,7 @@ const Percentage = () => {
               <SubText className="font-extrabold text-primary-800 text-center">
                 {el.percentage}%
               </SubText>
-              <SmText className="capitalize text-white w-min text-center">
+              <SmText className="capitalize text-white w-32 text-center">
                 {el.title}
               </SmText>
             </div>

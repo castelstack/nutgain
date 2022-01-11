@@ -40,7 +40,7 @@ const Time = () => {
             <div className="p-10">
               {array.map((el) => (
                 <div key={el.id} className="flex flex-col  p-1">
-                  <h5 className="text-sm text-white font-bold px-1 flex items-center">
+                  <h5 className="text-base font-prime text-white px-1 flex items-center">
                     {el.verified ? (
                       <img
                         src={tick}
@@ -57,8 +57,11 @@ const Time = () => {
                     {el.desc}
                   </h5>
                   {el.subDesc.map((el) => (
-                    <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
-                      {el}
+                    <p
+                      key={el}
+                      className="ml-14 font-prime text-sm rounded text-gray-500 "
+                    >
+                      &bull; {el}
                     </p>
                   ))}
                 </div>
@@ -117,27 +120,27 @@ const Time = () => {
           {phase5 ? (
             <>
               <div className="p-10" style={{ width: "28%" }}>
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase1}
                 </p>
                 {array.quarterOne.map((el) => BoxCol(el))}
               </div>
               <div className="p-10" style={{ width: "28%" }}>
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase2}
                 </p>
                 {array.quarterTwo.map((el) => BoxCol(el))}
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase3}
                 </p>
                 {array.quarterThree.map((el) => BoxCol(el))}
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase4}
                 </p>
                 {array.quarterFour.map((el) => BoxCol(el))}
               </div>
               <div className="p-10" style={{ width: "28%" }}>
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase4}
                 </p>
                 {array.quarterFive.map((el) => BoxCol(el))}
@@ -146,23 +149,23 @@ const Time = () => {
           ) : phase4 ? (
             <>
               <div className="p-10" style={{ width: "28%" }}>
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase1}
                 </p>
                 {array.quarterOne.map((el) => BoxCol(el))}
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase2}
                 </p>
                 {array.quarterTwo.map((el) => BoxCol(el))}
               </div>
               <div className="p-10" style={{ width: "28%" }}>
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase3}
                 </p>
                 {array.quarterThree.map((el) => BoxCol(el))}
               </div>
               <div className="p-10" style={{ width: "28%" }}>
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase4}
                 </p>
                 {array.quarterFour.map((el) => BoxCol(el))}
@@ -171,19 +174,19 @@ const Time = () => {
           ) : (
             <>
               <div className="p-10" style={{ width: "28%" }}>
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase1}
                 </p>
                 {array.quarterOne.map((el) => BoxCol(el))}
               </div>
               <div className="p-10" style={{ width: "28%" }}>
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase2}
                 </p>
                 {array.quarterTwo.map((el) => BoxCol(el))}
               </div>
               <div className="p-10" style={{ width: "28%" }}>
-                <p className="text-primary-800 text-base font-bold ">
+                <p className="text-primary-800  text-sm font-prime font-bold ">
                   {phase3}
                 </p>
                 {array.quarterThree.map((el) => BoxCol(el))}
@@ -198,7 +201,7 @@ const Time = () => {
   const BoxCol = (el) => {
     return (
       <div key={el.id} className="flex flex-col  p-1">
-        <h5 className="text-sm text-white font-bold px-1 flex items-center">
+        <h5 className="text-base font-prime text-white px-1 flex items-center">
           {el.verified ? (
             <img src={tick} alt="nutgain logo" className="h-6 w-6 mr-5" />
           ) : (
@@ -207,8 +210,11 @@ const Time = () => {
           {el.desc}
         </h5>
         {el.subDesc.map((el) => (
-          <p key={el} className="ml-4 text-sm rounded text-gray-500 ">
-            {el}
+          <p
+            key={el}
+            className="ml-14 font-prime text-sm rounded text-gray-500 "
+          >
+            &bull; {el}
           </p>
         ))}
       </div>
@@ -221,7 +227,7 @@ const Time = () => {
         <p className="text-white text-center text-base font-bold block">
           {index}
         </p>
-        <p className="text-white text-center text-base font-bold py-6 ">
+        <p className="text-white sm:text-xl font-prime text-center text-base font-bold py-6 ">
           {Heading}
         </p>
       </div>

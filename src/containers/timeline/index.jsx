@@ -115,10 +115,10 @@ const ProjectTimeline = () => {
                   clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%",
                 }}
               >
-                <SmText className="text-gray-100 px-4 w-full text-center">
+                <SmText className="text-white px-4 w-full text-center">
                   Buy Fee
                 </SmText>
-                <SmText className="text-gray-100 px-4 w-full text-center">
+                <SmText className="text-white px-4 w-full text-center">
                   Sell Fee
                 </SmText>
               </div>

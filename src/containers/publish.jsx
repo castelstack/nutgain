@@ -27,7 +27,7 @@ const Publish = () => {
               <img
                 src={el.image}
                 alt="zor"
-                className="sm:h-32 sm:w-32 h-12 w-12"
+                className="sm:h-32 sm:w-32 h-12 w-12 mb-6"
               />
             </a>
             <SmText className="text-gray-900 font-bold">{el.company}</SmText>
