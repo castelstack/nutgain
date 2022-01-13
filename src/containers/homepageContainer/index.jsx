@@ -16,8 +16,8 @@ import Modal2 from "./modal2";
 const Home = () => {
   return (
     <div className="overflow-hidden">
-      <Modal />
-      <Modal2 />
+      {/* <Modal /> */}
+      {/* <Modal2 /> */}
       <Hero />
       <Reward />
       <Redistro />

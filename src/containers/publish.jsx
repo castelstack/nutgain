@@ -7,8 +7,8 @@ import pb4 from "../assets/svg/pb4.svg";
 import pb5 from "../assets/svg/pb5.svg";
 import pb6 from "../assets/svg/pb6.svg";
 import pbk from "../assets/svg/pinksale.png";
-import yahoo from "../assets/svg/yahoo.svg";
-import pre from "../assets/svg/pre.svg";
+import yahoo from "../assets/webp/yahoo.webp";
+import pre from "../assets/webp/pre.webp";
 import { paddingX } from "../constant/styles/spacing";
 // import { ScrollInRight } from "../constant/layout/animateOnScroll";
 

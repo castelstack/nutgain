@@ -43,10 +43,10 @@ const Footer = () => {
             <SubText className="font-bold text-white mb-3">Site</SubText>
             <div className="flex flex-col gap-3 ">
               {site.map((el, index) => (
-                <a href={el.link} target={el.link !== '' ? "_blank" : 'none'}>
-                <SmText key={index} className="text-white capitalize">
-                  {el.name}
-                </SmText>
+                <a href={el.link} target={el.link !== "" ? "_blank" : "none"}>
+                  <SmText key={index} className="text-white capitalize">
+                    {el.name}
+                  </SmText>
                 </a>
               ))}
             </div>
@@ -63,7 +63,9 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex flex-col">
-              <SubText className="font-bold text-white mb-4">Contact Us</SubText>
+              <SubText className="font-bold text-white mb-4">
+                Contact Us
+              </SubText>
               <div className="flex gap-1 items-start">
                 <a
                   rel="noreferrer"
@@ -90,7 +92,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <SubText className="font-bold text-white mt-20 mb-4">Our Pages</SubText>
+              <SubText className="font-bold text-white mt-20 mb-4">
+                Our Pages
+              </SubText>
               <div className="flex gap-2 items-start">
                 <a
                   rel="noreferrer"
@@ -174,20 +178,20 @@ const products = [
 
 const site = [
   {
-    name :  "privacy policy",
-    link: 'https://www.privacypolicies.com/live/9423dd98-c6ba-4561-80c0-4f8204f965c4'
+    name: "privacy policy",
+    link: "https://www.privacypolicies.com/live/9423dd98-c6ba-4561-80c0-4f8204f965c4",
   },
   {
-    name:  "terms and conditions",
-    link: 'https://www.privacypolicies.com/live/49161a43-e3be-4dbc-97dd-a155424f793c'
+    name: "terms and conditions",
+    link: "https://www.privacypolicies.com/live/49161a43-e3be-4dbc-97dd-a155424f793c",
   },
   {
-    name :  "career oppurtunity",
-    link: ''
+    name: "career oppurtunity",
+    link: "",
   },
   {
-    name:  "report a security issue",
-    link: ''
+    name: "report a security issue",
+    link: "",
   },
 ];
 const help = [

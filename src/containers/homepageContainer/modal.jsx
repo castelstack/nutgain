@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../assets/svg/logo.svg";
-import reward from "../../assets/svg/scanner.svg";
+import logo from "../../assets/webp/logo.webp";
+import reward from "../../assets/webp/scanner.webp";
 import ModalView from "react-modal";
 import { Heading, SmText, SubText } from "../../constant/styles/text";
 
@@ -13,7 +13,7 @@ const stylebg = {
 };
 
 const Modal = () => {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [modalIsOpen, setIsOpen] = React.useState(true);
 
   function ClipBoardFtn() {
     navigator.clipboard.writeText("0xC091377110ACFB780dFB9f6c200b2EF81d8cE4aB");

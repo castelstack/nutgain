@@ -1,10 +1,10 @@
 import React from "react";
 // import { paddingX } from "../constant/styles/spacing";
 import { SmText } from "../constant/styles/text";
-import dia from "../assets/svg/dia.svg";
-import gift from "../assets/svg/gift.svg";
+import dia from "../assets/webp/dia.webp";
+import gift from "../assets/webp/gift.webp";
 import nft from "../assets/svg/nft.svg";
-import bgward from "../assets/svg/bgward.svg";
+import bgward from "../assets/webp/bgward.webp";
 import liner from "../assets/svg/liner.svg";
 import linerl from "../assets/svg/strokel.svg";
 

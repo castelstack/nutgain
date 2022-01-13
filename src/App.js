@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./App.css";
 import Loader from "./components/loader";
-import Homepage from "./pages";
+// import Homepage from "./pages";
+
+const Homepage = React.lazy(() => import("./pages"));
 
 function App() {
   const [loaded, setLoaded] = React.useState(true);
@@ -11,7 +13,11 @@ function App() {
       setLoaded(false);
     }, 3000);
   }, []);
-  return <div className="App">{loaded ? <Loader /> : <Homepage />}</div>;
+  return (
+    <Suspense fallback={<Loader />}>
+      <Homepage />
+    </Suspense>
+  );
 }
 
 export default App;
