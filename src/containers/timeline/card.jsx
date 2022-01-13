@@ -4,7 +4,7 @@ import quarterline from "../../assets/svg/quarterline.svg";
 
 export const TimeCard = ({ year, info, title, icon, desc }) => {
   return (
-    <div className="flex flex-col items-start gap-4 w-full relative">
+    <div className="flex divHeight flex-col items-start gap-4 w-full relative">
       <img
         src={quarterline}
         alt="zor"
@@ -37,7 +37,7 @@ export const TimeCard = ({ year, info, title, icon, desc }) => {
           src={icon}
           alt="zor"
           style={{ position: "absolute", bottom: "-116px", left: "46px" }}
-          className="justify-self-end h-20 w-20 ml-4 mt-6"
+          className=" justify-self-end h-20 w-20 ml-4 mt-6"
         />
       </div>
     </div>

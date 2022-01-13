@@ -44,9 +44,9 @@ const Publish = () => {
         >
           <div></div>
 
-          <img src={yahoo} alt="zor" />
+          <img src={yahoo} alt="zor" className="mob-image-yahoo" />
 
-          <img src={pre} alt="zor" />
+          <img src={pre} alt="zor" className="mob-image-wire" />
         </div>
       </div>
     </div>

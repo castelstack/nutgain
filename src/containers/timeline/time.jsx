@@ -506,7 +506,7 @@ const data = [
       {
         id: 12,
         verified: false,
-        desc: "Initiation of Product Developmen",
+        desc: "Initiation of Product Development",
         subDesc: [
           "Swap & Liquidity",
           "Smart Contract Development",

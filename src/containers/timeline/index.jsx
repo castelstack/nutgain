@@ -115,10 +115,10 @@ const ProjectTimeline = () => {
                   clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%",
                 }}
               >
-                <SmText className="text-white px-4 w-full text-center">
+                <SmText className="text-white px-4 mobPadding w-full text-center">
                   Buy Fee
                 </SmText>
-                <SmText className="text-white px-4 w-full text-center">
+                <SmText className="text-white px-4 mobPadding w-full text-center">
                   Sell Fee
                 </SmText>
               </div>
@@ -136,7 +136,7 @@ const ProjectTimeline = () => {
                 }}
                 className="bg-primary-800"
               >
-                <SmText className="text-gray-900 px-8 py-4 font-bold ">
+                <SmText className="text-gray-900 mobfontSize md:px-8 px-2 py-4 font-bold ">
                   Liquidity Pool
                 </SmText>
               </div>
@@ -189,7 +189,7 @@ const ProjectTimeline = () => {
               }}
               className="bg-primary-800"
             >
-              <SmText className="text-gray-900 md:px-8 px-2 py-4 font-bold ">
+              <SmText className="text-gray-900 mobfontSize md:px-8 px-2 py-4 font-bold ">
                 Product Development
               </SmText>
             </div>
@@ -215,7 +215,7 @@ const ProjectTimeline = () => {
               }}
               className="bg-primary-800"
             >
-              <SmText className="text-gray-900 md:px-8 px-2 py-4 font-bold ">
+              <SmText className="text-gray-900 mobfontSize md:px-8 px-2 py-4 font-bold ">
                 Redistribution
               </SmText>
             </div>

@@ -58,3 +58,26 @@ a {
   position: absolute;
   margin: auto;
 }
+
+@media only screen and (max-width: 700px) {
+  .divHeight {
+    margin: 30px 0px 100px 0px;
+    height: 280px;
+  }
+  .mobfontSize {
+    font-size: 0.8rem;
+    padding: 17px 0px 17px 9px;
+  }
+  .mobPadding {
+    padding-left: 5px;
+    font-size: 0.8rem;
+  }
+  .mob-image-yahoo {
+    width: 30%;
+    height: 50px;
+  }
+  .mob-image-wire {
+    width: 36%;
+    height: 50px;
+  }
+}

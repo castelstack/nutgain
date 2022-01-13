@@ -63,10 +63,10 @@ const Redistro = () => {
               className="grid grid-cols-2 bg-dark-700 justify-between justify-items-center px-4 py-4"
               style={{ clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0% 100%" }}
             >
-              <SmText className="text-white px-4 w-full text-center">
+              <SmText className="text-white mobPadding px-4 w-full text-center">
                 Buy Fee
               </SmText>
-              <SmText className="text-white px-4 w-full text-center">
+              <SmText className="text-white mobPadding px-4 w-full text-center">
                 Sell Fee
               </SmText>
             </div>
