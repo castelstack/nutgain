@@ -44,9 +44,9 @@ const Publish = () => {
         >
           <div></div>
 
-          <img src={yahoo} alt="zor" className="h-32 md:w-1/4 w-32" />
+          <img src={yahoo} alt="zor" />
 
-          <img src={pre} alt="zor" className="h-32 md:w-1/4 w-32" />
+          <img src={pre} alt="zor" />
         </div>
       </div>
     </div>
