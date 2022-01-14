@@ -85,7 +85,7 @@ const Hero = () => {
               >
                 Contract Address
               </a>
-              <a
+              {/* <a
                 rel="noreferrer2"
                 className={`rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 md:text-base
                   transition ease-in  text-sm font-bold md:px-12 px-6  md:py-4 py-3 bg-primary-800`}
@@ -93,6 +93,15 @@ const Hero = () => {
                 target="_blank"
               >
                 Whitelist your Wallet
+              </a> */}
+              <a
+                rel="noreferrer2"
+                className={`rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 md:text-base
+                  transition ease-in  text-sm font-bold md:px-12 px-6  md:py-4 py-3 bg-primary-800`}
+                href="https://www.pinksale.finance/#/launchpad/0xDE199E1602767F332d4539DFEB687EaCAAbF0C4b?chain=BSC"
+                target="_blank"
+              >
+                Buy now
               </a>
             </div>
             <div className="flex gap-2 items-center">
