@@ -73,7 +73,7 @@ const Hero = () => {
               Web3, DeFi, Metaverse, NFT, Crypto Wallet, D-Hyper Ecommerce and
               dApps.
             </SmText>
-            <CountdownView />
+            {/* <CountdownView /> */}
 
             <div className="flex gap-4 py-2 items-center">
               <a
