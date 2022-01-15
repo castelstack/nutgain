@@ -59,7 +59,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 
 export const CountdownView = () => (
   <Countdown
-    date={new Date("2022-01-16T00:00:00").setHours(0, 0, 0)}
+    date={new Date("2022-01-15T00:00:00").setHours(14, 0, 0)}
     renderer={renderer}
   />
 );
