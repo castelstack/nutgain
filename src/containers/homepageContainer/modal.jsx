@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../assets/webp/logo.webp";
 import reward from "../../assets/webp/scanner.webp";
 import ModalView from "react-modal";
-import { Heading, SmText, SubText } from "../../constant/styles/text";
+import { SubText } from "../../constant/styles/text";
 
 const stylebg = {
   background: "rgba(0, 0, 0, 0.75);",

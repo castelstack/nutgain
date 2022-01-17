@@ -2,12 +2,12 @@ import React from "react";
 import logo from "../assets/svg/logo.svg";
 import tel from "../assets/svg/telegram.svg";
 import twitter from "../assets/svg/twitter1.svg";
-import cup from "../assets/svg/Group.svg";
-import linkdin from "../assets/svg/linkedin.svg";
-import msg from "../assets/svg/medium.svg";
+// import cup from "../assets/svg/Group.svg";
+// import linkdin from "../assets/svg/linkedin.svg";
+// import msg from "../assets/svg/medium.svg";
 import bg from "../assets/svg/bghead.svg";
 import squ from "../assets/svg/s.svg";
-import { Heading, SmText, SubText } from "../constant/styles/text";
+import { Heading, SmText } from "../constant/styles/text";
 import { paddingX } from "../constant/styles/spacing";
 import { CountdownView } from "../components/countdown";
 // import { ScrollInRight } from "../constant/layout/animateOnScroll";
@@ -95,7 +95,7 @@ const Hero = () => {
                 Whitelist your Wallet
               </a> */}
               <a
-                rel="noreferrer2"
+                rel="2 noreferrer"
                 className={`rounded-full ring-2 ring-white hover:ring-0 hover:shadow-md text-primary-900 md:text-base
                   transition ease-in  text-sm font-bold md:px-12 px-6  md:py-4 py-3 bg-primary-800`}
                 href="https://www.pinksale.finance/#/launchpad/0xDE199E1602767F332d4539DFEB687EaCAAbF0C4b?chain=BSC"

@@ -14,7 +14,7 @@ import squ from "../../assets/svg/squb.svg";
 import coin from "../../assets/svg/coin2.svg";
 import coin2 from "../../assets/svg/BUSD.svg";
 import card from "../../assets/svg/card.svg";
-import { ReactComponent as Stand } from "../../assets/svg/stand.svg";
+// import { ReactComponent as Stand } from "../../assets/svg/stand.svg";
 import PieChart from "./pieChart";
 import Percentage from "./percentage";
 

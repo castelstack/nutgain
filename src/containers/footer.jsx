@@ -43,7 +43,11 @@ const Footer = () => {
             <SubText className="font-bold text-white mb-3">Site</SubText>
             <div className="flex flex-col gap-3 ">
               {site.map((el, index) => (
-                <a href={el.link} target={el.link !== "" ? "_blank" : "none"}>
+                <a
+                  href={el.link}
+                  target={el.link !== "" ? "_blank" : "none"}
+                  rel="noreferrer"
+                >
                   <SmText key={index} className="text-white capitalize">
                     {el.name}
                   </SmText>

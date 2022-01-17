@@ -2,16 +2,16 @@ import React from "react";
 import { paddingX } from "../../constant/styles/spacing";
 import { Heading, SmText, SubText } from "../../constant/styles/text";
 
-import { ScrollDot, ScrollDotUp } from "../../constant/layout/animateOnScroll";
+// import { ScrollDot, ScrollDotUp } from "../../constant/layout/animateOnScroll";
 
-import dot from "../../assets/svg/dot.svg";
+// import dot from "../../assets/svg/dot.svg";
 import LineDot from "../../assets/svg/LineDot.svg";
 import LineVertical from "../../assets/svg/LineVertical.svg";
 import noTick from "../../assets/svg/noTick.svg";
 import tick from "../../assets/svg/tick.svg";
-const style = {
-  clipPath: "polygon(0 0, 95% 0, 80% 100%, 0% 100%)",
-};
+// const style = {
+//   clipPath: "polygon(0 0, 95% 0, 80% 100%, 0% 100%)",
+// };
 const Time = () => {
   const BoxUI = (title, subTitle, array, Heading, index) => {
     return (
@@ -397,45 +397,45 @@ const Time = () => {
 export default Time;
 
 // mock data
-const quarterOne = [
-  {
-    id: 12,
-    verified: true,
-    desc: "UI & Domain Finalization",
-    subDesc: [],
-  },
-  {
-    id: 2,
-    verified: true,
-    desc: "UX Development",
-    subDesc: [],
-    // subDesc: [
-    //   "Swap & Liquidity",
-    //   "Smart Contract Development",
-    //   "Yield Farming Integration",
-    //   "Staking Integration",
-    //   "  Spin & Win",
-    // ],
-  },
-  {
-    id: 124,
-    verified: false,
-    desc: "Initiation of Product Development",
-    subDesc: [],
-  },
-  {
-    id: 124,
-    verified: false,
-    desc: "Deployment & Testing on Test Bed",
-    subDesc: [],
-  },
-  {
-    id: 124,
-    verified: false,
-    desc: "Go-live on 28th Feb 2022",
-    subDesc: [],
-  },
-];
+// const quarterOne = [
+//   {
+//     id: 12,
+//     verified: true,
+//     desc: "UI & Domain Finalization",
+//     subDesc: [],
+//   },
+//   {
+//     id: 2,
+//     verified: true,
+//     desc: "UX Development",
+//     subDesc: [],
+//     // subDesc: [
+//     //   "Swap & Liquidity",
+//     //   "Smart Contract Development",
+//     //   "Yield Farming Integration",
+//     //   "Staking Integration",
+//     //   "  Spin & Win",
+//     // ],
+//   },
+//   {
+//     id: 124,
+//     verified: false,
+//     desc: "Initiation of Product Development",
+//     subDesc: [],
+//   },
+//   {
+//     id: 124,
+//     verified: false,
+//     desc: "Deployment & Testing on Test Bed",
+//     subDesc: [],
+//   },
+//   {
+//     id: 124,
+//     verified: false,
+//     desc: "Go-live on 28th Feb 2022",
+//     subDesc: [],
+//   },
+// ];
 
 const data = [
   // first

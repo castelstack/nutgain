@@ -1,6 +1,6 @@
 import React from "react";
 import { paddingX } from "../constant/styles/spacing";
-import { Heading, MdHeading, SmText, SubText } from "../constant/styles/text";
+import { Heading, MdHeading, SmText } from "../constant/styles/text";
 import ad2 from "../assets/svg/ad2.svg";
 import ad3 from "../assets/svg/ad3.svg";
 import ad4 from "../assets/svg/ad4.svg";

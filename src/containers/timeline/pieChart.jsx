@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Pie } from "../../assets/svg/pie3.svg";
-import { SubText, SmText, MdHeading } from "../../constant/styles/text";
+import { MdHeading } from "../../constant/styles/text";
 const PieChart = () => {
   return (
     <section className="grid md:grid-cols-2 grid-cols-1 items-center md:-space-x-10 -space-x-0">
@@ -42,35 +42,35 @@ const PieChart = () => {
   );
 };
 
-const data = [
-  {
-    title: "parameters",
-    color: "bg-pie-100",
-  },
-  {
-    title: "Reward & Referrals",
-    color: "bg-pie-200",
-  },
-  {
-    title: "Intial investors",
-    color: "bg-pie-300",
-  },
-  {
-    title: "presale offering",
-    color: "bg-pie-400",
-  },
-  {
-    title: "product development",
-    color: "bg-pie-500",
-  },
-  {
-    title: "general public",
-    color: "bg-pie-600",
-  },
+// const data = [
+//   {
+//     title: "parameters",
+//     color: "bg-pie-100",
+//   },
+//   {
+//     title: "Reward & Referrals",
+//     color: "bg-pie-200",
+//   },
+//   {
+//     title: "Intial investors",
+//     color: "bg-pie-300",
+//   },
+//   {
+//     title: "presale offering",
+//     color: "bg-pie-400",
+//   },
+//   {
+//     title: "product development",
+//     color: "bg-pie-500",
+//   },
+//   {
+//     title: "general public",
+//     color: "bg-pie-600",
+//   },
 
-  {
-    title: "marketing",
-    color: "bg-pie-700",
-  },
-];
+//   {
+//     title: "marketing",
+//     color: "bg-pie-700",
+//   },
+// ];
 export default PieChart;

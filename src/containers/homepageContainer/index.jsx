@@ -10,8 +10,8 @@ import Reward from "../reward";
 import Team from "../team";
 import ProjectTimeline from "../timeline";
 import Time from "../timeline/time";
-import Modal from "./modal";
-import Modal2 from "./modal2";
+// import Modal from "./modal";
+// import Modal2 from "./modal2";
 
 const Home = () => {
   return (

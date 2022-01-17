@@ -7,7 +7,7 @@ import cha4 from "../assets/svg/cha4.svg";
 import hero from "../assets/svg/hero2.svg";
 import video from "../assets/svg/video.svg";
 import stroke from "../assets/svg/line.svg";
-import rebg from "../assets/svg/rebg.svg";
+// import rebg from "../assets/svg/rebg.svg";
 // import { ReactComponent as Hero } from "../assets/svg/hero.svg";
 
 import { paddingX } from "../constant/styles/spacing";
@@ -122,6 +122,7 @@ const Browser = () => {
                 <a
                   href="https://online.flippingbook.com/view/956899460/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <p className="text-primary-800 text-xl font-prime font-bold text-center flex ">
                     Find out more &rarr;
