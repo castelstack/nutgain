@@ -6,7 +6,8 @@ import Loader from "./components/loader";
 const Homepage = React.lazy(() => import("./pages"));
 
 function App() {
-  const [loaded, setLoaded] = React.useState(true);
+  // eslint-disable-next-line no-unused-vars
+  const [_, setLoaded] = React.useState(true);
 
   React.useEffect(() => {
     setTimeout(() => {
