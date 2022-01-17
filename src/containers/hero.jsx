@@ -9,7 +9,7 @@ import bg from "../assets/svg/bghead.svg";
 import squ from "../assets/svg/s.svg";
 import { Heading, SmText } from "../constant/styles/text";
 import { paddingX } from "../constant/styles/spacing";
-import { CountdownView } from "../components/countdown";
+// import { CountdownView } from "../components/countdown";
 // import { ScrollInRight } from "../constant/layout/animateOnScroll";
 
 // button component
@@ -73,7 +73,7 @@ const Hero = () => {
               Web3, DeFi, Metaverse, NFT, Crypto Wallet, D-Hyper Ecommerce and
               dApps.
             </SmText>
-            <CountdownView />
+            {/* <CountdownView /> */}
 
             <div className="flex gap-4 py-2 items-center">
               <a
